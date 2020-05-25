@@ -43,6 +43,9 @@
 
     .project-wrapper {    
         position: relative;
+        margin-top: 60px;
+
+
 
         .project-thumbnail {
             width: 100%;
@@ -142,10 +145,11 @@
             bottom: 0;
 
         }
-
+    }
         /* ---- Portfolio Card --- */
         .portfolio-container {
             position: relative;
+            margin-top: 100px;
 
             .port-thumbnail {
                 width: 100%;
@@ -245,7 +249,6 @@
                 bottom: 0;
 
             }
-        }
 
     }
 
@@ -327,19 +330,42 @@
  @media (min-width: 605px) {
 
     .works-showcase {
+
         .section-01 {
-            .swift-container {
-                    
+
+            .works-title {
+                margin-left: 50px;
+            }
+
+            .project-wrapper {
+                margin-left: 50px;
+                margin-right: 50px;
+            /* ---- Swift Card ----  */
+            .swift-container {    
+                 margin-bottom: 90px;        
+                           
+
                 .project-thumbnail {
-                    width: 400px;
+                    width: 300px;
                     display: block;
                     margin: 0;
+                    
+
+                    .swift-feature {
+                        height: 75vh;
+                    }
                 }
+
+
 
                 .swift-description p{
                     background-color: rgb(23, 42, 69);
                     padding: 30px;
-                    margin-top: 80px;
+                    margin-top: 30px;
+                    /* margin-left: 150px; */
+                    margin-left: 30%;
+                    margin-right: 0;
+                    border-radius: 3px;
                 }
 
                 .swift-tech {
@@ -348,20 +374,47 @@
 
                     i {
                        text-align: right;
-                       margin-left: 45px;
+                       margin-left: 35px;
                      
                     }
                 }
-
-
-
-
             }
 
-          
+             /* ---- Portfolio Card ----  */
+             .portfolio-container {
+                 margin-top: 50px;
+                   
+                .port-thumbnail {
+                    width: 300px;                   
+                    margin-right: 0;
+                    
 
+                    .port-feature {
+                        height: 70vh;
+                    }
+                }
+
+                .port-description p{
+                    background-color: rgb(23, 42, 69);
+                    padding: 30px;
+                    margin-top: 80px;
+                    margin-right: 30%;
+                }
+
+                .port-tech {
+                    display: block;
+                    margin-bottom: 70px;
+
+                    i {
+                       text-align: left;
+                       margin-right: 35px;
+                     
+                    }
+                }
+            }
             
         }   
+    }
     }
 
 } 
@@ -369,9 +422,45 @@
 @media (min-width: 775px) {
     .works-showcase{
         .section-01{
-
             .works-title {
-            margin-left: 60px;
+                
+            }
+            .project-wrapper {
+
+                .swift-container {     
+                    margin-bottom: 200px;               
+                    .project-thumbnail {
+
+                        width: 400px;
+                        .swift-feature {
+                            height: 475px;
+                        }
+                        
+                    }
+
+                    .swift-info {
+                        .featured-title {                      
+                        }
+                    }
+
+                    .swift-description {
+                        .swift-tech {
+                            margin-top: 0;
+
+                        }
+                        .featured-links {
+                            margin-top: -35px;
+                        }
+                    }
+                }
+
+                .portfolio-container {
+                    .port-thumbnail {
+                        .port-feature {
+                            height: 100%;
+                        }
+                    }
+                }
             }
         }
     }
@@ -385,4 +474,8 @@
         }        
     }
 
+}
+
+@media (min-width: 940px) {
+    
 }

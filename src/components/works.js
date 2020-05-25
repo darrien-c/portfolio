@@ -48,7 +48,7 @@ const Works = () => {
 
                                 <div className="swift-tech">
                                     <i><DiGit /></i>
-                                    <i> <DiHtml5 /></i>
+                                    <i><DiHtml5 /></i>
                                     <i><DiSass /></i>
                                 </div>
 
@@ -78,9 +78,9 @@ const Works = () => {
                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
                               <div className="port-tech">
-                                  <DiGit />
-                                  <DiHtml5 />
-                                  <DiSass />
+                                  <i><DiGit /></i>
+                                  <i><DiHtml5 /></i>
+                                  <i><DiSass /></i>
                               </div>
 
                               <div className="featured-links">
