@@ -28,6 +28,29 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto Mono`,
+            variants: [`300`, `400`, `600`,`700`]
+          },
+          {
+            family: `Roboto`,
+            subsets: [`latin`]
+          },
+          {
+            family: `Source Sans Pro`,
+            variants: [`300`, `400`, `600`,`700`]
+          },
+          {
+            family: `Source Sans Pro`,
+            subsets: [`sans-serif`]
+          },
+        ],
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

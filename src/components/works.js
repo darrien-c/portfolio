@@ -24,16 +24,16 @@ const Works = () => {
         <div className="works-showcase">
             <div className="container">
                 <section id="projects" className="section-01">
-                    <h3 className="works-title">  <span>01.</span>  Some Things I've Built</h3>
 
                     <div className="project-wrapper">
+                    <h3 className="works-title">  <span>01.</span>  Some Things I've Built</h3>
 
                       {/* --- Capstone Card --- */}
                       <div className="capstone-container">
                           <div className="capstone-thumbnail">
                         {/*     <Img className="swift-feature" fluid={data.swiftFeatured.childImageSharp.fluid} alt="Swift Project" />   */}
-                              <img className="capstone-feature" src={comingSoon} /> 
-                              <div className="capstone-overlay"></div>
+                             <a href="#"><img className="capstone-feature" src={comingSoon} /> 
+                              <div className="capstone-overlay"></div></a>
                           </div>
 
                           <div className="capstone-info">
@@ -41,22 +41,22 @@ const Works = () => {
                                 <h4>Featured Project</h4>
                                 <h5>Capstone</h5>
                             </div>
-                            <div className="capstone-description">
-                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                               
+                         
+                               <p className="capstone-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
-                                <div className="capstone-tech">
-                                    <i><DiGit /></i>
-                                    <i><DiHtml5 /></i>
-                                    <i><DiSass /></i>
-                                </div>
+                            <div className="capstone-tools">
+                                  <div className="capstone-tech">
+                                      <i><DiGit /></i>
+                                      <i><DiHtml5 /></i>
+                                      <i><DiSass /></i>
+                                  </div>
 
-                                <div className="featured-links">
-                                  <a href="#"><DiGithubBadge /></a>   
-                                  <a href="#"><BsBoxArrowInUpRight /></a>                         
-                                </div> 
-                            </div>                            
-                          </div>           
+                                  <div className="featured-links">
+                                    <a href="https://github.com/darrien-c" target="_blank"><DiGithubBadge /></a>   
+                                    <a href="#" target="_blank"><BsBoxArrowInUpRight /></a>                         
+                                  </div> 
+                              </div>                            
+                            </div>
 
                       </div>
 
@@ -72,19 +72,20 @@ const Works = () => {
                                 <h5>Portfolio</h5>
                             </div>
 
-                            <div className="port-description">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                           
+                              <p className="port-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-                              <div className="port-tech">
-                                  <i><DiGit /></i>
-                                  <i><DiHtml5 /></i>
-                                  <i><DiSass /></i>
-                              </div>
+                              <div className="port-tools">
+                                <div className="port-tech">
+                                    <i><DiGit /></i>
+                                    <i><DiHtml5 /></i>
+                                    <i><DiSass /></i>
+                                </div>
 
-                              <div className="featured-links">
-                                <a href="#"><DiGithubBadge /></a>   
-                                <a href="#"><BsBoxArrowInUpRight /></a>                         
-                              </div>
+                                <div className="featured-links">
+                                  <a href="https://github.com/darrien-c" target="_blank"><DiGithubBadge /></a>   
+                                  <a href="#"><BsBoxArrowInUpRight /></a>                         
+                                </div>
                             </div>
                           </div>
                       </div> {/* ---- End of Portfolio ---- */}
@@ -102,20 +103,20 @@ const Works = () => {
                                 <h4>Featured Project</h4>
                                 <h5>Swift</h5>
                             </div>
-                            <div className="swift-description">
-                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            
+                               <p className="swift-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                
+                               <div className="swift-tools">
+                                  <div className="swift-tech">
+                                      <i><DiGit /></i>
+                                      <i><DiHtml5 /></i>
+                                      <i><DiSass /></i>
+                                  </div>
 
-                                <div className="swift-tech">
-                                    <i><DiGit /></i>
-                                    <i><DiHtml5 /></i>
-                                    <i><DiSass /></i>
-                                </div>
-
-                                <div className="featured-links">
-                                  <a href="#"><DiGithubBadge /></a>   
-                                  <a href="#"><BsBoxArrowInUpRight /></a>                         
-                                </div> 
+                                  <div className="featured-links">
+                                    <a href="https://github.com/darrien-c" target="_blank"><DiGithubBadge /></a>   
+                                    <a href="#"><BsBoxArrowInUpRight /></a>                         
+                                  </div> 
                             </div>                            
                           </div>                     
                       </div> {/* ---- End of Swift ----- */}
@@ -125,7 +126,7 @@ const Works = () => {
 
             <div className="fixed-social">
               <ul class="social-media">
-                <li><a href="#"><DiGithubBadge /></a></li>  
+                <li><a href="https://github.com/darrien-c" target="_blank"><DiGithubBadge /></a></li>  
                 <li><a href="#"><FaLinkedinIn /></a></li>
               </ul>
             </div>

@@ -37,15 +37,15 @@
             overflow: hidden;
 
         }
-    }
+    
 
-    /* ----- Project Cards ----- */
+    /* ======= Project Cards ======== */
 
     .project-wrapper {    
         position: relative;
         margin-top: 60px;
 
-        /* --- Capstone Card --- */
+        /* ----- Capstone Card ------ */
         .capstone-container{
             position: relative;
 
@@ -61,7 +61,7 @@
                     top: 0;
                     left: 0;
                     width: 100%;
-                    height: 75vh;
+                    height: 50vh;
                     object-fit: cover;
                     object-position: center center;
     
@@ -71,7 +71,7 @@
 
             .capstone-info {      
                 
-                /* --- Project Title --- */
+                /* -------- Project Title --------- */
                 .featured-title {
                     display: block;
                     position: absolute;
@@ -99,45 +99,53 @@
                     position: absolute;
                     top: 50px;
                 /*  color: rgb(168, 178, 209); */
-                color: white;
+                    color: white;
                     font-size: 18px;
                     text-align: right;
                     margin: 70px 30px;
+                    font-family: 'Source Sans Pro';
+                    font-weight: 300;
                 }
 
                 /* --- Project Technologies --- */
+                .capstone-tools {
+                    display: block;
+                    position: absolute;
+                    bottom: 50px;
+                    right: 0;
+                    color: white;
+                    margin-right: 20px;
 
+                    .capstone-tech,
+                    .featured-links {
+                        font-size: 30px;
+                    }
 
-                .capstone-tech,
-                .featured-links {
-                    font-size: 30px;
-                }
+                    .capstone-tech {
+                        font-size: 40px;
+                    }
 
-                .capstone-tech {
-                    font-size: 40px;
-                }
+                    .capstone-tech {
+                        text-align: right;    
+                        i {
+                            margin-left: 20px;
+                        }
+                    }
 
-                .capstone-tech {
-                    margin-top: 50px;
-                    margin-bottom: 25px;
-                    display: flex;
-                    justify-content: space-evenly;
-                    text-align: right;                 
-                }
-
-                .featured-links {
-                    margin-top: 50px;                
-
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        padding-left: 20px;
+                    .featured-links {         
+                        text-align: right;
+                        margin-top: 50px;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            padding-left: 20px;
+                        }
                     }
                 }
 
             }
             .capstone-overlay {
-                background-color: rgba(40, 87, 76, 0.637);
+                background-color: rgba(11, 71, 57, 0.637);
                 height: 100%;
                 display: block;
                 position: absolute;
@@ -145,14 +153,16 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
+                
 
             }
         }
 
-        /* --- Swift Card --- */
+        /* -------- Swift Card -------- */
 
         .swift-container{
             position: relative;
+            
 
             .project-thumbnail {
                 width: 100%;
@@ -166,10 +176,9 @@
                     top: 0;
                     left: 0;
                     width: 100%;
-                    height: 75vh;
+                    height: 50vh;
                     object-fit: cover;
                     object-position: center center;
-    
                 }        
 
             }
@@ -204,39 +213,50 @@
                     position: absolute;
                     top: 50px;
                 /*  color: rgb(168, 178, 209); */
-                color: white;
-                    font-size: 18px;
+                    color: white;
+                    font-size: 16px;
                     text-align: right;
                     margin: 70px 30px;
+                    font-family: 'Source Sans Pro';
+                    font-weight: 300;
                 }
 
                 /* --- Project Technologies --- */
 
+                .swift-tools {
+                    display: block;
+                    position: absolute;
+                    bottom: 50px;
+                    right: 0;
+                    color: white;
 
-                .swift-tech,
-                .featured-links {
-                    font-size: 30px;
-                }
+                    .featured-links {
+                        font-size: 30px;
+                    }
 
-                .swift-tech {
-                    font-size: 40px;
-                }
+                    .swift-tech {
+                        font-size: 40px;
+                    }
 
-                .swift-tech {
-                    margin-top: 50px;
-                    margin-bottom: 25px;
-                    display: flex;
-                    justify-content: space-evenly;
-                    text-align: right;                 
-                }
+                    .swift-tech {
+                        margin-top: 50px;
+                        margin-bottom: 25px;
+                        text-align: right;      
+                        
+                        i {
+                            margin-right: 20px;
+                        }
+                    }
 
-                .featured-links {
-                    margin-top: 50px;                
-
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        padding-left: 20px;
+                    .featured-links {
+                        text-align: right;    
+                        margin-top: 50px;                
+                        margin-right: 20px;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            padding-left: 20px;
+                        }
                     }
                 }
 
@@ -256,7 +276,8 @@
 
         
     }
-        /* ---- Portfolio Card --- */
+        /* --------- Portfolio Card ---------- */
+
         .portfolio-container {
             position: relative;
             margin-top: 100px;
@@ -274,7 +295,7 @@
                     top: 0;
                     left: 0;
                     width: 100%;
-                    height: 75vh;
+                    height: 50vh;
                     object-fit: cover;
                     object-position: center center;
     
@@ -313,40 +334,53 @@
                     position: absolute;
                     top: 50px;
                 /*  color: rgb(168, 178, 209); */
-                color: white;
+                    color: white;
                     font-size: 18px;
                     text-align: left;
                     margin: 70px 30px;
+                    font-family: 'Source Sans Pro';
+                    font-weight: 300;
                 }
 
                 /* --- Project Technologies --- */
 
-                .port-tech,
-                .featured-links {
-                    font-size: 30px;
-                }
+                .port-tools {
+                    display: block;
+                    position: absolute;
+                    bottom: 50px;
+                    left: 0;
+                    color: white;
+                    margin-left: 20px;
 
-                .port-tech {
-                    font-size: 40px;
-                }
-
-                .port-tech {
-                    margin-top: 50px;
-                    margin-bottom: 25px;
-                    display: flex;
-                    justify-content: space-evenly;
-                    text-align: left;
-                }
-
-                .featured-links {
-                    margin-top: 50px;                
-
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        padding-right: 20px;
+                    .port-tech,
+                    .featured-links {
+                        font-size: 30px;
                     }
+
+                    .port-tech {
+                        font-size: 40px;
+                    }
+
+                    .port-tech {
+                        margin-top: 80px;
+                        margin-bottom: 25px;
+                        text-align: left;
+
+                        i {
+                            margin-right: 20px;
+                        }
+                    }
+
+                    .featured-links {
+                        margin-top: 50px;                
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            padding-right: 20px;
+                        }
                 }
+            }
 
             }
             .port-overlay {
@@ -362,7 +396,7 @@
             }
 
     }
-
+}
     /*------- Side Contact ------ */
 
     .fixed-contact {
@@ -435,17 +469,18 @@
         display: none;
     }
 
-
 }
 
- @media (min-width: 605px) {
+/* ======== Media Queries ========= */
+
+ @media (min-width: 610px) {
 
     .works-showcase {
 
         .section-01 {
-
+            
             .works-title {
-                margin-left: 50px;
+          
             }
 
             .project-wrapper {
@@ -455,47 +490,67 @@
             /* ---- Capstone Card ----  */
             .capstone-container {
                 margin-bottom: 90px;        
-                           
+                position: relative;
 
                 .capstone-thumbnail {
                     width: 300px;
                     display: block;
-                    margin: 0;
-                    
+                    margin: 0;                   
 
                     .capstone-feature {
-                        height: 75vh;
+                        height: 55vh;    
+                        cursor: pointer;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
                 }
 
+                .featured-title {
+                    margin-top: 0;  
+                }
 
-
-                .capstone-description p{
+                .capstone-description {
                     background-color: rgb(23, 42, 69);
-                    padding: 30px;
-                    margin-top: 30px;
-                    /* margin-left: 150px; */
-                    margin-left: 30%;
-                    margin-right: 0;
+                    padding: 25px;
+                    max-width: 50%;
                     border-radius: 3px;
+                    position: absolute;
+                    right: 0;        
+                    font-size: 16px !important;
                 }
 
                 .capstone-tech {
                     display: block;
-                    margin-bottom: 70px;
-
+                    margin-right: 10px;
+                    
                     i {
                        text-align: right;
-                       margin-left: 35px;
-                     
+                       margin-left: 15px;                       
+                       font-size: 35px;
                     }
                 }
+
+                .featured-links {
+                    margin-right: 10px;
+                    margin-top: 50px;
+                }
+
+                .capstone-overlay {
+                    cursor: pointer;
+                }
+                .capstone-overlay:hover {
+                    cursor: pointer;
+                    opacity: 0;
+                }
+
             }
 
             /* ---- Swift Card ----  */
             .swift-container {    
                  margin-bottom: 90px;        
-                           
+                 position: relative;
 
                 .project-thumbnail {
                     width: 300px;
@@ -504,19 +559,23 @@
                     
 
                     .swift-feature {
-                        height: 75vh;
+                        height: 55vh;
+                        cursor: pointer;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
                 }
 
 
 
-                .swift-description p{
+                .swift-description{
                     background-color: rgb(23, 42, 69);
-                    padding: 30px;
-                    margin-top: 30px;
-                    /* margin-left: 150px; */
-                    margin-left: 30%;
-                    margin-right: 0;
+                    padding: 25px;
+                    max-width: 50%;
+                    position: absolute;
+                    right: 0;
                     border-radius: 3px;
                 }
 
@@ -526,42 +585,57 @@
 
                     i {
                        text-align: right;
-                       margin-left: 35px;
+                       margin-left: 15px;
+                       font-size: 35px;
                      
                     }
                 }
+
             }
 
              /* ---- Portfolio Card ----  */
-             .portfolio-container {
-               
+             .portfolio-container {               
                  margin-bottom: 150px;
+
                 .port-thumbnail {
                     width: 300px;                   
-                    margin-right: 0;
-                    
+                    margin-right: 0;                    
 
                     .port-feature {
-                        height: 70vh;
+                        height: 55vh;
+                        cursor: pointer;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
                 }
 
-                .port-description p{
+                .port-description {
                     background-color: rgb(23, 42, 69);
-                    padding: 30px;
+                    padding: 25px;
                     margin-top: 80px;
-                    margin-right: 30%;
+                    margin-right: 50%;
+                    font-size: 16px;
                 }
 
                 .port-tech {
                     display: block;
-                    margin-bottom: 70px;
+                    margin-bottom: 0;
 
                     i {
                        text-align: left;
-                       margin-right: 35px;
-                     
+                       margin-right: 15px;
+                       font-size: 35px;
                     }
+                }
+
+                .port-overlay {
+                    cursor: pointer;
+                }
+                .port-overlay:hover {
+                    cursor: pointer;
+                    opacity: 0;
                 }
             }
             
@@ -581,8 +655,16 @@
 
                 /* --- Capstone Card ---- */
                 .capstone-container {
-                    .capstone-thumbnail {
+                    
+                    .capstone-thumbnail {                       
                         width: 400px;
+                    }
+
+                    .capstone-description {
+
+                        .featured-links {
+                           
+                        }
                     }
                 }
 
@@ -646,7 +728,7 @@
 
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 905px) {
     .works-showcase {
    
         .section-01 {
@@ -657,41 +739,33 @@
             }
 
             .project-wrapper {
+                margin-top: 90px;
                 margin-right: 0;
                 margin-left: 0;
 
                 /* --- Capstone Card --- */
                 .capstone-container {
+                    
                     .capstone-thumbnail {
-                        width: 600px;
-                        .capstone-feature {
-                            height: 475px;
+                        width: 575px;
+
+                        .capstone-feature {                            
+                            height: 400px;
                         }
                     }
-
-                    .capstone-description {
-                        p {
-                            margin-top: 0;
-                            margin-left: 50%;
-                        }
-
-                        .capstone-tech {
-                            font-size: 30px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                        }
+                    
+                    .capstone-tools {
+                       bottom: 6px !important;
                     }
-
-
                 }
 
                  /* --- Portfolio Card --- */
 
                 .portfolio-container {
                     .port-thumbnail {
-                        width: 600px;
+                        width: 575px;
                         .port-feature {
-                            height: 475px;
+                            height: 400px;
                         }
                     }
 
@@ -704,20 +778,17 @@
                     .port-description {
                         margin-left: 0;
                         
-                        p {
+                        .port-description {
+                            margin-left: 0;
                             margin-top: 0;
                             padding: 22px;
                             margin-right: 50%;
                         }
 
-                        .port-tech {
-                            margin-bottom: 30px;
-                        }
+                    }
 
-                        .featured-links {
-                            margin-top: 50px;
-                     
-                        }
+                    .port-tools {
+                        bottom: 6px !important;
                     }
                 }
 
@@ -730,11 +801,55 @@
                            height: 475px;
                        }                       
                     }
+
                     .swift-description {
+                        right: 0;
                         p {
+                         
                             margin-left: 50%;
                         }
                     }
+                }
+
+              
+            }
+        }
+    }
+}
+
+@media (min-width: 1080px) {
+    .works-showcase {   
+        .section-01 { 
+            
+            .works-title {
+               
+            }
+            .project-wrapper {   
+                width: 980px;
+                margin: 0 auto;
+                /* --- Capstone Card --- */
+                .capstone-container {                    
+                    .capstone-thumbnail {    
+                        .capstone-feature {
+                        }
+                    }
+
+                    .featured-title {
+                        margin-bottom: 0;
+
+                        h5 {
+                            margin-bottom: 0;
+                        }
+                    }               
+                }
+
+                 /* --- Portfolio Card --- */
+
+                .portfolio-container {
+                }
+
+                /* --- Swift Card --- */
+                .swift-container{                   
                 }
 
               
