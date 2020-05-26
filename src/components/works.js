@@ -39,7 +39,7 @@ const Works = () => {
                           <div className="capstone-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
-                                <h5>Capstone</h5>
+                                <h5><a href="#" target="_blank">Capstone</a></h5>
                             </div>
                          
                                <p className="capstone-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -69,7 +69,7 @@ const Works = () => {
                           <div className="port-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
-                                <h5>Portfolio</h5>
+                                <h5><a href="#" target="_blank">Portfolio</a></h5>
                             </div>
 
                            
@@ -101,7 +101,7 @@ const Works = () => {
                           <div className="swift-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
-                                <h5>Swift</h5>
+                                <h5><a href="#" target="_blank">Swift</a></h5>
                             </div>
                             
                                <p className="swift-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>

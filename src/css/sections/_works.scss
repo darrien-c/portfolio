@@ -37,6 +37,22 @@
             overflow: hidden;
 
         }
+
+        h5 {
+            color: white;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: rgb(100, 255, 218);
+                }
+            }        
+        
+        }
+
+    
     
 
     /* ======= Project Cards ======== */
@@ -216,7 +232,7 @@
                     color: white;
                     font-size: 16px;
                     text-align: right;
-                    margin: 70px 30px;
+                    margin: 100px 30px;
                     font-family: 'Source Sans Pro';
                     font-weight: 300;
                 }
@@ -471,7 +487,7 @@
 
 }
 
-/* ======== Media Queries ========= */
+/* ======== # Media Queries ========= */
 
  @media (min-width: 610px) {
 
@@ -493,7 +509,8 @@
                 position: relative;
 
                 .capstone-thumbnail {
-                    width: 300px;
+                    /* width: 300px; */
+                    width: 60%;
                     display: block;
                     margin: 0;                   
 
@@ -553,7 +570,7 @@
                  position: relative;
 
                 .project-thumbnail {
-                    width: 300px;
+                    width: 60%;
                     display: block;
                     margin: 0;
                     
@@ -577,6 +594,7 @@
                     position: absolute;
                     right: 0;
                     border-radius: 3px;
+                   
                 }
 
                 .swift-tech {
@@ -591,6 +609,14 @@
                     }
                 }
 
+                .swift-overlay {
+                    cursor: pointer;
+                }
+                .swift-overlay:hover {
+                    cursor: pointer;
+                    opacity: 0;
+                }
+
             }
 
              /* ---- Portfolio Card ----  */
@@ -598,7 +624,7 @@
                  margin-bottom: 150px;
 
                 .port-thumbnail {
-                    width: 300px;                   
+                    width: 60%;               
                     margin-right: 0;                    
 
                     .port-feature {
@@ -615,7 +641,7 @@
                     background-color: rgb(23, 42, 69);
                     padding: 25px;
                     margin-top: 80px;
-                    margin-right: 50%;
+                    margin-right: 40%;
                     font-size: 16px;
                 }
 
@@ -655,17 +681,6 @@
 
                 /* --- Capstone Card ---- */
                 .capstone-container {
-                    
-                    .capstone-thumbnail {                       
-                        width: 400px;
-                    }
-
-                    .capstone-description {
-
-                        .featured-links {
-                           
-                        }
-                    }
                 }
 
                 /* --- Swift Card --- */
@@ -677,7 +692,6 @@
                         width: 400px;
 
                         .swift-feature {
-                            height: 475px;
                         }
                         
                     }
@@ -703,7 +717,7 @@
                         width: 400px;
 
                         .port-feature {
-                            height: 595px;
+                            
                         }
                     }
 
@@ -747,7 +761,8 @@
                 .capstone-container {
                     
                     .capstone-thumbnail {
-                        width: 575px;
+                        /* width: 575px; */
+                        width: 60%;
 
                         .capstone-feature {                            
                             height: 400px;
@@ -763,7 +778,7 @@
 
                 .portfolio-container {
                     .port-thumbnail {
-                        width: 575px;
+                        width: 60%;
                         .port-feature {
                             height: 400px;
                         }
@@ -795,7 +810,7 @@
                 /* --- Swift Card --- */
                 .swift-container{                   
                     .project-thumbnail {
-                        width: 600px;
+                        width: 60%;
 
                         .swift-feature {
                            height: 475px;
