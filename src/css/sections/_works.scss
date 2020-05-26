@@ -45,111 +45,222 @@
         position: relative;
         margin-top: 60px;
 
-
-
-        .project-thumbnail {
-            width: 100%;
-            margin: 0 auto;
-            mix-blend-mode: screen;
+        /* --- Capstone Card --- */
+        .capstone-container{
             position: relative;
-            
-           .swift-feature   {
-                border-radius: 3px;  
-                position: inherit !important; 
+
+            .capstone-thumbnail {
+                width: 100%;
+                margin: 0 auto;
+                mix-blend-mode: screen;
+                position: relative;
+                
+            .capstone-feature   {
+                    border-radius: 3px;  
+                    position: inherit !important; 
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 75vh;
+                    object-fit: cover;
+                    object-position: center center;
+    
+                }        
+
+            }
+
+            .capstone-info {      
+                
+                /* --- Project Title --- */
+                .featured-title {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    color: $off-white;
+                    text-align: right;
+                    right: 0;
+                    margin: 30px 30px;
+                }
+
+                h4 {
+                    margin-bottom: 10px;
+                    font-size: 13px;
+                    color: rgb(100, 255, 218);
+                }
+
+                h5 {
+                    font-size: 23px;
+                }
+
+                /* --- Project Description --- */
+
+                .capstone-description {
+                    display: block;
+                    position: absolute;
+                    top: 50px;
+                /*  color: rgb(168, 178, 209); */
+                color: white;
+                    font-size: 18px;
+                    text-align: right;
+                    margin: 70px 30px;
+                }
+
+                /* --- Project Technologies --- */
+
+
+                .capstone-tech,
+                .featured-links {
+                    font-size: 30px;
+                }
+
+                .capstone-tech {
+                    font-size: 40px;
+                }
+
+                .capstone-tech {
+                    margin-top: 50px;
+                    margin-bottom: 25px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    text-align: right;                 
+                }
+
+                .featured-links {
+                    margin-top: 50px;                
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        padding-left: 20px;
+                    }
+                }
+
+            }
+            .capstone-overlay {
+                background-color: rgba(40, 87, 76, 0.637);
+                height: 100%;
+                display: block;
+                position: absolute;
                 top: 0;
                 left: 0;
-                width: 100%;
-                height: 75vh;
-                object-fit: cover;
-                object-position: center center;
- 
-            }        
+                right: 0;
+                bottom: 0;
 
+            }
         }
 
-        .swift-info {      
-            
-            /* --- Project Title --- */
-            .featured-title {
+        /* --- Swift Card --- */
+
+        .swift-container{
+            position: relative;
+
+            .project-thumbnail {
+                width: 100%;
+                margin: 0 auto;
+                mix-blend-mode: screen;
+                position: relative;
+                
+            .swift-feature   {
+                    border-radius: 3px;  
+                    position: inherit !important; 
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 75vh;
+                    object-fit: cover;
+                    object-position: center center;
+    
+                }        
+
+            }
+
+            .swift-info {      
+                
+                /* --- Project Title --- */
+                .featured-title {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    color: $off-white;
+                    text-align: right;
+                    right: 0;
+                    margin: 30px 30px;
+                }
+
+                h4 {
+                    margin-bottom: 10px;
+                    font-size: 13px;
+                    color: rgb(100, 255, 218);
+                }
+
+                h5 {
+                    font-size: 23px;
+                }
+
+                /* --- Project Description --- */
+
+                .swift-description {
+                    display: block;
+                    position: absolute;
+                    top: 50px;
+                /*  color: rgb(168, 178, 209); */
+                color: white;
+                    font-size: 18px;
+                    text-align: right;
+                    margin: 70px 30px;
+                }
+
+                /* --- Project Technologies --- */
+
+
+                .swift-tech,
+                .featured-links {
+                    font-size: 30px;
+                }
+
+                .swift-tech {
+                    font-size: 40px;
+                }
+
+                .swift-tech {
+                    margin-top: 50px;
+                    margin-bottom: 25px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    text-align: right;                 
+                }
+
+                .featured-links {
+                    margin-top: 50px;                
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        padding-left: 20px;
+                    }
+                }
+
+            }
+            .swift-overlay {
+                background-color: rgba(40, 87, 76, 0.637);
+                height: 100%;
                 display: block;
                 position: absolute;
                 top: 0;
-                color: $off-white;
-                text-align: right;
+                left: 0;
                 right: 0;
-                margin: 30px 30px;
+                bottom: 0;
+
             }
-
-            h4 {
-                margin-bottom: 10px;
-                font-size: 13px;
-                color: rgb(100, 255, 218);
-            }
-
-            h5 {
-                font-size: 23px;
-            }
-
-            /* --- Project Description --- */
-
-            .swift-description {
-                display: block;
-                position: absolute;
-                top: 50px;
-            /*  color: rgb(168, 178, 209); */
-            color: white;
-                font-size: 18px;
-                text-align: right;
-                margin: 70px 30px;
-            }
-
-             /* --- Project Technologies --- */
-
-
-            .swift-tech,
-            .featured-links {
-                font-size: 30px;
-            }
-
-            .swift-tech {
-                font-size: 40px;
-            }
-
-            .swift-tech {
-                 margin-top: 50px;
-                margin-bottom: 25px;
-                display: flex;
-                justify-content: space-evenly;
-                text-align: right;                 
-            }
-
-            .featured-links {
-                margin-top: 50px;                
-
-                a {
-                    text-decoration: none;
-                    color: white;
-                    padding-left: 20px;
-                }
-            }
-
         }
-        .swift-overlay {
-            background-color: rgba(15, 32, 28, 0.637);
-            height: 100%;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
 
-        }
+        
     }
         /* ---- Portfolio Card --- */
         .portfolio-container {
             position: relative;
             margin-top: 100px;
+            margin-bottom: 100px;
 
             .port-thumbnail {
                 width: 100%;
@@ -239,7 +350,7 @@
 
             }
             .port-overlay {
-                background-color: rgba(15, 32, 28, 0.637);
+                background-color: rgba(40, 87, 76, 0.637);
                 height: 100%;
                 display: block;
                 position: absolute;
@@ -340,6 +451,47 @@
             .project-wrapper {
                 margin-left: 50px;
                 margin-right: 50px;
+
+            /* ---- Capstone Card ----  */
+            .capstone-container {
+                margin-bottom: 90px;        
+                           
+
+                .capstone-thumbnail {
+                    width: 300px;
+                    display: block;
+                    margin: 0;
+                    
+
+                    .capstone-feature {
+                        height: 75vh;
+                    }
+                }
+
+
+
+                .capstone-description p{
+                    background-color: rgb(23, 42, 69);
+                    padding: 30px;
+                    margin-top: 30px;
+                    /* margin-left: 150px; */
+                    margin-left: 30%;
+                    margin-right: 0;
+                    border-radius: 3px;
+                }
+
+                .capstone-tech {
+                    display: block;
+                    margin-bottom: 70px;
+
+                    i {
+                       text-align: right;
+                       margin-left: 35px;
+                     
+                    }
+                }
+            }
+
             /* ---- Swift Card ----  */
             .swift-container {    
                  margin-bottom: 90px;        
@@ -382,8 +534,8 @@
 
              /* ---- Portfolio Card ----  */
              .portfolio-container {
-                 margin-top: 50px;
-                   
+               
+                 margin-bottom: 150px;
                 .port-thumbnail {
                     width: 300px;                   
                     margin-right: 0;
@@ -427,11 +579,21 @@
             }
             .project-wrapper {
 
-                .swift-container {     
-                    margin-bottom: 200px;               
-                    .project-thumbnail {
-
+                /* --- Capstone Card ---- */
+                .capstone-container {
+                    .capstone-thumbnail {
                         width: 400px;
+                    }
+                }
+
+                /* --- Swift Card --- */
+
+                .swift-container {     
+                    margin-bottom: 200px;  
+
+                    .project-thumbnail {
+                        width: 400px;
+
                         .swift-feature {
                             height: 475px;
                         }
@@ -455,9 +617,17 @@
                 }
 
                 .portfolio-container {
-                    .port-thumbnail {
+                    .port-thumbnail {                        
+                        width: 400px;
+
                         .port-feature {
-                            height: 100%;
+                            height: 595px;
+                        }
+                    }
+
+                    .port-description {
+                        .featured-links {
+                            margin-top: 0;
                         }
                     }
                 }
@@ -476,6 +646,99 @@
 
 }
 
-@media (min-width: 940px) {
-    
+@media (min-width: 1080px) {
+    .works-showcase {
+   
+        .section-01 {
+            padding: 0;
+
+            .works-title {
+                margin-left: 0;
+            }
+
+            .project-wrapper {
+                margin-right: 0;
+                margin-left: 0;
+
+                /* --- Capstone Card --- */
+                .capstone-container {
+                    .capstone-thumbnail {
+                        width: 600px;
+                        .capstone-feature {
+                            height: 475px;
+                        }
+                    }
+
+                    .capstone-description {
+                        p {
+                            margin-top: 0;
+                            margin-left: 50%;
+                        }
+
+                        .capstone-tech {
+                            font-size: 30px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                        }
+                    }
+
+
+                }
+
+                 /* --- Portfolio Card --- */
+
+                .portfolio-container {
+                    .port-thumbnail {
+                        width: 600px;
+                        .port-feature {
+                            height: 475px;
+                        }
+                    }
+
+                    .port-info {
+                        .featured-title {
+                            margin-left: 0;
+                        }
+                    }
+
+                    .port-description {
+                        margin-left: 0;
+                        
+                        p {
+                            margin-top: 0;
+                            padding: 22px;
+                            margin-right: 50%;
+                        }
+
+                        .port-tech {
+                            margin-bottom: 30px;
+                        }
+
+                        .featured-links {
+                            margin-top: 50px;
+                     
+                        }
+                    }
+                }
+
+                /* --- Swift Card --- */
+                .swift-container{                   
+                    .project-thumbnail {
+                        width: 600px;
+
+                        .swift-feature {
+                           height: 475px;
+                       }                       
+                    }
+                    .swift-description {
+                        p {
+                            margin-left: 50%;
+                        }
+                    }
+                }
+
+              
+            }
+        }
+    }
 }

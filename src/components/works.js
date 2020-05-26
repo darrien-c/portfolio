@@ -28,9 +28,69 @@ const Works = () => {
 
                     <div className="project-wrapper">
 
+                      {/* --- Capstone Card --- */}
+                      <div className="capstone-container">
+                          <div className="capstone-thumbnail">
+                        {/*     <Img className="swift-feature" fluid={data.swiftFeatured.childImageSharp.fluid} alt="Swift Project" />   */}
+                              <img className="capstone-feature" src={comingSoon} /> 
+                              <div className="capstone-overlay"></div>
+                          </div>
 
-                      {/* ---- Swift Card ----- */}
-                      <div className="swift-container">
+                          <div className="capstone-info">
+                            <div className="featured-title">
+                                <h4>Featured Project</h4>
+                                <h5>Capstone</h5>
+                            </div>
+                            <div className="capstone-description">
+                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                               
+
+                                <div className="capstone-tech">
+                                    <i><DiGit /></i>
+                                    <i><DiHtml5 /></i>
+                                    <i><DiSass /></i>
+                                </div>
+
+                                <div className="featured-links">
+                                  <a href="#"><DiGithubBadge /></a>   
+                                  <a href="#"><BsBoxArrowInUpRight /></a>                         
+                                </div> 
+                            </div>                            
+                          </div>           
+
+                      </div>
+
+                    {/* ---- Portfolio Card ---- */}
+                    <div className="portfolio-container">
+                          <div className="port-thumbnail">
+                              <img className="port-feature" src={comingSoon} /> 
+                              <div className="port-overlay"></div>
+                          </div>
+                          <div className="port-info">
+                            <div className="featured-title">
+                                <h4>Featured Project</h4>
+                                <h5>Portfolio</h5>
+                            </div>
+
+                            <div className="port-description">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                              <div className="port-tech">
+                                  <i><DiGit /></i>
+                                  <i><DiHtml5 /></i>
+                                  <i><DiSass /></i>
+                              </div>
+
+                              <div className="featured-links">
+                                <a href="#"><DiGithubBadge /></a>   
+                                <a href="#"><BsBoxArrowInUpRight /></a>                         
+                              </div>
+                            </div>
+                          </div>
+                      </div> {/* ---- End of Portfolio ---- */}
+
+                    {/* ---- Swift Card ----- */}
+                    <div className="swift-container">
                         <div className="project-thumbnail">
                         {/*     <Img className="swift-feature" fluid={data.swiftFeatured.childImageSharp.fluid} alt="Swift Project" />   */}
                               <img className="swift-feature" src={swiftImage} /> 
@@ -56,40 +116,9 @@ const Works = () => {
                                   <a href="#"><DiGithubBadge /></a>   
                                   <a href="#"><BsBoxArrowInUpRight /></a>                         
                                 </div> 
-                            </div>
-
-                            
-                          </div>
-                       {/* ---- End of Swift ----- */}
-                      </div> 
-
-                 {/* ---- Portfolio Card ---- */}
-                 <div className="portfolio-container">
-                          <div className="port-thumbnail">
-                              <img className="port-feature" src={comingSoon} /> 
-                              <div className="port-overlay"></div>
-                          </div>
-                          <div className="port-info">
-                            <div className="featured-title">
-                                <h4>Featured Project</h4>
-                                <h5>Portfolio</h5>
-                            </div>
-                            <div className="port-description">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                              <div className="port-tech">
-                                  <i><DiGit /></i>
-                                  <i><DiHtml5 /></i>
-                                  <i><DiSass /></i>
-                              </div>
-
-                              <div className="featured-links">
-                                <a href="#"><DiGithubBadge /></a>   
-                                <a href="#"><BsBoxArrowInUpRight /></a>                         
-                              </div>
-                            </div>
-                          </div>
-                      </div> {/* ---- End of Portfolio ---- */}
+                            </div>                            
+                          </div>                     
+                      </div> {/* ---- End of Swift ----- */}
                     </div>
                </section>            
             </div>        
