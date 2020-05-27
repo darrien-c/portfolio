@@ -50,9 +50,7 @@
                 }
             }        
         
-        }
-
-    
+        }    
     
 
     /* ======= Project Cards ======== */
@@ -86,8 +84,7 @@
             }
 
             .capstone-info {      
-                
-                /* -------- Project Title --------- */
+                /* ----- Project Title ---- */
                 .featured-title {
                     display: block;
                     position: absolute;
@@ -95,7 +92,7 @@
                     color: $off-white;
                     text-align: right;
                     right: 0;
-                    margin: 30px 30px;
+                    margin: 20px 30px;
                 }
 
                 h4 {
@@ -118,7 +115,7 @@
                     color: white;
                     font-size: 18px;
                     text-align: right;
-                    margin: 70px 30px;
+                    margin: 50px 30px;
                     font-family: 'Source Sans Pro';
                     font-weight: 300;
                 }
@@ -127,7 +124,7 @@
                 .capstone-tools {
                     display: block;
                     position: absolute;
-                    bottom: 50px;
+                    bottom: 26px;
                     right: 0;
                     color: white;
                     margin-right: 20px;
@@ -177,8 +174,7 @@
         /* -------- Swift Card -------- */
 
         .swift-container{
-            position: relative;
-            
+            position: relative;            
 
             .project-thumbnail {
                 width: 100%;
@@ -199,7 +195,7 @@
 
             }
 
-            .swift-info {      
+            .swift-info {                      
                 
                 /* --- Project Title --- */
                 .featured-title {
@@ -209,7 +205,7 @@
                     color: $off-white;
                     text-align: right;
                     right: 0;
-                    margin: 30px 30px;
+                    margin: 20px 30px;
                 }
 
                 h4 {
@@ -232,7 +228,7 @@
                     color: white;
                     font-size: 16px;
                     text-align: right;
-                    margin: 100px 30px;
+                    margin: 50px 30px;
                     font-family: 'Source Sans Pro';
                     font-weight: 300;
                 }
@@ -242,7 +238,7 @@
                 .swift-tools {
                     display: block;
                     position: absolute;
-                    bottom: 50px;
+                    bottom: 26px;
                     right: 0;
                     color: white;
 
@@ -260,7 +256,7 @@
                         text-align: right;      
                         
                         i {
-                            margin-right: 20px;
+                            margin-right: 10px;
                         }
                     }
 
@@ -319,8 +315,7 @@
 
             }
 
-            .port-info {      
-                
+            .port-info {                      
             /* --- Project Title --- */           
         
                 .featured-title {
@@ -330,7 +325,7 @@
                     color: $off-white;
                     text-align: left;
                     left: 0;
-                    margin: 30px 30px;
+                    margin: 20px 30px;
                 }
 
                 h4 {
@@ -353,7 +348,7 @@
                     color: white;
                     font-size: 18px;
                     text-align: left;
-                    margin: 70px 30px;
+                    margin: 50px 30px;
                     font-family: 'Source Sans Pro';
                     font-weight: 300;
                 }
@@ -363,7 +358,7 @@
                 .port-tools {
                     display: block;
                     position: absolute;
-                    bottom: 50px;
+                    bottom: 26px;
                     left: 0;
                     color: white;
                     margin-left: 20px;
@@ -378,8 +373,7 @@
                     }
 
                     .port-tech {
-                        margin-top: 80px;
-                        margin-bottom: 25px;
+                    
                         text-align: left;
 
                         i {
@@ -410,7 +404,6 @@
                 bottom: 0;
 
             }
-
     }
 }
     /*------- Side Contact ------ */
@@ -418,7 +411,7 @@
     .fixed-contact {
         position: fixed;
         top: 70%;
-        right: -58px;
+        right: -46px;
         transform: rotate(90deg);
         font-weight: 700;
         font-size: 15px;
@@ -450,7 +443,7 @@
         display: flex;
         flex-direction: column;
         top: 70%;
-        left: 0;
+        left: 10px;
         font-weight: 700;
         font-size: 25px;
         color: $off-white;
@@ -492,13 +485,9 @@
  @media (min-width: 610px) {
 
     .works-showcase {
-
-        .section-01 {
-            
-            .works-title {
-          
+        .section-01 {            
+            .works-title {          
             }
-
             .project-wrapper {
                 margin-left: 50px;
                 margin-right: 50px;
@@ -506,7 +495,7 @@
             /* ---- Capstone Card ----  */
             .capstone-container {
                 margin-bottom: 90px;        
-                position: relative;
+                position: relative;                
 
                 .capstone-thumbnail {
                     /* width: 300px; */
@@ -525,12 +514,12 @@
                 }
 
                 .featured-title {
-                    margin-top: 0;  
+                    margin: 0;
                 }
 
                 .capstone-description {
                     background-color: rgb(23, 42, 69);
-                    padding: 25px;
+                    padding: 17px;
                     max-width: 50%;
                     border-radius: 3px;
                     position: absolute;
@@ -538,31 +527,36 @@
                     font-size: 16px !important;
                 }
 
-                .capstone-tech {
-                    display: block;
-                    margin-right: 10px;
-                    
-                    i {
-                       text-align: right;
-                       margin-left: 15px;                       
-                       font-size: 35px;
+                .capstone-tools {
+                    bottom: 0 !important;                    
+
+                    .capstone-tech {
+                        display: block;
+                        margin-right: 10px;
+                        margin-bottom: -20px;
+
+                        i {
+                            text-align: right;
+                            margin-left: 15px;                       
+                            font-size: 35px;
+                            
+                        }
+
+                    .featured-links {
+                        margin-right: 10px;
                     }
-                }
 
-                .featured-links {
-                    margin-right: 10px;
-                    margin-top: 50px;
-                }
+                    .capstone-overlay {
+                        cursor: pointer;
+                    }
+                    .capstone-overlay:hover {
+                        cursor: pointer;
+                        opacity: 0;
+                    }
 
-                .capstone-overlay {
-                    cursor: pointer;
                 }
-                .capstone-overlay:hover {
-                    cursor: pointer;
-                    opacity: 0;
-                }
-
             }
+        }
 
             /* ---- Swift Card ----  */
             .swift-container {    
@@ -585,27 +579,29 @@
                     }
                 }
 
-
-
                 .swift-description{
                     background-color: rgb(23, 42, 69);
-                    padding: 25px;
+                    padding: 17px;
                     max-width: 50%;
                     position: absolute;
                     right: 0;
-                    border-radius: 3px;
-                   
+                    border-radius: 3px;                   
+                }
+
+                .swift-tools{
+                    bottom: 0 !important;
+                    margin-right: 20px;
                 }
 
                 .swift-tech {
                     display: block;
                     margin-bottom: 70px;
+                    margin-bottom: -20px !important;
 
                     i {
                        text-align: right;
                        margin-left: 15px;
-                       font-size: 35px;
-                     
+                       font-size: 35px;                     
                     }
                 }
 
@@ -621,11 +617,12 @@
 
              /* ---- Portfolio Card ----  */
              .portfolio-container {               
-                 margin-bottom: 150px;
+                 margin-bottom: 110px;
+                 margin-left: 0;    
 
                 .port-thumbnail {
                     width: 60%;               
-                    margin-right: 0;                    
+                    margin-right: 0;                                    
 
                     .port-feature {
                         height: 55vh;
@@ -637,24 +634,41 @@
                     }
                 }
 
-                .port-description {
-                    background-color: rgb(23, 42, 69);
-                    padding: 25px;
-                    margin-top: 80px;
-                    margin-right: 40%;
-                    font-size: 16px;
-                }
-
-                .port-tech {
-                    display: block;
-                    margin-bottom: 0;
-
-                    i {
-                       text-align: left;
-                       margin-right: 15px;
-                       font-size: 35px;
+                .port-info {
+                    .featured-title {
+                        margin-left: 0;
                     }
                 }
+
+                .port-description {
+                    background-color: rgb(23, 42, 69);
+                    padding: 17px;
+                    margin-top: 50px;
+                    margin-right: 50%;
+                    font-size: 16px;
+                    border-radius: 3px;
+                    margin-left: 0;
+                }
+
+                .port-tools {
+                    bottom: 0 !important;
+                    margin-left: 0;
+                    
+                    .port-tech {
+                        display: block;
+                        margin-bottom: 35px;
+    
+                        i {
+                           text-align: left;
+                           margin-right: 15px;
+                           font-size: 35px;
+                        }
+                    }
+
+                    .featured-links {
+                        margin: 0;
+                    }
+                }                
 
                 .port-overlay {
                     cursor: pointer;
@@ -674,13 +688,14 @@
 @media (min-width: 775px) {
     .works-showcase{
         .section-01{
-            .works-title {
-                
+            .works-title {                
             }
             .project-wrapper {
-
                 /* --- Capstone Card ---- */
                 .capstone-container {
+                    .capstone-description{
+                        padding: 25px;
+                    }
                 }
 
                 /* --- Swift Card --- */
@@ -698,30 +713,32 @@
 
                     .swift-info {
                         .featured-title {                      
-                        }
-                    }
+                        }                    
 
                     .swift-description {
-                        .swift-tech {
-                            margin-top: 0;
-
-                        }
-                        .featured-links {
-                            margin-top: -35px;
-                        }
+                        padding: 25px;
                     }
-                }
 
+                    .swift-tech {  
+                    }
+                    .featured-links {
+                        margin-top: -35px;
+                    }
+                    
+                }
+            }
+
+            /* ---- Portfolio Card ----- */
                 .portfolio-container {
                     .port-thumbnail {                        
                         width: 400px;
 
-                        .port-feature {
-                            
+                        .port-feature {                            
                         }
                     }
 
                     .port-description {
+                        padding: 25px;
                         .featured-links {
                             margin-top: 0;
                         }
@@ -768,6 +785,11 @@
                             height: 400px;
                         }
                     }
+
+                    .capstone-description {
+                        margin-top: 70px !important;
+                    }
+
                     
                     .capstone-tools {
                        bottom: 6px !important;
@@ -792,14 +814,9 @@
 
                     .port-description {
                         margin-left: 0;
-                        
-                        .port-description {
-                            margin-left: 0;
-                            margin-top: 0;
-                            padding: 22px;
-                            margin-right: 50%;
-                        }
-
+                        margin-top: 70px;
+                        padding: 22px;
+                        margin-right: 50%;                      
                     }
 
                     .port-tools {
@@ -813,12 +830,13 @@
                         width: 60%;
 
                         .swift-feature {
-                           height: 475px;
+                           height: 400px;
                        }                       
                     }
 
                     .swift-description {
                         right: 0;
+                        margin-top: 90px !important;
                         p {
                          
                             margin-left: 50%;
@@ -840,7 +858,7 @@
                
             }
             .project-wrapper {   
-                width: 980px;
+ 
                 margin: 0 auto;
                 /* --- Capstone Card --- */
                 .capstone-container {                    
