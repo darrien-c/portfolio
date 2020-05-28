@@ -2,10 +2,11 @@
     display: flex;
     align-items: center;
     position: relative;
-    height: 100vh;
+    height: auto;
 
     
     .section-01 {  
+        
         margin-top: 150px;
         padding-right: 10px;
         padding-left: 10px;
@@ -56,6 +57,7 @@
     /* ======= Project Cards ======== */
 
     .project-wrapper {    
+
         position: relative;
         margin-top: 60px;
 
@@ -113,7 +115,7 @@
                     top: 50px;
                 /*  color: rgb(168, 178, 209); */
                     color: white;
-                    font-size: 18px;
+                    font-size: 16px;
                     text-align: right;
                     margin: 50px 30px;
                     font-family: 'Source Sans Pro';
@@ -124,7 +126,7 @@
                 .capstone-tools {
                     display: block;
                     position: absolute;
-                    bottom: 26px;
+                    bottom: 20px;
                     right: 0;
                     color: white;
                     margin-right: 20px;
@@ -346,7 +348,7 @@
                     top: 50px;
                 /*  color: rgb(168, 178, 209); */
                     color: white;
-                    font-size: 18px;
+                    font-size: 16px;
                     text-align: left;
                     margin: 50px 30px;
                     font-family: 'Source Sans Pro';
@@ -411,7 +413,7 @@
     .fixed-contact {
         position: fixed;
         top: 70%;
-        right: -46px;
+        right: -60px;
         transform: rotate(90deg);
         font-weight: 700;
         font-size: 15px;
@@ -443,7 +445,7 @@
         display: flex;
         flex-direction: column;
         top: 70%;
-        left: 10px;
+        left: -3px;
         font-weight: 700;
         font-size: 25px;
         color: $off-white;
@@ -485,201 +487,204 @@
  @media (min-width: 610px) {
 
     .works-showcase {
-        .section-01 {            
-            .works-title {          
-            }
-            .project-wrapper {
-                margin-left: 50px;
-                margin-right: 50px;
+        .container {
+            width: 100%;
+            .section-01 { 
+                        
+                .works-title {          
+                }
+                .project-wrapper {
+                    margin-left: 50px;
+                    margin-right: 50px;
 
-            /* ---- Capstone Card ----  */
-            .capstone-container {
-                margin-bottom: 90px;        
-                position: relative;                
+                /* ---- Capstone Card ----  */
+                .capstone-container {
+                    margin-bottom: 90px;        
+                    position: relative;                
 
-                .capstone-thumbnail {
-                    /* width: 300px; */
-                    width: 60%;
-                    display: block;
-                    margin: 0;                   
+                    .capstone-thumbnail {
+                        /* width: 300px; */
+                        width: 60%;
+                        display: block;
+                        margin: 0;                   
 
-                    .capstone-feature {
-                        height: 55vh;    
-                        cursor: pointer;
+                        .capstone-feature {
+                            height: 55vh;    
+                            cursor: pointer;
 
-                        &:hover {
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .featured-title {
+                        margin: 0;
+                    }
+
+                    .capstone-description {
+                        background-color: rgb(23, 42, 69);
+                        padding: 17px;
+                        max-width: 50%;
+                        border-radius: 3px;
+                        position: absolute;
+                        right: 0;        
+                        font-size: 16px !important;
+                    }
+
+                    .capstone-tools {
+                        bottom: 0 !important;                    
+
+                        .capstone-tech {
+                            display: block;
+                            margin-right: 10px;
+                            margin-bottom: -20px;
+
+                            i {
+                                text-align: right;
+                                margin-left: 15px;                       
+                                font-size: 35px;
+                                
+                            }
+
+                        .featured-links {
+                            margin-right: 10px;
+                        }
+
+                        .capstone-overlay {
                             cursor: pointer;
                         }
-                    }
-                }
-
-                .featured-title {
-                    margin: 0;
-                }
-
-                .capstone-description {
-                    background-color: rgb(23, 42, 69);
-                    padding: 17px;
-                    max-width: 50%;
-                    border-radius: 3px;
-                    position: absolute;
-                    right: 0;        
-                    font-size: 16px !important;
-                }
-
-                .capstone-tools {
-                    bottom: 0 !important;                    
-
-                    .capstone-tech {
-                        display: block;
-                        margin-right: 10px;
-                        margin-bottom: -20px;
-
-                        i {
-                            text-align: right;
-                            margin-left: 15px;                       
-                            font-size: 35px;
-                            
+                        .capstone-overlay:hover {
+                            cursor: pointer;
+                            opacity: 0;
                         }
 
-                    .featured-links {
-                        margin-right: 10px;
+                    }
+                }
+            }
+
+                /* ---- Swift Card ----  */
+                .swift-container {         
+                    position: relative;
+
+                    .project-thumbnail {
+                        width: 60%;
+                        display: block;
+                        margin: 0;
+                        
+
+                        .swift-feature {
+                            height: 55vh;
+                            cursor: pointer;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
                     }
 
-                    .capstone-overlay {
+                    .swift-description{
+                        background-color: rgb(23, 42, 69);
+                        padding: 17px;
+                        max-width: 50%;
+                        position: absolute;
+                        right: 0;
+                        border-radius: 3px;                   
+                    }
+
+                    .swift-tools{
+                        bottom: 0 !important;
+                        margin-right: 20px;
+                    }
+
+                    .swift-tech {
+                        display: block;
+                        margin-bottom: 70px;
+                        margin-bottom: -20px !important;
+
+                        i {
+                        text-align: right;
+                        margin-left: 15px;
+                        font-size: 35px;                     
+                        }
+                    }
+
+                    .swift-overlay {
                         cursor: pointer;
                     }
-                    .capstone-overlay:hover {
+                    .swift-overlay:hover {
                         cursor: pointer;
                         opacity: 0;
                     }
 
                 }
-            }
-        }
 
-            /* ---- Swift Card ----  */
-            .swift-container {    
-                 margin-bottom: 90px;        
-                 position: relative;
+                /* ---- Portfolio Card ----  */
+                .portfolio-container {               
+                    margin-bottom: 110px;
+                    margin-left: 0;    
 
-                .project-thumbnail {
-                    width: 60%;
-                    display: block;
-                    margin: 0;
-                    
+                    .port-thumbnail {
+                        width: 60%;               
+                        margin-right: 0;                                    
 
-                    .swift-feature {
-                        height: 55vh;
-                        cursor: pointer;
-
-                        &:hover {
+                        .port-feature {
+                            height: 55vh;
                             cursor: pointer;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
                         }
                     }
-                }
 
-                .swift-description{
-                    background-color: rgb(23, 42, 69);
-                    padding: 17px;
-                    max-width: 50%;
-                    position: absolute;
-                    right: 0;
-                    border-radius: 3px;                   
-                }
-
-                .swift-tools{
-                    bottom: 0 !important;
-                    margin-right: 20px;
-                }
-
-                .swift-tech {
-                    display: block;
-                    margin-bottom: 70px;
-                    margin-bottom: -20px !important;
-
-                    i {
-                       text-align: right;
-                       margin-left: 15px;
-                       font-size: 35px;                     
-                    }
-                }
-
-                .swift-overlay {
-                    cursor: pointer;
-                }
-                .swift-overlay:hover {
-                    cursor: pointer;
-                    opacity: 0;
-                }
-
-            }
-
-             /* ---- Portfolio Card ----  */
-             .portfolio-container {               
-                 margin-bottom: 110px;
-                 margin-left: 0;    
-
-                .port-thumbnail {
-                    width: 60%;               
-                    margin-right: 0;                                    
-
-                    .port-feature {
-                        height: 55vh;
-                        cursor: pointer;
-
-                        &:hover {
-                            cursor: pointer;
+                    .port-info {
+                        .featured-title {
+                            margin-left: 0;
                         }
                     }
-                }
 
-                .port-info {
-                    .featured-title {
+                    .port-description {
+                        background-color: rgb(23, 42, 69);
+                        padding: 17px;
+                        margin-top: 50px;
+                        margin-right: 50%;
+                        font-size: 16px;
+                        border-radius: 3px;
                         margin-left: 0;
                     }
-                }
 
-                .port-description {
-                    background-color: rgb(23, 42, 69);
-                    padding: 17px;
-                    margin-top: 50px;
-                    margin-right: 50%;
-                    font-size: 16px;
-                    border-radius: 3px;
-                    margin-left: 0;
-                }
-
-                .port-tools {
-                    bottom: 0 !important;
-                    margin-left: 0;
-                    
-                    .port-tech {
-                        display: block;
-                        margin-bottom: 35px;
-    
-                        i {
-                           text-align: left;
-                           margin-right: 15px;
-                           font-size: 35px;
+                    .port-tools {
+                        bottom: 0 !important;
+                        margin-left: 0;
+                        
+                        .port-tech {
+                            display: block;
+                            margin-bottom: 35px;
+        
+                            i {
+                            text-align: left;
+                            margin-right: 15px;
+                            font-size: 35px;
+                            }
                         }
-                    }
 
-                    .featured-links {
-                        margin: 0;
-                    }
-                }                
+                        .featured-links {
+                            margin: 0;
+                        }
+                    }                
 
-                .port-overlay {
-                    cursor: pointer;
+                    .port-overlay {
+                        cursor: pointer;
+                    }
+                    .port-overlay:hover {
+                        cursor: pointer;
+                        opacity: 0;
+                    }
                 }
-                .port-overlay:hover {
-                    cursor: pointer;
-                    opacity: 0;
-                }
-            }
-            
-        }   
+                
+            }   
+        }
     }
     }
 
@@ -701,7 +706,7 @@
                 /* --- Swift Card --- */
 
                 .swift-container {     
-                    margin-bottom: 200px;  
+                     
 
                     .project-thumbnail {
                         width: 400px;
@@ -761,7 +766,8 @@
 
 @media (min-width: 905px) {
     .works-showcase {
-   
+        .container {
+            width: 1150px;
         .section-01 {
             padding: 0;
 
@@ -848,6 +854,7 @@
             }
         }
     }
+}
 }
 
 @media (min-width: 1080px) {

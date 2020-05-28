@@ -21,7 +21,7 @@ const Works = () => {
     }
   `)
     return (
-        <div className="works-showcase">
+        <section className="works-showcase">
             <div className="container">
                 <section id="projects" className="section-01">
 
@@ -131,7 +131,7 @@ const Works = () => {
               </ul>
             </div>
             <div className="fixed-contact">darrien@gmail.com</div>    
-        </div>
+        </section>
     )
 }
 
