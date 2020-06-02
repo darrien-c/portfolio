@@ -1,0 +1,20 @@
+.footer-wrapper {
+    height: 60px;
+    margin-top: 100px;
+    text-align: center;
+    background: #131f38;
+    font-family: 'Source Sans Pro';
+
+    p {
+        color: rgb(129, 129, 129);
+        padding: 17px;
+        margin: 0;
+
+    }
+}
+
+@media (min-width: 905px) {
+    .footer-wrapper {
+        margin-top: 0;
+    }
+}

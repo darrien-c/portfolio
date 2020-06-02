@@ -7,6 +7,7 @@ import { DiGithubBadge, DiGit , DiHtml5, DiSass } from 'react-icons/di';
 import {  BsBoxArrowInUpRight} from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 
+
 const Works = () => {
     const data = useStaticQuery(graphql`
     query {

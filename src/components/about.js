@@ -11,7 +11,7 @@ import jsSVG from '../images/javascript.svg'
 const About = () => {
     
     return (
-    <section className="about-showcase">
+    <section className="about-showcase" id="about">
         <div className="container">
             <div className="about-wrapper">
                 <div className="about-content">
