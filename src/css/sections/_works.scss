@@ -525,6 +525,7 @@
                     .capstone-description {
                         background-color: rgb(23, 42, 69);
                         padding: 17px;
+                        margin-right: 0;
                         max-width: 50%;
                         border-radius: 3px;
                         position: absolute;
@@ -537,8 +538,9 @@
 
                         .capstone-tech {
                             display: block;
-                            margin-right: 10px;
+
                             margin-bottom: -20px;
+                            margin-right: 0;
 
                             i {
                                 text-align: right;
