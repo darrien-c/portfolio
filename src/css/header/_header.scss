@@ -15,7 +15,7 @@ header {
 
 
         .logo {
-            padding: 20px;
+            margin: 30px 0 0 10px;
             a {
                 text-decoration: none;
                 letter-spacing: 1.5px;
@@ -26,10 +26,12 @@ header {
         .navigation {
             nav {
                 span {
+                    color: rgb(100, 255, 218);
                     margin-right: 5px;
                 }
                 a{
-                    color: $off-white;
+                    /* color: $off-white; */
+                    color: rgb(177, 187, 216);
                     margin: 0 10px;
                     text-decoration: none;
                     letter-spacing: 1.5px;

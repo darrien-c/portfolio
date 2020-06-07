@@ -1,6 +1,7 @@
-import React from "react"
-import "../css/styles.scss"
-
+import React from "react";
+import "../css/styles.scss";
+import SEO from '../components/seo';
+import Layout from '../components/layout';
 
 /* Header */
 import Header from '../components/header'
@@ -14,14 +15,19 @@ import Works from '../components/works'
  /* Footer Section */
  import Footer from '../components/footer' 
 
-const IndexPage = () => (
-  <div>
-    <Header />
-    <Works />
-    <About />
-    <Footer />
-  </div>
-  
-)
+const IndexPage = () => {
+
+  return(
+      
+      <Layout>
+        <SEO title/>
+        <Header />
+        <Works />
+        <About />
+        <Footer />
+      </Layout>
+
+  )
+}
 
 export default IndexPage

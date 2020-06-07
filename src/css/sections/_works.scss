@@ -1,4 +1,5 @@
 .works-showcase {
+    
     display: flex;
     align-items: center;
     position: relative;
@@ -40,11 +41,11 @@
         }
 
         h5 {
-            color: white;
+            color: rgb(203, 215, 247);
 
             a {
                 text-decoration: none;
-                color: white;
+                color: rgb(177, 187, 216);
 
                 &:hover {
                     color: rgb(100, 255, 218);
@@ -64,6 +65,8 @@
         /* ----- Capstone Card ------ */
         .capstone-container{
             position: relative;
+            margin-top: 150px;
+            margin-bottom: 200px;
 
             .capstone-thumbnail {
                 width: 100%;
@@ -294,8 +297,8 @@
 
         .portfolio-container {
             position: relative;
-            margin-top: 100px;
-            margin-bottom: 100px;
+            margin-top: 150px;
+            margin-bottom: 200px;
 
             .port-thumbnail {
                 width: 100%;
@@ -498,8 +501,7 @@
                     margin-right: 50px;
 
                 /* ---- Capstone Card ----  */
-                .capstone-container {
-                    margin-bottom: 90px;        
+                .capstone-container {  
                     position: relative;                
 
                     .capstone-thumbnail {
@@ -566,7 +568,9 @@
             }
 
                 /* ---- Swift Card ----  */
-                .swift-container {         
+                .swift-container {  
+                    margin-top: 170px;     
+                    margin-bottom: 170px;  
                     position: relative;
 
                     .project-thumbnail {
@@ -622,8 +626,7 @@
                 }
 
                 /* ---- Portfolio Card ----  */
-                .portfolio-container {               
-                    margin-bottom: 110px;
+                .portfolio-container {       
                     margin-left: 0;    
 
                     .port-thumbnail {
