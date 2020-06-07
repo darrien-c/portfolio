@@ -66,7 +66,7 @@
         .capstone-container{
             position: relative;
             margin-top: 150px;
-            margin-bottom: 200px;
+            /* margin-bottom: 200px; */
 
             .capstone-thumbnail {
                 width: 100%;
@@ -170,15 +170,14 @@
                 top: 0;
                 left: 0;
                 right: 0;
-                bottom: 0;
-                
-
+                bottom: 0;              
             }
         }
 
         /* -------- Swift Card -------- */
 
         .swift-container{
+            margin-top: 160px;
             position: relative;            
 
             .project-thumbnail {
@@ -298,7 +297,7 @@
         .portfolio-container {
             position: relative;
             margin-top: 150px;
-            margin-bottom: 200px;
+         /*    margin-bottom: 200px; */
 
             .port-thumbnail {
                 width: 100%;
@@ -493,31 +492,36 @@
         .container {
             width: 100%;
             .section-01 { 
-                        
-                .works-title {          
-                }
+ 
                 .project-wrapper {
                     margin-left: 50px;
                     margin-right: 50px;
 
                 /* ---- Capstone Card ----  */
-                .capstone-container {  
+                .capstone-container {                      
                     position: relative;                
 
                     .capstone-thumbnail {
                         /* width: 300px; */
                         width: 60%;
                         display: block;
-                        margin: 0;                   
+                        margin: 0;     
+                        cursor: pointer;   
 
-                        .capstone-feature {
+                        .capstone-overlay:hover {
+                            cursor: pointer;
+                            opacity: 0;
+                        }
+
+                      /*   .capstone-feature {
                             height: 55vh;    
                             cursor: pointer;
 
                             &:hover {
                                 cursor: pointer;
+
                             }
-                        }
+                        }     */                 
                     }
 
                     .featured-title {
@@ -554,6 +558,7 @@
                         .featured-links {
                             margin-right: 10px;
                         }
+
 
                         .capstone-overlay {
                             cursor: pointer;

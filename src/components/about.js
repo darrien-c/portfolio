@@ -11,9 +11,13 @@ import jsSVG from '../images/javascript.svg'
 const About = () => {
     
     return (
-    <section className="about-showcase" id="about">
-        <div className="container">
-            <div className="about-wrapper">
+    <section className="about-showcase" id="about" >
+        <div className="container" >
+            <div className="about-wrapper" 
+            data-sal="slide-up"
+            data-sal-duration ="500"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-back">
                 <div className="about-content">
                     <h3 className="about-title"><span>02.</span> About</h3>
                     <div className="about-desc">
