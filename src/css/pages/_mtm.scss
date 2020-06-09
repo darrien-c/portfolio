@@ -1,0 +1,218 @@
+main {
+    margin: 0 auto;
+    height: 100%;
+ /*    margin-left: 50px;
+    margin-right: 50px; */
+
+    .project-intro-container {
+        height: auto;
+        display: block;
+        margin: 150px 0 70px 0;
+        width: 100%;
+        color: #e3e3e3;
+        font-family: 'Source Sans Pro';
+
+        .project-header {
+
+            h1, h2 {
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            img {
+                padding: 0;
+                margin: 0 auto;
+                
+            }    
+        }
+
+
+
+        cite, p {
+            padding: 0;
+            margin: 0;
+            
+        }
+
+
+        cite {
+            color: #253150;
+            font-size: 10px;
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            margin-bottom: 150px;
+        }
+
+        .cta-links {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+            height: auto;
+            margin-top: 70px;
+            margin-bottom: 70px;
+           
+            .box-1 {
+                font-size: 33px;
+            }
+
+            .box-2 {
+                font-size: 40px;
+            }
+
+            a{        
+            text-decoration: none;
+            color: #e3e3e3;
+            }
+        }   
+
+    
+    }
+
+
+
+    .project-description {
+        width: 100%;
+        margin: 0 auto;
+        color: #e3e3e3;
+        font-family: 'Source Sans Pro';
+        margin-bottom: 80px;
+        margin-top: 80px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #03162a;     
+ 
+
+
+        .proj-scope {
+            margin: 0 auto;
+            width: 968px; 
+           /*  background-color: #03162a;     */
+        }
+        h2 {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 400;
+        }
+
+        p {
+            margin-bottom: 80px;
+        }
+        
+
+        .techstack {
+            ul {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            li{
+                list-style: none;
+            }
+            li {
+                &::before {
+                   /*  content: "";
+                    position: absolute;
+                    margin-left: -15px;
+                    margin-top: 10px;
+                    height: 5px;
+                    width: 5px;
+                    border: 10px solid rgb(39, 148, 133);
+                    border-width: 2px 2px 0 0;
+                    transform: rotate(45deg); 
+                    »*/
+                    content: "»";
+                    position: absolute;
+                    margin-left: -15px;
+                    margin-top: 0;
+                    height: 5px;
+                    width: 5px;
+                    font-size: 22px;
+                    line-height: 25px;
+                    color: rgb(39, 148, 133);
+/*                     border: 10px solid rgb(39, 148, 133);
+                    border-width: 2px 2px 0 0; */
+                }
+            }
+        }
+    }
+
+    .dev-process {
+        margin: 0 auto;
+        margin-bottom: 100px;
+ 
+        h2 {
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: #e3e3e3;
+        }
+
+        p {
+            color: #e3e3e3;
+            margin-bottom: 80px;
+        }
+        
+        .case-study__video{
+            width: 100%;
+        }
+        video {
+            width: 550px;
+        }
+
+        .code-wrapper {
+    /*       display: flex;
+            align-items: center;
+            flex: column nowrap; */
+            margin: 16px 15px;
+            max-width: 1000px;
+        }
+    }
+}
+
+
+@media(min-width: 740px) {
+
+    .project-intro-container {   
+       
+        .project-header {
+         
+        }
+
+        img {
+            width: 950px;
+        }
+    }
+
+    .project-description {
+        width: 968px; 
+    }
+    .dev-process {
+        width: 968px; 
+
+        video {
+            width: 750px;
+        }
+    }
+}
+
+@media(min-width: 1080px) {
+    .project-intro-container {   
+       
+        .project-header {
+
+            .techstack {
+                max-width: 500px;
+            }
+        }
+
+        img {
+
+        }
+    }
+}

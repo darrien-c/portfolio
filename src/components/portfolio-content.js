@@ -104,7 +104,7 @@ const PortfolioContent = () => {
         </div>
       </div>
     <Link to="/capstone">Codium Project</Link>
-    <Link to="/swift">Swift Project</Link>
+
     
   </Layout>
   )

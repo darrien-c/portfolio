@@ -8,17 +8,19 @@
     
     .section-01 {  
         
-        margin-top: 150px;
-        padding-right: 10px;
-        padding-left: 10px;
-        position: relative;
+        display: block;
+        margin-top: 90px; 
+        margin-right: 50px;
+        margin-left: 50px;
+        padding-top: 50px;
+        
 
         .works-title {
             color: $off-white;
             font-size: 24px;
             font-weight: 600;
             max-width: 600px;
-            margin: 70px 0 40px; 
+            /* margin: 70px 0 40px;  */
             height: 31px;  
             overflow: hidden;
         }
@@ -65,17 +67,20 @@
         /* ----- Capstone Card ------ */
         .capstone-container{
             position: relative;
-            margin-top: 150px;
+            margin-top: 80px;
+            margin-bottom: 50px;
             /* margin-bottom: 200px; */
+            
 
             .capstone-thumbnail {
                 width: 100%;
                 margin: 0 auto;
                 mix-blend-mode: screen;
                 position: relative;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
                 
             .capstone-feature   {
-                    border-radius: 3px;  
+                    border-radius: 5px;  
                     position: inherit !important; 
                     top: 0;
                     left: 0;
@@ -89,6 +94,7 @@
             }
 
             .capstone-info {      
+                
                 /* ----- Project Title ---- */
                 .featured-title {
                     display: block;
@@ -123,6 +129,7 @@
                     margin: 50px 30px;
                     font-family: 'Source Sans Pro';
                     font-weight: 300;
+                    
                 }
 
                 /* --- Project Technologies --- */
@@ -163,21 +170,22 @@
 
             }
             .capstone-overlay {
-                background-color: rgba(11, 71, 57, 0.637);
+                background-color: rgba(2, 35, 56, 0.637);
                 height: 100%;
                 display: block;
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
-                bottom: 0;              
+                bottom: 0;    
+                border-radius: 5px;            
             }
         }
 
         /* -------- Swift Card -------- */
 
         .swift-container{
-            margin-top: 160px;
+            margin-top: 80px;
             position: relative;            
 
             .project-thumbnail {
@@ -185,9 +193,11 @@
                 margin: 0 auto;
                 mix-blend-mode: screen;
                 position: relative;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                
                 
             .swift-feature   {
-                    border-radius: 3px;  
+                    border-radius: 5px;  
                     position: inherit !important; 
                     top: 0;
                     left: 0;
@@ -278,7 +288,7 @@
 
             }
             .swift-overlay {
-                background-color: rgba(40, 87, 76, 0.637);
+                background-color: rgba(2, 35, 56, 0.637);
                 height: 100%;
                 display: block;
                 position: absolute;
@@ -286,6 +296,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
+                border-radius: 5px;  
 
             }
         }
@@ -296,17 +307,18 @@
 
         .portfolio-container {
             position: relative;
-            margin-top: 150px;
-         /*    margin-bottom: 200px; */
+            margin-top: 70px;
+
 
             .port-thumbnail {
                 width: 100%;
                 margin: 0 auto;
                 mix-blend-mode: screen;
                 position: relative;
-                
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
             .port-feature   {
-                    border-radius: 3px;  
+                    border-radius: 5px;  
                     position: inherit !important; 
                     top: 0;
                     left: 0;
@@ -398,7 +410,7 @@
 
             }
             .port-overlay {
-                background-color: rgba(40, 87, 76, 0.637);
+                background-color: rgba(2, 35, 56, 0.637);
                 height: 100%;
                 display: block;
                 position: absolute;
@@ -406,7 +418,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-
+                border-radius: 5px;  
             }
     }
 }
@@ -492,10 +504,10 @@
         .container {
             width: 100%;
             .section-01 { 
+                margin-top: 90px; 
+                padding-top: 50px;
  
                 .project-wrapper {
-                    margin-left: 50px;
-                    margin-right: 50px;
 
                 /* ---- Capstone Card ----  */
                 .capstone-container {                      
@@ -507,10 +519,26 @@
                         display: block;
                         margin: 0;     
                         cursor: pointer;   
+                        transition: 300ms;
+                        
+                        &:hover {
+                            transition-duration: 0.9s;
+                            transition: all 0.5s ease-in-out;
+                            transform: scale(1.02);
+                            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                        }
+
+                        .capstone-overlay{
+                            background-color:  rgba(100, 255, 219, 0.466);
+                        }
 
                         .capstone-overlay:hover {
+                            
                             cursor: pointer;
                             opacity: 0;
+                            transition-duration: 0.5s;
+                            transition: all 0.2s ease-in-out;
+                            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
                         }
 
                       /*   .capstone-feature {
@@ -533,10 +561,11 @@
                         padding: 17px;
                         margin-right: 0;
                         max-width: 50%;
-                        border-radius: 3px;
+                        border-radius: 5px;
                         position: absolute;
                         right: 0;        
                         font-size: 16px !important;
+                        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
                     }
 
                     .capstone-tools {
@@ -560,33 +589,34 @@
                         }
 
 
-                        .capstone-overlay {
-                            cursor: pointer;
-                        }
-                        .capstone-overlay:hover {
-                            cursor: pointer;
-                            opacity: 0;
-                        }
-
                     }
                 }
             }
 
                 /* ---- Swift Card ----  */
                 .swift-container {  
-                    margin-top: 170px;     
-                    margin-bottom: 170px;  
+                    margin-top: 70px;     
+                    margin-bottom: 70px;  
                     position: relative;
 
                     .project-thumbnail {
                         width: 60%;
                         display: block;
                         margin: 0;
+                        transition: 300ms;
+
+                        &:hover {
+                            transition-duration: 0.9s;
+                            transition: all 0.5s ease-in-out;
+                            transform: scale(1.02);
+                            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                        }
                         
 
                         .swift-feature {
                             height: 55vh;
                             cursor: pointer;
+
 
                             &:hover {
                                 cursor: pointer;
@@ -600,7 +630,7 @@
                         max-width: 50%;
                         position: absolute;
                         right: 0;
-                        border-radius: 3px;                   
+                        border-radius: 5px;                   
                     }
 
                     .swift-tools{
@@ -622,10 +652,16 @@
 
                     .swift-overlay {
                         cursor: pointer;
+                        background-color:  rgba(100, 255, 219, 0.466);
                     }
                     .swift-overlay:hover {
                         cursor: pointer;
                         opacity: 0;
+                        cursor: pointer;
+                        opacity: 0;
+                        transition-duration: 0.5s;
+                        transition: all 0.2s ease-in-out;
+                        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
                     }
 
                 }
@@ -636,7 +672,14 @@
 
                     .port-thumbnail {
                         width: 60%;               
-                        margin-right: 0;                                    
+                        margin-right: 0;     
+                        
+                        &:hover {
+                            transition-duration: 0.9s;
+                            transition: all 0.5s ease-in-out;
+                            transform: scale(1.02);
+                            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                        }
 
                         .port-feature {
                             height: 55vh;
@@ -660,7 +703,7 @@
                         margin-top: 50px;
                         margin-right: 50%;
                         font-size: 16px;
-                        border-radius: 3px;
+                        border-radius: 5px;
                         margin-left: 0;
                     }
 
@@ -686,10 +729,14 @@
 
                     .port-overlay {
                         cursor: pointer;
+                        background-color:  rgba(100, 255, 219, 0.466);
                     }
                     .port-overlay:hover {
                         cursor: pointer;
                         opacity: 0;
+                        transition-duration: 0.5s;
+                        transition: all 0.2s ease-in-out;
+                        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
                     }
                 }
                 
@@ -703,6 +750,7 @@
 @media (min-width: 775px) {
     .works-showcase{
         .section-01{
+    
             .works-title {                
             }
             .project-wrapper {
@@ -779,7 +827,8 @@
         .container {
             width: 1150px;
         .section-01 {
-            padding: 0;
+            margin-top: 90px; 
+            padding-top: 50px;
 
             .works-title {
                 margin-left: 0;

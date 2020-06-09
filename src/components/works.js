@@ -1,15 +1,27 @@
 import React from "react"
 import { useStaticQuery, graphq } from "gatsby"
+import { Link } from "gatsby";
+
+/* Images */
 import Img from 'gatsby-image'
 import swiftImage from '../images/swift.png';
 import comingSoon from '../images/coming-soon.jpg';
+
+/* Icons */
 import { DiGithubBadge, DiGit , DiHtml5, DiSass } from 'react-icons/di';
 import {  BsBoxArrowInUpRight} from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
-import sal from 'sal.js';
-import { Link } from "gatsby";
+import { AiOutlineMail} from "react-icons/ai";
+
+/* Animations */
 import Reveal from 'react-reveal/Reveal';
 import HeadShake from 'react-reveal/HeadShake';
+import Slide from 'react-reveal/Slide';
+import Particles from 'react-particles-js';
+
+/* About Section */
+import About from '../components/about'
+
 
 const Works = () => {
 
@@ -26,7 +38,9 @@ const Works = () => {
     }
   `)
     return (
-        <section className="works-showcase"  >
+     
+        <section className="works-showcase"  >   
+         <Particles className="particles"  params={{"retina_detect": true}}/>     
             <div className="container">
                 <div id="projects" className="section-01">
                     <div className="project-wrapper" >
@@ -105,14 +119,14 @@ const Works = () => {
                 <Reveal>
                     <div className="swift-container">
                         <div className="project-thumbnail">
-                            <Link to="/swift"><img className="swift-feature" src={swiftImage} />
+                            <Link to="/match-the-memes"><img className="swift-feature" src={swiftImage} />
                               <div className="swift-overlay"></div></Link>
                           </div>
 
                           <div className="swift-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
-                                <h5><a href="#" target="_blank">Swift</a></h5>
+                                <h5><a href="#" target="_blank">Match the Memes</a></h5>
                             </div>
                             
                                <p className="swift-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -131,28 +145,30 @@ const Works = () => {
                             </div>     */}                        
                           </div>                     
                       </div> {/* ---- End of Swift ----- */}
+
+                      {/*  About Component*/}
+                      <About />
                       </Reveal>
                     </div>
                </div>            
             </div>        
-
-            <div className="fixed-social"  
-                data-sal="slide-up"
-                data-sal-duration ="500"
-                data-sal-delay="300"
-                data-sal-easing="ease-out-back">
+           
+          <Slide bottom>
+            <div className="fixed-social">
               <ul class="social-media" >
+              <li><a href="#"><AiOutlineMail /></a></li>
                 <li><a href="https://github.com/darrien-c" target="_blank"><DiGithubBadge /></a></li>  
-                <li><a href="#"><FaLinkedinIn /></a></li>
+                <li><a href="#"><FaLinkedinIn /></a></li>            
+                
               </ul>
             </div>
+            </Slide>
+     {/*        
+            <div className="fixed-contact"><Slide bottom><p>darrien@gmail.com </p></Slide>
+            </div>   */}
             
-            <div className="fixed-contact"  
-                data-sal="slide-up"
-                data-sal-duration ="900"
-                data-sal-delay="300"
-                data-sal-easing="ease-out-back">darrien@gmail.com</div>    
         </section>
+
     )
 }
 

@@ -77,7 +77,7 @@ const CapstoneContent = () => {
         <div className="team">
           <ul>
             <a href="#" target="_blank"><li>Denise Nguyen</li></a>
-            <a href="#" target="_blank"><li>Tiffany Tang</li></a>
+            <a href="http://www.tiffanytang.ca/" target="_blank"><li>Tiffany Tang</li></a>
             <a href="#" target="_blank"><li>Tin Lau</li></a>
             <a href="#" target="_blank"><li>Wynonna Moo</li></a>
           </ul>
@@ -85,7 +85,12 @@ const CapstoneContent = () => {
     </section>
 
     <section className="dev-process">
-      {/* images here */}
+            {/*       
+                <div className="case-study__video">
+                    <video autoplay="true" loop="true" muted="true" className="case-study__video">
+                    <source src={swiftVideo} type="video/mp4" />      
+                    </video> 
+                </div> */}
     </section>
     <div
         style={{

@@ -5,14 +5,14 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-/* Capstone Content */
-import SwiftContent from '../components/swift-content';
+/* MatchMemes Content */
+import MatchMemesContent from '../components/matchmeme-content';
 
-const Swift = () => (
+const MatchMemes = () => (
   <Layout>
     <SEO title="Page two" />
-    <SwiftContent />
+    <MatchMemesContent />
   </Layout>
 )
 
-export default Swift
+export default MatchMemes

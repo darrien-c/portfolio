@@ -2,7 +2,7 @@ import React from "react";
 import "../css/styles.scss";
 import SEO from '../components/seo';
 import Layout from '../components/layout';
-
+import Particles from 'react-particles-js';
 
 /* Header */
 import Header from '../components/header'
@@ -24,8 +24,8 @@ const IndexPage = () => {
         <SEO title/>
         <Header />
         <Works />
-        <About />
-        <Footer />
+       {/*  <About />   */}              
+        <Footer />         
       </Layout>
 
   )
