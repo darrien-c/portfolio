@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphq } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby";
 
 /* Images */
@@ -8,8 +8,8 @@ import swiftImage from '../images/swift.png';
 import comingSoon from '../images/coming-soon.jpg';
 
 /* Icons */
-import { DiGithubBadge, DiGit , DiHtml5, DiSass } from 'react-icons/di';
-import {  BsBoxArrowInUpRight} from "react-icons/bs";
+import { DiGithubBadge /* , DiGit , DiHtml5, DiSass  */} from 'react-icons/di';
+/* import {  BsBoxArrowInUpRight} from "react-icons/bs"; */
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail} from "react-icons/ai";
 
@@ -19,12 +19,12 @@ import HeadShake from 'react-reveal/HeadShake';
 import Slide from 'react-reveal/Slide';
 import Particles from 'react-particles-js';
 
+
 /* About Section */
 import About from '../components/about'
 
 
 const Works = () => {
-
     const data = useStaticQuery(graphql`
     query {
       swiftFeatured: file(relativePath: { eq: "swift.png" }) {
@@ -39,14 +39,14 @@ const Works = () => {
   `)
     return (
      
-        <section className="works-showcase"  >   
-         <Particles className="particles"  params={{"retina_detect": true}}/>     
+        <section className="works-showcase" >  
+         <Particles className="particles"  params={{"retina_detect": true}}/>               
             <div className="container">
                 <div id="projects" className="section-01">
                     <div className="project-wrapper" >
                       <HeadShake>
                     <Reveal>
-                      <h3 className="works-title"><span>01.</span>  Some Things I've Built</h3>
+                      <h3 className="works-title"><span>01.</span> Projects I've Built</h3>
                     </Reveal></HeadShake>
                       {/* --- Capstone Card --- */}
                       <Reveal>
@@ -156,9 +156,9 @@ const Works = () => {
           <Slide bottom>
             <div className="fixed-social">
               <ul class="social-media" >
-              <li><a href="#"><AiOutlineMail /></a></li>
-                <li><a href="https://github.com/darrien-c" target="_blank"><DiGithubBadge /></a></li>  
-                <li><a href="#"><FaLinkedinIn /></a></li>            
+                <li><a href="mailto:darrienchow_@hotmail.com"><AiOutlineMail /></a></li>
+                <li><a href="https://github.com/darrien-c" target="_blank" rel="nofollow noopener noreferrer"><DiGithubBadge /></a></li>  
+                <li><a href="https://www.linkedin.com/in/darrien-chow/" target="_blank" rel="nofollow noopener noreferrer"><FaLinkedinIn /></a></li>            
                 
               </ul>
             </div>

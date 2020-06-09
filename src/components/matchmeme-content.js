@@ -6,6 +6,9 @@ import Layout from "./layout";
 import SEO from "./seo";
 import { useEffect } from "react";
 
+/* import Animations */
+import Particles from 'react-particles-js';
+
 //import icons
 import {  BsBoxArrowInUpRight} from "react-icons/bs";
 import { DiGithubBadge, DiGit , DiHtml5, DiSass } from 'react-icons/di';
@@ -65,7 +68,8 @@ const MatchMemesContent = () => {
 `)
 
   return (
-      <main>
+      <main>  
+        <Particles className="particles"  params={{"retina_detect": true}}/>    
         <section className="project-intro-container">
           <div className="project-header">
           <h1>Match the Memes</h1>
@@ -78,7 +82,7 @@ const MatchMemesContent = () => {
             {/* <cite>Template by AlwaysSunday</cite> */}
           </div>
         </section>
-
+        
         <section className="project-description">  
             <div className="proj-scope">        
               <h2>Scope</h2>

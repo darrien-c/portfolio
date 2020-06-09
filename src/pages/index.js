@@ -23,8 +23,7 @@ const IndexPage = () => {
       <Layout>
         <SEO title/>
         <Header />
-        <Works />
-       {/*  <About />   */}              
+        <Works />        
         <Footer />         
       </Layout>
 

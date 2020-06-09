@@ -31,11 +31,13 @@ const About = () => {
                             </div>
                             <ul className="skills-arrow">
                                     <li>HTML</li>
-                                    <li>S<span>(C)</span>SS</li>
+                                    <li>CSS</li>
+                                    <li>SaSS</li>
                                     <li>JavaScript</li>
                                     <li>PHP</li>
-                                    <li>SaSS</li>
-                                </ul>
+                                    <li>React</li>
+                            </ul>
+                            <a href="mailto:darrienchow_@hotmail.com" rel="nofollow noopener noreferrer" className="contact">Contact</a>
                              </Slide>
                             <Slide right>
                                 <div className="about-box">
@@ -49,9 +51,7 @@ const About = () => {
                                     </div>
                                 </div>
                             </Slide>
-                            <div className="contact">
-                                <a href="mailto:darrienchow_@hotmail.com">Contact</a>
-                            </div>
+                            
                         </div> 
                     </div>
                 </div>
