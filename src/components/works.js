@@ -8,13 +8,11 @@ import {  BsBoxArrowInUpRight} from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import sal from 'sal.js';
 import { Link } from "gatsby";
-
+import Reveal from 'react-reveal/Reveal';
+import HeadShake from 'react-reveal/HeadShake';
 
 const Works = () => {
-  sal({
-    threshold: 1,
-    once: true,
-  });
+
     const data = useStaticQuery(graphql`
     query {
       swiftFeatured: file(relativePath: { eq: "swift.png" }) {
@@ -32,18 +30,13 @@ const Works = () => {
             <div className="container">
                 <div id="projects" className="section-01">
                     <div className="project-wrapper" >
-                    <h3 className="works-title" 
-                          data-sal="fade"
-                          data-sal-duration ="500"
-                          data-sal-delay="300"
-                          data-sal-easing="ease-out-back"><span>01.</span>  Some Things I've Built</h3>
-
+                      <HeadShake>
+                    <Reveal>
+                      <h3 className="works-title"><span>01.</span>  Some Things I've Built</h3>
+                    </Reveal></HeadShake>
                       {/* --- Capstone Card --- */}
-                      <div className="capstone-container" 
-                          data-sal="slide-up"
-                          data-sal-duration ="500"
-                          data-sal-delay="300"
-                          data-sal-easing="ease-out-back">
+                      <Reveal>
+                      <div className="capstone-container">
                           <div className="capstone-thumbnail">
                             <Link to="/capstone" target="_blank"><img className="capstone-feature" src={comingSoon} /> 
                               <div className="capstone-overlay"></div></Link>
@@ -71,13 +64,12 @@ const Works = () => {
                               </div>     */}                        
                             </div>
                       </div>{/* ---- End of Capstone ---- */}
+                    </Reveal>
+
 
                     {/* ---- Portfolio Card ---- */}
-                    <div className="portfolio-container"   
-                          data-sal="slide-up"
-                          data-sal-duration ="500"
-                          data-sal-delay="200"
-                          data-sal-easing="ease-out-back">
+                    <Reveal >
+                    <div className="portfolio-container">
                           <div className="port-thumbnail">
                           <Link to="/portfolio"><img className="port-feature" src={comingSoon} /> 
                               <div className="port-overlay"></div>
@@ -106,15 +98,13 @@ const Works = () => {
                             </div> */}
                           </div>
                       </div> {/* ---- End of Portfolio ---- */}
+                      </Reveal>
+
 
                     {/* ---- Swift Card ----- */}
-                    <div className="swift-container"  
-                          data-sal="slide-up"
-                          data-sal-duration ="500"
-                          data-sal-delay="200"
-                          data-sal-easing="ease-out-back">
+                <Reveal>
+                    <div className="swift-container">
                         <div className="project-thumbnail">
-                        {/*     <Img className="swift-feature" fluid={data.swiftFeatured.childImageSharp.fluid} alt="Swift Project" />   */}
                             <Link to="/swift"><img className="swift-feature" src={swiftImage} />
                               <div className="swift-overlay"></div></Link>
                           </div>
@@ -141,6 +131,7 @@ const Works = () => {
                             </div>     */}                        
                           </div>                     
                       </div> {/* ---- End of Swift ----- */}
+                      </Reveal>
                     </div>
                </div>            
             </div>        

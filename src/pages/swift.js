@@ -5,12 +5,13 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+/* Capstone Content */
+import SwiftContent from '../components/swift-content';
+
 const Swift = () => (
   <Layout>
     <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to Capstone </p>
-    <Link to="/">Go back to the homepage</Link>
+    <SwiftContent />
   </Layout>
 )
 

@@ -1,16 +1,15 @@
 // Gatsby supports TypeScript natively!
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+/* Capstone Content */
+import CapstoneContent from '../components/capstone-content';
 
 const Capstone = () => (
   <Layout>
     <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to Capstone </p>
-    <Link to="/">Go back to the homepage</Link>
+    <CapstoneContent />
   </Layout>
 )
 

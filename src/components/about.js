@@ -1,23 +1,21 @@
-import React from "react"
-import { useStaticQuery, graphq } from "gatsby"
-import aboutSVG from '../images/dark-code-editor-window.svg'
-import htmlSVG from '../images/html5.svg'
-import cssSVG from '../images/css3.svg'
-import reactSVG from '../images/react.svg'
-import sassSVG from '../images/sass.svg'
-import phpSVG from '../images/php-logo.svg'
-import jsSVG from '../images/javascript.svg'
+import React from "react";
+import { useStaticQuery, graphq } from "gatsby";
+import aboutSVG from '../images/dark-code-editor-window.svg';
+import htmlSVG from '../images/html5.svg';
+import cssSVG from '../images/css3.svg';
+import reactSVG from '../images/react.svg';
+import sassSVG from '../images/sass.svg';
+import phpSVG from '../images/php-logo.svg';
+import jsSVG from '../images/javascript.svg';
+import Reveal from 'react-reveal/Reveal';
 
 const About = () => {
     
     return (
+        <Reveal>
     <section className="about-showcase" id="about" >
         <div className="container" >
-            <div className="about-wrapper" 
-            data-sal="slide-up"
-            data-sal-duration ="500"
-            data-sal-delay="300"
-            data-sal-easing="ease-out-back">
+            <div className="about-wrapper">
                 <div className="about-content">
                     <h3 className="about-title"><span>02.</span> About</h3>
                     <div className="about-desc">
@@ -47,6 +45,7 @@ const About = () => {
             </div>
         </div>
     </section>
+    </Reveal>
     )
 }
 
