@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import { useStaticQuery, graphq } from "gatsby";
-import Img from 'gatsby-image';
-import Layout from "./layout";
-import SEO from "./seo";
 import { useEffect } from "react";
 
 /* import Animations */
