@@ -109,8 +109,11 @@ const MatchMemesContent = () => {
               </div>
           </div>
         </section>
-        <Link to="/portfolio">Portfolio Project</Link>
-        <Link to="/capstone">Codium Project</Link>
+
+        <div className="prev-next-container">
+          <div className="prev-next-subtitle">Next Project</div>
+          <Link to="/codium" className="link-title">Codium</Link>
+      </div>
     </main>
   )
 }

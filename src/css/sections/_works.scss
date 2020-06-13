@@ -1,5 +1,5 @@
 .works-showcase {
-    
+    font-family: 'Source Sans Pro';
     display: flex;
     align-items: center;
     position: relative;
@@ -25,7 +25,8 @@
         }
 
         span {
-            color: rgb(100, 255, 218);
+            /* color: rgb(100, 255, 218); */
+            color: #63CDD7; 
             margin-right: 15px;
         }
 
@@ -35,9 +36,9 @@
             height: 1px;
             width: 100%;
             position: relative;
-            background-color: rgb(187, 193, 206);
+            background-color: #bbc1ce;
             top: -10px;     
-            right: -285px; 
+            right: -150px; 
             overflow: hidden;
 
         }
@@ -50,7 +51,7 @@
                 color: rgb(177, 187, 216);
 
                 &:hover {
-                    color: rgb(100, 255, 218);
+                    color: #64ffda;
                 }
             }        
         
@@ -67,8 +68,8 @@
         /* ----- Capstone Card ------ */
         .capstone-container{
             position: relative;
-            margin-top: 80px;
-            margin-bottom: 50px;
+            margin-top: 100px;
+            margin-bottom: 150px;
             /* margin-bottom: 200px; */
             
 
@@ -132,45 +133,58 @@
                     
                 }
 
-                /* --- Project Technologies --- */
-                .capstone-tools {
-                    display: block;
+                /* --- See more btn --- */
+                .details-btn{
+                   display: block;
                     position: absolute;
+                    text-align: center;
                     bottom: 20px;
                     right: 0;
+                    font-size: 14px;
+                    border: 1px solid rgb(173, 173, 173); 
+                    border-radius: 4px; 
+                    padding: 9px 20px; 
+                    cursor: pointer;
+                    text-decoration: none;
                     color: white;
-                    margin-right: 20px;
+                    margin-right: 30px;
 
-                    .capstone-tech,
-                    .featured-links {
-                        font-size: 30px;
+                    @media (min-width: 610px) {
+                        margin-right: 0;
                     }
 
-                    .capstone-tech {
-                        font-size: 40px;
+                    &:before { 
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        z-index: -1;
+                        background-color: #000;
+                        transform: scaleX(.3);
+                        opacity: 0;
+                        transition: all .3s
                     }
 
-                    .capstone-tech {
-                        text-align: right;    
-                        i {
-                            margin-left: 20px;
-                        }
-                    }
+                    &:hover::before {
+                        opacity: 1;
+                        background-color: #132046;
+                        transform: scaleX(1);
+                        transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+                    }    
 
-                    .featured-links {         
-                        text-align: right;
-                        margin-top: 50px;
-                        a {
-                            text-decoration: none;
-                            color: white;
-                            padding-left: 20px;
-                        }
-                    }
+                    a {
+                        text-decoration: none;
+                        color: white;   
+                        line-height: 20px;                        
+                    }                    
                 }
 
             }
             .capstone-overlay {
-                background-color: rgba(2, 35, 56, 0.637);
+                 background-color: #022338a2;
                 height: 100%;
                 display: block;
                 position: absolute;
@@ -220,6 +234,7 @@
                     text-align: right;
                     right: 0;
                     margin: 20px 30px;
+                    margin-right: 30px;
                 }
 
                 h4 {
@@ -243,52 +258,59 @@
                     font-size: 16px;
                     text-align: right;
                     margin: 50px 30px;
+                    margin-right: 30px;
                     font-family: 'Source Sans Pro';
                     font-weight: 300;
                 }
 
                 /* --- Project Technologies --- */
-
-                .swift-tools {
+                .details-btn{
                     display: block;
-                    position: absolute;
-                    bottom: 26px;
-                    right: 0;
-                    color: white;
-
-                    .featured-links {
-                        font-size: 30px;
-                    }
-
-                    .swift-tech {
-                        font-size: 40px;
-                    }
-
-                    .swift-tech {
-                        margin-top: 50px;
-                        margin-bottom: 25px;
-                        text-align: right;      
-                        
-                        i {
-                            margin-right: 10px;
-                        }
-                    }
-
-                    .featured-links {
-                        text-align: right;    
-                        margin-top: 50px;                
-                        margin-right: 20px;
-                        a {
-                            text-decoration: none;
-                            color: white;
-                            padding-left: 20px;
-                        }
-                    }
-                }
+                     position: absolute;
+                     text-align: center;
+                     bottom: 20px;
+                     right: 0;
+                     font-size: 14px;
+                     border: 1px solid rgb(173, 173, 173); 
+                     border-radius: 4px; 
+                     padding: 9px 20px; 
+                     cursor: pointer;
+                     text-decoration: none;
+                     color: white;
+                     margin-right: 30px;
+ 
+                     &:before { 
+                         content: "";
+                         position: absolute;
+                         top: 0;
+                         left: 0;
+                         display: block;
+                         width: 100%;
+                         height: 100%;
+                         z-index: -1;
+                         background-color: #000;
+                         transform: scaleX(.3);
+                         opacity: 0;
+                         transition: all .3s
+                     }
+ 
+                     &:hover::before {
+                         opacity: 1;
+                         background-color: #132046;
+                         transform: scaleX(1);
+                         transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+                     }    
+ 
+                     a {
+                         text-decoration: none;
+                         color: white;   
+                         line-height: 20px;                        
+                     }                    
+                 }
 
             }
             .swift-overlay {
-                background-color: rgba(2, 35, 56, 0.637);
+                background-color: rgba(1, 24, 37, 0.897);
                 height: 100%;
                 display: block;
                 position: absolute;
@@ -307,7 +329,7 @@
 
         .portfolio-container {
             position: relative;
-            margin-top: 70px;
+            margin-bottom: 150px;
 
 
             .port-thumbnail {
@@ -370,43 +392,53 @@
                 }
 
                 /* --- Project Technologies --- */
-
-                .port-tools {
+                .details-btn{
                     display: block;
-                    position: absolute;
-                    bottom: 26px;
-                    left: 0;
-                    color: white;
-                    margin-left: 20px;
+                     position: absolute;
+                     text-align: center;
+                     bottom: 20px;
+                     left: 0;
+                     font-size: 14px;
+                     border: 1px solid rgb(173, 173, 173); 
+                     border-radius: 4px; 
+                     padding: 9px 20px; 
+                     cursor: pointer;
+                     text-decoration: none;
+                     color: white;
+                     margin-left: 30px;
 
-                    .port-tech,
-                    .featured-links {
-                        font-size: 30px;
+                     @media (min-width: 610px) {
+                        margin-left: 0;
                     }
-
-                    .port-tech {
-                        font-size: 40px;
-                    }
-
-                    .port-tech {
-                    
-                        text-align: left;
-
-                        i {
-                            margin-right: 20px;
-                        }
-                    }
-
-                    .featured-links {
-                        margin-top: 50px;                
-
-                        a {
-                            text-decoration: none;
-                            color: white;
-                            padding-right: 20px;
-                        }
-                }
-            }
+ 
+                     &:before { 
+                         content: "";
+                         position: absolute;
+                         top: 0;
+                         left: 0;
+                         display: block;
+                         width: 100%;
+                         height: 100%;
+                         z-index: -1;
+                         background-color: #000;
+                         transform: scaleX(.3);
+                         opacity: 0;
+                         transition: all .3s
+                     }
+ 
+                     &:hover::before {
+                         opacity: 1;
+                         background-color: #132046;
+                         transform: scaleX(1);
+                         transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+                     }    
+ 
+                     a {
+                         text-decoration: none;
+                         color: white;   
+                         line-height: 20px;                        
+                     }                    
+                 }
 
             }
             .port-overlay {
@@ -529,7 +561,8 @@
                         }
 
                         .capstone-overlay{
-                            background-color:  rgba(100, 255, 219, 0.466);
+                          /*   background-color:  rgba(100, 255, 219, 0.466); */
+                          background-color: #0092b780;
                         }
 
                         .capstone-overlay:hover {
@@ -557,7 +590,8 @@
                     }
 
                     .capstone-description {
-                        background-color: rgb(23, 42, 69);
+                        /* background-color: rgb(23, 42, 69); */
+                       background-color: rgb(30, 44, 90);
                         padding: 17px;
                         margin-right: 0;
                         max-width: 50%;
@@ -652,7 +686,8 @@
 
                     .swift-overlay {
                         cursor: pointer;
-                        background-color:  rgba(100, 255, 219, 0.466);
+                       /*  background-color:  rgba(100, 255, 219, 0.466); */
+                        background-color:  #63cdd7a8;
                     }
                     .swift-overlay:hover {
                         cursor: pointer;
@@ -701,7 +736,8 @@
                         background-color: rgb(23, 42, 69);
                         padding: 17px;
                         margin-top: 50px;
-                        margin-right: 50%;
+                        max-width: 50%;
+                        /* margin-right: 50%; */
                         font-size: 16px;
                         border-radius: 5px;
                         margin-left: 0;
@@ -729,7 +765,7 @@
 
                     .port-overlay {
                         cursor: pointer;
-                        background-color:  rgba(100, 255, 219, 0.466);
+                        background-color:  #63cdd7a8;
                     }
                     .port-overlay:hover {
                         cursor: pointer;

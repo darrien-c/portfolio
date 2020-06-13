@@ -1,0 +1,15 @@
+// Media Query Breakpoints
+@function em($px,$bc: 16){
+    @return #{$px/$bc}em;
+}
+$mobileScreen: em(320);
+$tabletScreen: em(768);
+$desktopScreen: em(1080);
+
+
+//media queries
+@mixin mq($w) {
+    @media(min-width: $w){
+        @content
+    }
+}

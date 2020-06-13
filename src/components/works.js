@@ -4,14 +4,14 @@ import { Link } from "gatsby";
 
 /* Images */
 import Img from 'gatsby-image'
-import swiftImage from '../images/swift.png';
+import mtmImage from '../images/mtm-card.png';
 import comingSoon from '../images/coming-soon.jpg';
 
 /* Icons */
 import { DiGithubBadge /* , DiGit , DiHtml5, DiSass  */} from 'react-icons/di';
-/* import {  BsBoxArrowInUpRight} from "react-icons/bs"; */
+import { BsCodeSlash as Code } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
-import { AiOutlineMail} from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 
 /* Animations */
 import Reveal from 'react-reveal/Reveal';
@@ -46,36 +46,25 @@ const Works = () => {
                     <div className="project-wrapper" >
                       <HeadShake>
                     <Reveal>
-                      <h3 className="works-title"><span>01.</span> Projects I've Built</h3>
+                      <h3 className="works-title"><span><Code /></span> Projects </h3>
                     </Reveal></HeadShake>
                       {/* --- Capstone Card --- */}
                       <Reveal>
                       <div className="capstone-container">
                           <div className="capstone-thumbnail">
-                            <Link to="/capstone" target="_blank"><img className="capstone-feature" src={comingSoon} /> 
+                            <Link to="/codium" target="_blank"><img className="capstone-feature" src={comingSoon} /> 
                               <div className="capstone-overlay"></div></Link>
                           </div>
 
                           <div className="capstone-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
-                                <h5><a href="#" target="_blank">Capstone</a></h5>
+                                <h5><a href="#" target="_blank">Codium</a></h5>
                             </div>
                          
-                               <p className="capstone-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                               <p className="capstone-description">Personal portfolio site built with GatsbyJS and hosted on Netlify. </p>       
 
-               {/*              <div className="capstone-tools">
-                                  <div className="capstone-tech">
-                                      <i><DiGit /></i>
-                                      <i><DiHtml5 /></i>
-                                      <i><DiSass /></i>
-                                  </div>
-
-                                  <div className="featured-links">
-                                    <a href="https://github.com/darrien-c" target="_blank"><DiGithubBadge /></a>   
-                                    <a href="#" target="_blank"><BsBoxArrowInUpRight /></a>                         
-                                  </div> 
-                              </div>     */}                        
+                               <Link to="/codium" className="details-btn">More Details</Link>       
                             </div>
                       </div>{/* ---- End of Capstone ---- */}
                     </Reveal>
@@ -93,23 +82,10 @@ const Works = () => {
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
                                 <h5><a href="#" target="_blank">Portfolio</a></h5>
-                            </div>
-
-                           
+                            </div>                
                               <p className="port-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-                         {/*      <div className="port-tools">
-                                <div className="port-tech">
-                                    <i><DiGit /></i>
-                                    <i><DiHtml5 /></i>
-                                    <i><DiSass /></i>
-                                </div>
-
-                                <div className="featured-links">
-                                  <a href="https://github.com/darrien-c" target="_blank"><DiGithubBadge /></a>   
-                                  <a href="#"><BsBoxArrowInUpRight /></a>                         
-                                </div>
-                            </div> */}
+                              <Link to="/capstone" className="details-btn">More Details</Link>
                           </div>
                       </div> {/* ---- End of Portfolio ---- */}
                       </Reveal>
@@ -119,7 +95,7 @@ const Works = () => {
                 <Reveal>
                     <div className="swift-container">
                         <div className="project-thumbnail">
-                            <Link to="/match-the-memes"><img className="swift-feature" src={swiftImage} />
+                            <Link to="/match-the-memes"><img className="swift-feature" src={mtmImage} />
                               <div className="swift-overlay"></div></Link>
                           </div>
 
@@ -130,19 +106,9 @@ const Works = () => {
                             </div>
                             
                                <p className="swift-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                               
-                       {/*         <div className="swift-tools">
-                                  <div className="swift-tech">
-                                      <i><DiGit /></i>
-                                      <i><DiHtml5 /></i>
-                                      <i><DiSass /></i>
-                                  </div>
-
-                                  <div className="featured-links">
-                                    <a href="https://github.com/darrien-c" target="_blank"><DiGithubBadge /></a>   
-                                    <a href="#"><BsBoxArrowInUpRight /></a>                         
-                                  </div> 
-                            </div>     */}                        
+                                                         
+                              <Link to="/capstone" className="details-btn">More Details</Link>                                 
+                      
                           </div>                     
                       </div> {/* ---- End of Swift ----- */}
 
@@ -163,9 +129,6 @@ const Works = () => {
               </ul>
             </div>
             </Slide>
-     {/*        
-            <div className="fixed-contact"><Slide bottom><p>darrien@gmail.com </p></Slide>
-            </div>   */}
             
         </section>
 

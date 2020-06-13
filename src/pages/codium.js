@@ -4,12 +4,12 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 /* Capstone Content */
-import CapstoneContent from '../components/capstone-content';
+import CodiumContent from '../components/codium-content';
 
 const Capstone = () => (
   <Layout>
     <SEO title="Page two" />
-    <CapstoneContent />
+    <CodiumContent />
   </Layout>
 )
 

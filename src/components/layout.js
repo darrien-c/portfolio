@@ -15,6 +15,9 @@ import "./layout.css"
 import "../css/styles.scss";
 import Particles from 'react-particles-js';
 
+
+
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -26,10 +29,14 @@ const Layout = ({ children }) => {
     }
   `)
 
+
+  
+
   return (
     <>
     <div>
       <Header siteTitle={data.site.siteMetadata.title} />
+      
         {/* <main>{children}</main> */}      
        {children}
        </div>
