@@ -66,7 +66,7 @@ const Works = () => {
                                 <AniLink cover direction="up"  bg="#0e101bfc"  to="/codium"><h5>Codium</h5></AniLink>
                             </div>
                          
-                               <p className="capstone-description">Codium is a fictious online coding website where users of beginner experience can start their journey. </p>       
+                               <p className="capstone-description">Codium is a fictious introductory online coding website where people of no experience can learn at their own pace.</p>       
 
                                <AniLink cover direction="up"  bg="#0e101bfc" to="/codium" className="details-btn">View Details</AniLink>       
                             </div>
@@ -109,7 +109,7 @@ const Works = () => {
                                 <AniLink cover direction="up" bg="#0e101bfc" to="/match-the-memes"><h5>Match the Memes</h5></AniLink>
                             </div>
                             
-                               <p className="swift-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                               <p className="swift-description">A matching card game based on memes developed with JavaScript. </p>
                                                          
                               <AniLink cover direction="up" bg="#0e101bfc" to="/match-the-memes" className="details-btn">View Details</AniLink>                                 
                       

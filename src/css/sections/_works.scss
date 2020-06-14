@@ -6,6 +6,12 @@
     height: auto;
     overflow:hidden;
 
+    .container {
+
+
+        @media (min-width: 905px) {
+            width: 1150px;
+        }
     
     .section-01 {  
         
@@ -15,20 +21,32 @@
         margin-right: 40px;
         margin-left: 40px;
         padding-top: 50px;
+
+
         
-        
+        @media (min-width: 610px) {
+            margin-top: 90px; 
+            padding-top: 50px;
+        }
+
+        @media (min-width: 905px) {
+            margin-top: 90px; 
+            padding-top: 50px;
+        }
 
         .works-title {
             color: $off-white;
             font-weight: 600;
             max-width: 600px;
-            /* margin: 70px 0 40px;  */
             height: 31px;  
             overflow: hidden;
+
+            @media (min-width: 905px) {
+                margin-left: 0;
+            }
         }
 
         span {
-            /* color: rgb(100, 255, 218); */
             color: #63CDD7; 
             margin-right: 15px;
         }
@@ -68,12 +86,25 @@
         position: relative;        
         margin-top: 60px;
 
-        /* ----- Capstone Card ------ */
+
+        @media (min-width: 905px) {
+            margin-top: 90px;
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 50px;
+        }
+
+        @media (min-width: 1080px) {
+            margin: 0 auto;
+        }
+
+
+        /* ==== Codium Card ==== */
+
         .capstone-container{
             position: relative;
             margin-top: 100px;
             margin-bottom: 150px;
-            /* margin-bottom: 200px; */
             
 
             .capstone-thumbnail {
@@ -82,6 +113,25 @@
                 mix-blend-mode: screen;
                 position: relative;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+                @media (min-width: 610px)  {
+                    width: 60%;
+                    display: block;
+                    margin: 0;     
+                    cursor: pointer;   
+                    transition: 300ms;
+
+                    &:hover {
+                        transition-duration: 0.9s;
+                        transition: all 0.5s ease-in-out;
+                        transform: scale(1.02);
+                        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                    }
+                }
+
+                @media (min-width: 905px) {
+                    width: 60%;
+                }
                 
             .capstone-feature   {
                     border-radius: 5px;  
@@ -91,15 +141,18 @@
                     width: 100%;
                     height: 50vh;
                     object-fit: cover;
-                    object-position: center center;
-    
+                    object-position: center center;   
+                    
+                    @media (min-width: 905px) {
+                        height: 400px;
+                    }
                 }        
 
             }
 
-            .capstone-info {      
-                
-                /* ----- Project Title ---- */
+
+            /* ==== Project Titles ==== */
+            .capstone-info {         
                 .featured-title {
                     display: block;
                     position: absolute;
@@ -112,10 +165,19 @@
                     a {
                         text-decoration: none;
                     }
+
+                    @media (min-width: 610px) {
+                        margin: 0;
+                    }
+
+                    @media (min-width: 1080px) {
+                        margin-bottom: 0;
+                    }
                 }
 
                 h4 {
-                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
                     font-size: 13px;
                     color: rgb(100, 255, 218);
                 }
@@ -126,25 +188,48 @@
                     &:hover {
                         color: rgb(100, 255, 218);
                     }
+
+                    @media (min-width: 1080px) {
+                        margin-bottom: 0;
+                    }
                 }
 
-                /* --- Project Description --- */
 
+                /* ==== Project Description ==== */
                 .capstone-description {
                     display: block;
                     position: absolute;
-                    top: 50px;
-                /*  color: rgb(168, 178, 209); */
+                    top: 80px;
                     color: white;
                     font-size: 16px;
                     text-align: right;
                     margin: 50px 30px;
                     font-family: 'Source Sans Pro';
                     font-weight: 300;
-                    
-                }
 
-                /* --- See more btn --- */
+                    @media (min-width: 610px) {
+                        background-color: rgb(30, 44, 90);
+                        padding: 17px;
+                        margin-right: 0;
+                        max-width: 50%;
+                        border-radius: 5px;
+                        position: absolute;
+                        right: 0;        
+                        font-size: 16px !important;
+                        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                    }
+
+                    @media (min-width: 775px) {
+                        padding: 25px;
+                    }
+
+                    @media (min-width: 905px) {
+                        margin-top: 70px !important;
+                    }
+                }
+                
+
+                /* ==== View Details btn ==== */
                 .details-btn{
                    display: block;
                     position: absolute;
@@ -203,15 +288,32 @@
                 left: 0;
                 right: 0;
                 bottom: 0;    
-                border-radius: 5px;            
+                border-radius: 5px;   
+                
+                @media (min-width: 610px) {
+                    background-color: #0092b780;
+
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0;
+                        transition-duration: 0.5s;
+                        transition: all 0.2s ease-in-out;
+                        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                    }
+                }
             }
         }
 
-        /* -------- Swift Card -------- */
+        /* ==== Swift Card ===== */
 
         .swift-container{
             margin-top: 80px;
-            position: relative;            
+            position: relative;       
+            
+            @media (min-width: 610px) {
+                margin-top: 70px;     
+                margin-bottom: 70px;  
+            }
 
             .project-thumbnail {
                 width: 100%;
@@ -220,7 +322,28 @@
                 position: relative;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
                 
-                
+                @media (min-width: 610px) {
+                    width: 60%;
+                    display: block;
+                    margin: 0;
+                    transition: 300ms;
+
+                    &:hover {
+                        transition-duration: 0.9s;
+                        transition: all 0.5s ease-in-out;
+                        transform: scale(1.02);
+                        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                    }
+                }
+
+                @media (min-width: 775px) {
+                    width: 400px;
+                }
+
+                @media (min-width: 905px) {
+                    width: 60%;
+                }
+
             .swift-feature   {
                     border-radius: 5px;  
                     position: inherit !important; 
@@ -230,13 +353,26 @@
                     height: 50vh;
                     object-fit: cover;
                     object-position: center center;
+
+                    @media (min-width: 610px) {                       
+                        height: 55vh;
+                        cursor: pointer;
+
+                        &:hover {
+                            cursor: pointer;
+                        }                        
+                    }
+
+                    @media (min-width: 905px) {
+                        height: 400px;
+                    }
                 }        
 
             }
 
-            .swift-info {                      
-                
-                /* --- Project Title --- */
+
+             /* ==== Project Title ==== */
+            .swift-info {                           
                 .featured-title {
                     display: block;
                     position: absolute;
@@ -253,36 +389,59 @@
                 }
 
                 h4 {
-                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
                     font-size: 13px;
                     color: rgb(100, 255, 218);
                 }
 
                 h5 {                    
                     font-size: 23px;
-
+                    
                     &:hover {
                         color: rgb(100, 255, 218);
                     }
                 }
 
-                /* --- Project Description --- */
 
+                /* ==== Project Description ==== */
                 .swift-description {
                     display: block;
                     position: absolute;
-                    top: 50px;
-                /*  color: rgb(168, 178, 209); */
+                    top: 80px;
                     color: white;
                     font-size: 16px;
                     text-align: right;
-                    margin: 50px 30px;
-                    margin-right: 30px;
+                    right: 0;
+                    margin: 50px 30px;                   
                     font-family: 'Source Sans Pro';
                     font-weight: 300;
+
+                    @media (min-width: 610px) {
+                        background-color: rgb(30, 44, 90);
+                        padding: 17px;
+                        max-width: 50%;
+                        position: absolute;
+                        right: 0;
+                        border-radius: 5px;  
+                    }
+
+                    @media (min-width: 775px) {
+                        padding: 25px;
+                    }
+
+                    @media (min-width: 905px) {
+                        right: 0;
+                        margin-top: 90px !important;
+
+                        p {                         
+                            margin-left: 50%;
+                        }
+                    }
+                    
                 }
 
-                /* --- Project Technologies --- */
+                /* ==== View Details btn ==== */
                 .details-btn{
                     display: block;
                      position: absolute;
@@ -339,17 +498,35 @@
                 bottom: 0;
                 border-radius: 5px;  
 
-            }
-        }
+                @media (min-width: 610px) {
+                    cursor: pointer;
+                    background-color: #0092b780;
 
-        
+                    &:hover {                        
+                        opacity: 0;
+                        cursor: pointer;
+                        opacity: 0;
+                        transition-duration: 0.5s;
+                        transition: all 0.2s ease-in-out;
+                        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                    }
+                }
+
+            }
+        }        
     }
-        /* --------- Portfolio Card ---------- */
+
+
+
+        /* ==== Portfolio Card ===== */
 
         .portfolio-container {
             position: relative;
             margin-bottom: 150px;
 
+            @media (min-width: 610px) {
+                margin-left: 0;    
+            }
 
             .port-thumbnail {
                 width: 100%;
@@ -357,6 +534,26 @@
                 mix-blend-mode: screen;
                 position: relative;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                
+                @media (min-width: 610px) {
+                    width: 60%;               
+                    margin-right: 0;     
+                    
+                    &:hover {
+                        transition-duration: 0.9s;
+                        transition: all 0.5s ease-in-out;
+                        transform: scale(1.02);
+                        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                    }
+                }
+
+                @media (min-width: 775px) {
+                    width: 400px;
+                }
+
+                @media (min-width: 905px) {
+                    width: 60%;
+                }
 
             .port-feature   {
                     border-radius: 5px;  
@@ -367,14 +564,27 @@
                     height: 50vh;
                     object-fit: cover;
                     object-position: center center;
+
+                    @media (min-width: 610px) {
+                        height: 55vh;
+                        cursor: pointer;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }       
+                    
+                    @media (min-width: 905px) {
+                        height: 400px;
+                    }
     
                 }        
 
             }
 
-            .port-info {                      
-            /* --- Project Title --- */           
-        
+
+        /* ==== Project Title ==== */ 
+            .port-info {                    
                 .featured-title {
                     display: block;
                     position: absolute;
@@ -387,10 +597,19 @@
                     a {
                         text-decoration: none;
                     }
+
+                    @media (min-width: 610px) {
+                        margin-left: 0;
+                    }
+
+                    @media (min-width: 905px) {
+                        margin-left: 0;
+                    }
                 }
 
                 h4 {
-                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
                     font-size: 13px;
                     color: rgb(100, 255, 218);
                 }
@@ -403,22 +622,43 @@
                     }
                 }
 
-                /* --- Project Description --- */
 
+                /* ==== Project Description ==== */
                 .port-description {
                     display: block;
                     position: absolute;
-                    top: 50px;
-                /*  color: rgb(168, 178, 209); */
+                    top: 80px;
                     color: white;
                     font-size: 16px;
                     text-align: left;
                     margin: 50px 30px;
                     font-family: 'Source Sans Pro';
                     font-weight: 300;
+
+                    @media (min-width: 610px)  {
+                        background-color: rgb(30, 44, 90);
+                        padding: 17px;
+                        margin-top: 50px;
+                        max-width: 50%;
+                        font-size: 16px;
+                        border-radius: 5px;
+                        margin-left: 0;
+                    }
+
+                    @media (min-width: 775px) {
+                        padding: 25px;
+                    }
+
+                    @media (min-width: 905px) {
+                        margin-left: 0;
+                        margin-top: 70px;
+                        padding: 22px;
+                        margin-right: 50%;      
+                    }
                 }
 
-                /* --- Project Technologies --- */
+
+                /* ==== Project Technologies ==== */
                 .details-btn{
                     display: block;
                      position: absolute;
@@ -478,40 +718,25 @@
                 right: 0;
                 bottom: 0;
                 border-radius: 5px;  
+
+                @media (min-width: 610px) {
+                    cursor: pointer;
+                    background-color:  #0092b780;
+
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0;
+                        transition-duration: 0.5s;
+                        transition: all 0.2s ease-in-out;
+                        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                    }
+                }
             }
     }
 }
-    /*------- Side Contact ------ */
-
-    .fixed-contact {
-        position: fixed;
-        top: 70%;
-        right: -60px;
-        transform: rotate(90deg);
-        font-weight: 700;
-        font-size: 15px;
-        color: $off-white;
-        letter-spacing: 1.5px;
-        z-index: 8;
-    
-
-        &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            height: 155px;
-            width: 1px;
-            transform: rotate(90deg);
-            background-color: rgb(187, 193, 206);
-            right: -100px;
-            bottom: -67px;
-        }
-    }
-    .fixed-contact {
-        display: none;
-    }
-
-    /*------- Side Social Media ------ */
+}
+   
+    /* ==== Side Social Media ==== */
 
     .fixed-social {
         position: fixed;
@@ -532,8 +757,7 @@
             margin-left: 20px;
             a {            
                 color: white;
-            }
-      
+            }      
         }
         
         .social-media:after {
@@ -551,474 +775,12 @@
 
     .fixed-social {
         display: none;
-    }
 
-}
-
-/* ======== # Media Queries ========= */
-
- @media (min-width: 610px) {
-
-    .works-showcase {
-        .container {
-            width: 100%;
-            .section-01 { 
-                margin-top: 90px; 
-                padding-top: 50px;
- 
-                .project-wrapper {
-
-                /* ---- Capstone Card ----  */
-                .capstone-container {                      
-                    position: relative;                
-
-                    .capstone-thumbnail {
-                        /* width: 300px; */
-                        width: 60%;
-                        display: block;
-                        margin: 0;     
-                        cursor: pointer;   
-                        transition: 300ms;
-                        
-                        &:hover {
-                            transition-duration: 0.9s;
-                            transition: all 0.5s ease-in-out;
-                            transform: scale(1.02);
-                            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-                        }
-
-                        .capstone-overlay{
-                          /*   background-color:  rgba(100, 255, 219, 0.466); */
-                          background-color: #0092b780;
-                        }
-
-                        .capstone-overlay:hover {
-                            
-                            cursor: pointer;
-                            opacity: 0;
-                            transition-duration: 0.5s;
-                            transition: all 0.2s ease-in-out;
-                            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-                        }
-
-                      /*   .capstone-feature {
-                            height: 55vh;    
-                            cursor: pointer;
-
-                            &:hover {
-                                cursor: pointer;
-
-                            }
-                        }     */                 
-                    }
-
-                    .featured-title {
-                        margin: 0;
-                    }
-
-                    .capstone-description {
-                        /* background-color: rgb(23, 42, 69); */
-                       background-color: rgb(30, 44, 90);
-                        padding: 17px;
-                        margin-right: 0;
-                        max-width: 50%;
-                        border-radius: 5px;
-                        position: absolute;
-                        right: 0;        
-                        font-size: 16px !important;
-                        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-                    }
-
-                    .capstone-tools {
-                        bottom: 0 !important;                    
-
-                        .capstone-tech {
-                            display: block;
-
-                            margin-bottom: -20px;
-                            margin-right: 0;
-
-                            i {
-                                text-align: right;
-                                margin-left: 15px;                       
-                                font-size: 35px;
-                                
-                            }
-
-                        .featured-links {
-                            margin-right: 10px;
-                        }
-
-
-                    }
-                }
-            }
-
-                /* ---- Swift Card ----  */
-                .swift-container {  
-                    margin-top: 70px;     
-                    margin-bottom: 70px;  
-                    position: relative;
-
-                    .project-thumbnail {
-                        width: 60%;
-                        display: block;
-                        margin: 0;
-                        transition: 300ms;
-
-                        &:hover {
-                            transition-duration: 0.9s;
-                            transition: all 0.5s ease-in-out;
-                            transform: scale(1.02);
-                            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-                        }
-                        
-
-                        .swift-feature {
-                            height: 55vh;
-                            cursor: pointer;
-
-
-                            &:hover {
-                                cursor: pointer;
-                            }
-                        }
-                    }
-
-                    .swift-description{
-                        background-color: rgb(30, 44, 90);
-                        padding: 17px;
-                        max-width: 50%;
-                        position: absolute;
-                        right: 0;
-                        border-radius: 5px;                   
-                    }
-
-                    .swift-tools{
-                        bottom: 0 !important;
-                        margin-right: 20px;
-                    }
-
-                    .swift-tech {
-                        display: block;
-                        margin-bottom: 70px;
-                        margin-bottom: -20px !important;
-
-                        i {
-                        text-align: right;
-                        margin-left: 15px;
-                        font-size: 35px;                     
-                        }
-                    }
-
-                    .swift-overlay {
-                        cursor: pointer;
-                       /*  background-color:  rgba(100, 255, 219, 0.466); */
-                       /*  background-color:  #63cdd7a8; */
-                       background-color: #0092b780;
-                    }
-                    .swift-overlay:hover {
-                        cursor: pointer;
-                        opacity: 0;
-                        cursor: pointer;
-                        opacity: 0;
-                        transition-duration: 0.5s;
-                        transition: all 0.2s ease-in-out;
-                        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-                    }
-
-                }
-
-                /* ---- Portfolio Card ----  */
-                .portfolio-container {       
-                    margin-left: 0;    
-
-                    .port-thumbnail {
-                        width: 60%;               
-                        margin-right: 0;     
-                        
-                        &:hover {
-                            transition-duration: 0.9s;
-                            transition: all 0.5s ease-in-out;
-                            transform: scale(1.02);
-                            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-                        }
-
-                        .port-feature {
-                            height: 55vh;
-                            cursor: pointer;
-
-                            &:hover {
-                                cursor: pointer;
-                            }
-                        }
-                    }
-
-                    .port-info {
-                        .featured-title {
-                            margin-left: 0;
-                        }
-                    }
-
-                    .port-description {
-                        background-color: rgb(30, 44, 90);
-                        padding: 17px;
-                        margin-top: 50px;
-                        max-width: 50%;
-                        /* margin-right: 50%; */
-                        font-size: 16px;
-                        border-radius: 5px;
-                        margin-left: 0;
-                    }
-
-                    .port-tools {
-                        bottom: 0 !important;
-                        margin-left: 0;
-                        
-                        .port-tech {
-                            display: block;
-                            margin-bottom: 35px;
-        
-                            i {
-                            text-align: left;
-                            margin-right: 15px;
-                            font-size: 35px;
-                            }
-                        }
-
-                        .featured-links {
-                            margin: 0;
-                        }
-                    }                
-
-                    .port-overlay {
-                        cursor: pointer;
-                        background-color:  #0092b780;
-                        
-                    }
-                    .port-overlay:hover {
-                        cursor: pointer;
-                        opacity: 0;
-                        transition-duration: 0.5s;
-                        transition: all 0.2s ease-in-out;
-                        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-                    }
-                }
-                
-            }   
-        }
-    }
-    }
-
-} 
-
-@media (min-width: 775px) {
-    .works-showcase{
-        .section-01{
-    
-            .works-title {                
-            }
-            .project-wrapper {
-                /* --- Capstone Card ---- */
-                .capstone-container {
-                    .capstone-description{
-                        padding: 25px;
-                    }
-                }
-
-                /* --- Swift Card --- */
-
-                .swift-container {     
-                     
-
-                    .project-thumbnail {
-                        width: 400px;
-
-                        .swift-feature {
-                        }
-                        
-                    }
-
-                    .swift-info {
-                        .featured-title {                      
-                        }                    
-
-                    .swift-description {
-                        padding: 25px;
-                    }
-
-                    .swift-tech {  
-                    }
-                    .featured-links {
-                        margin-top: -35px;
-                    }
-                    
-                }
-            }
-
-            /* ---- Portfolio Card ----- */
-                .portfolio-container {
-                    .port-thumbnail {                        
-                        width: 400px;
-
-                        .port-feature {                            
-                        }
-                    }
-
-                    .port-description {
-                        padding: 25px;
-                        .featured-links {
-                            margin-top: 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .works-showcase{      
-        .fixed-contact {
+        @media (min-width: 775px) {
             display: block;
-        }        
-        .fixed-social {
-            display: block;
-        }        
-    }
-
-}
-
-@media (min-width: 905px) {
-    .works-showcase {
-        .container {
-            width: 1150px;
-        .section-01 {
-            margin-top: 90px; 
-            padding-top: 50px;
-
-            .works-title {
-                margin-left: 0;
-            }
-
-            .project-wrapper {
-                margin-top: 90px;
-                margin-right: 0;
-                margin-left: 0;
-                margin-bottom: 50px;
-
-                /* --- Capstone Card --- */
-                .capstone-container {
-                    
-                    .capstone-thumbnail {
-                        /* width: 575px; */
-                        width: 60%;
-
-                        .capstone-feature {                            
-                            height: 400px;
-                        }
-                    }
-
-                    .capstone-description {
-                        margin-top: 70px !important;
-                    }
-
-                    
-                    .capstone-tools {
-                       bottom: 6px !important;
-                    }
-                }
-
-                 /* --- Portfolio Card --- */
-
-                .portfolio-container {
-                    .port-thumbnail {
-                        width: 60%;
-                        .port-feature {
-                            height: 400px;
-                        }
-                    }
-
-                    .port-info {
-                        .featured-title {
-                            margin-left: 0;
-                        }
-                    }
-
-                    .port-description {
-                        margin-left: 0;
-                        margin-top: 70px;
-                        padding: 22px;
-                        margin-right: 50%;                      
-                    }
-
-                    .port-tools {
-                        bottom: 6px !important;
-                    }
-                }
-
-                /* --- Swift Card --- */
-                .swift-container{                   
-                    .project-thumbnail {
-                        width: 60%;
-
-                        .swift-feature {
-                           height: 400px;
-                       }                       
-                    }
-
-                    .swift-description {
-                        right: 0;
-                        margin-top: 90px !important;
-                        p {
-                         
-                            margin-left: 50%;
-                        }
-                    }
-                }
-
-              
-            }
         }
     }
+
 }
-}
 
-@media (min-width: 1080px) {
-    .works-showcase {   
-        .section-01 { 
-            
-            .works-title {
-               
-            }
-            .project-wrapper {   
- 
-                margin: 0 auto;
-                /* --- Capstone Card --- */
-                .capstone-container {                    
-                    .capstone-thumbnail {    
-                        .capstone-feature {
-                        }
-                    }
 
-                    .featured-title {
-                        margin-bottom: 0;
-
-                        h5 {
-                            margin-bottom: 0;
-                        }
-                    }               
-                }
-
-                 /* --- Portfolio Card --- */
-
-                .portfolio-container {
-                }
-
-                /* --- Swift Card --- */
-                .swift-container{                   
-                }
-
-              
-            }
-        }
-    }
-}

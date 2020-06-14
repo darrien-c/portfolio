@@ -113,6 +113,7 @@ const PortfolioContent = () => {
                   <li>GatsbyJS</li>
                   <li>SaSS</li>
                   <li>Adobe XD</li>
+                  <li>Adobe Photoshop</li>
               </ul>
               </div>     
             </div>

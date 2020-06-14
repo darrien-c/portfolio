@@ -2,6 +2,7 @@ main {
     margin: 0 auto;
     height: 100%;
     font-family: 'Source Sans Pro';
+    font-weight: 300;
 
     .project-intro-container {
         height: auto;
@@ -135,6 +136,30 @@ main {
                 }
             }
         }
+
+        .role-section {
+            margin-top: 50px;
+            padding-top: 50px;
+
+            h2 {
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 300;
+            }
+        }
+
+        .team {
+            
+            h3 {
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 300;
+            }
+
+            ul {
+                width: 150px;
+            }
+        }
     }
 
     .design-process {
@@ -203,11 +228,13 @@ main {
         .prev-next-subtitle {
             letter-spacing: 7px;
             color: rgb(165, 165, 165);
-            margin: 20px;            
+            margin: 20px;       
+            font-size: 21px;     
         }
 
         .link-title {
-            color: white;   
+            font-size: 26px;
+            letter-spacing: 2px;  
             padding: 0;
             margin: 0 auto;
             color: #fff;

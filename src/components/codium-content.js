@@ -90,7 +90,6 @@ const CapstoneContent = () => {
 
     <section className="project-description">
       <div className="proj-scope">  
-        <h1>Codium</h1>
         <p>Codium is a fictional online coding school. The website is built with HTML, SaSS, WordPress, PHP, and version-controlled with Git. The project involved multiple meetings, discussions, wire-framing, development planning, actual development and design process, and site hosting.  </p>
 
         <div className="techstack">
@@ -106,12 +105,13 @@ const CapstoneContent = () => {
         </div>  
         <div className="role-section">   
 
-          <h3>My Role</h3>
-          <p>Working closely with in team of 5 to create a fully responsive and e ngaging instructors page. Building an ACF carousel that can retrieve users review posts.</p>
+          <h2>My Role</h2>
+          <p>Working closely with in team of 5 to create a fully responsive and engaging instructors page. Building an ACF carousel that can retrieve users review posts.... etc more to come</p>
         </div>
           <div className="team">
+            <h3>The Team</h3>
             <ul>
-              <a href="#" target="_blank"><li>Denise Nguyen</li></a>
+              <a href="https://denisenguyen.ca/" target="_blank"><li>Denise Nguyen</li></a>
               <a href="http://www.tiffanytang.ca/" target="_blank"><li>Tiffany Tang</li></a>
               <a href="#" target="_blank"><li>Tin Lau</li></a>
               <a href="#" target="_blank"><li>Wynonna Moo</li></a>
@@ -131,7 +131,7 @@ const CapstoneContent = () => {
 
       <section className="dev-process">
         <h2>Development</h2>
-            <p>The following code snippet is the matching logic to check if first card and second card match</p>
+            <p>The following code snippet is ...</p>
           <div className="code-wrapper">
               <div className="code-container">
               <pre>
