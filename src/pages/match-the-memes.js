@@ -15,7 +15,7 @@ import MatchMemesContent from '../components/matchmeme-content';
 const MatchMemes = () => (
   <Layout>
     <SEO title="Page two" /> 
-    <MatchMemesContent />
+     <MatchMemesContent />
   </Layout>
 )
 

@@ -43,6 +43,7 @@ module.exports = {
         loop: true
       },
     },
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-smoothscroll`
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -38,16 +38,30 @@ const CapstoneContent = () => {
 
   const data = useStaticQuery(graphql`
   query {
-    headerSolo: file(relativePath: { eq: "header-template.png" }) {
+    headerImage: file(relativePath: { eq: "port-header.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1500) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }        
       }
     }
-    headerImage: file(relativePath: { eq: "header-image.png" }) {
+    wireframeOne: file(relativePath: { eq: "port-wireframe-1.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }        
+      }
+    }
+    wireframeTwo: file(relativePath: { eq: "port-wireframe-2.png" }) {
+      childImageSharp {
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }        
+      }
+    }
+    colourPalette: file(relativePath: { eq: "port-colour-palette.png" }) {
+      childImageSharp {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }        
       }
@@ -60,9 +74,13 @@ const CapstoneContent = () => {
       <Particles className="particles"  params={{"retina_detect": true}}/>    
           <section className="project-intro-container">
             <div className="project-header">
+
             <h1>Codium</h1>
-          {/*  <Img fluid={data.mtmHeader.childImageSharp.fluid} /> */}
-              <img src={mtmHeader} alt="Match the Meme"/>  
+
+            <div className="main-image">
+              <Img fluid={data.headerImage.childImageSharp.fluid} /> 
+            </div>
+            
               <div className="cta-links">
                   <a href="http://dchow.bcitwebdeveloper.ca/match-the-memes/" target="_blank" rel="noreferrer" className="box-1"><span><BsBoxArrowInUpRight /></span></a>      
                   <a href="#" target="_blank" rel="noreferrer" className="box-2"><span><DiGithubBadge /></span></a>                         

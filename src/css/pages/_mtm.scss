@@ -1,6 +1,7 @@
 main {
     margin: 0 auto;
     height: 100%;
+    font-family: 'Source Sans Pro';
 
     .project-intro-container {
         height: auto;
@@ -29,11 +30,11 @@ main {
             }    
 
             .main-image {
-                width: 436px;
+                width: 100%;
                 margin: 0 auto;
 
                 @media(min-width: 768px) {
-                    width: 575px;
+                    width: 675px;
                 }
             }
         }
@@ -75,9 +76,7 @@ main {
             text-decoration: none;
             color: #e3e3e3;
             }
-        }   
-
-    
+        }       
     }
 
 
@@ -136,6 +135,29 @@ main {
                 }
             }
         }
+    }
+
+    .design-process {
+        margin: 0 auto;
+        width: 80%; 
+        margin-bottom: 100px;
+       
+        .design-image {
+            padding: 50px;
+            background-color: #0e101bfc; 
+        }
+
+        @media (min-width: 775px) {
+            width: 700px; 
+       }
+
+       h2 {
+          
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: #e3e3e3;      
+       }
     }
 
     .dev-process {
@@ -220,6 +242,8 @@ main {
 
     }
 }
+
+
 
 
 /* @media(min-width: 740px) {

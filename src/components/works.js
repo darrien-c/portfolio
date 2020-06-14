@@ -1,5 +1,5 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 import { Link } from "gatsby";
 
 /* Images */
@@ -18,6 +18,10 @@ import Reveal from 'react-reveal/Reveal';
 import HeadShake from 'react-reveal/HeadShake';
 import Slide from 'react-reveal/Slide';
 import Particles from 'react-particles-js';
+
+/* Transitions */
+import TransitionLink from "gatsby-plugin-transition-link";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 
 /* About Section */
@@ -52,19 +56,19 @@ const Works = () => {
                       <Reveal>
                       <div className="capstone-container">
                           <div className="capstone-thumbnail">
-                            <Link to="/codium" target="_blank"><img className="capstone-feature" src={comingSoon} /> 
-                              <div className="capstone-overlay"></div></Link>
+                            <AniLink cover direction="up"  bg="#0e101bfc"  to="/codium"><img className="capstone-feature" src={comingSoon} /> 
+                              <div className="capstone-overlay"></div></AniLink>
                           </div>
 
                           <div className="capstone-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
-                                <h5><a href="#" target="_blank">Codium</a></h5>
+                                <AniLink cover direction="up"  bg="#0e101bfc"  to="/codium"><h5>Codium</h5></AniLink>
                             </div>
                          
                                <p className="capstone-description">Codium is a fictious online coding website where users of beginner experience can start their journey. </p>       
 
-                               <Link to="/codium" className="details-btn">View Details</Link>       
+                               <AniLink cover direction="up"  bg="#0e101bfc" to="/codium" className="details-btn">View Details</AniLink>       
                             </div>
                       </div>{/* ---- End of Capstone ---- */}
                     </Reveal>
@@ -74,18 +78,18 @@ const Works = () => {
                     <Reveal >
                     <div className="portfolio-container">
                           <div className="port-thumbnail">
-                          <Link to="/portfolio"><img className="port-feature" src={comingSoon} /> 
+                          <AniLink cover direction="up"  bg="#0e101bfc" to="/portfolio"><img className="port-feature" src={comingSoon} /> 
                               <div className="port-overlay"></div>
-                          </Link>
+                          </AniLink>
                           </div>
                           <div className="port-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
-                                <h5><a href="#" target="_blank">Portfolio</a></h5>
+                                <AniLink cover direction="up"  bg="#0e101bfc" to="/portfolio"><h5>Portfolio</h5></AniLink>
                             </div>                
                               <p className="port-description">Personal portfolio site built with GatsbyJS and hosted on Netlify.</p>
 
-                              <Link to="/capstone" className="details-btn">View Details</Link>
+                              <AniLink cover direction="up"  bg="#0e101bfc"Link to="/portfolio" className="details-btn">View Details</AniLink>
                           </div>
                       </div> {/* ---- End of Portfolio ---- */}
                       </Reveal>
@@ -95,19 +99,19 @@ const Works = () => {
                 <Reveal>
                     <div className="swift-container">
                         <div className="project-thumbnail">
-                            <Link to="/match-the-memes"><img className="swift-feature" src={mtmImage} />
-                              <div className="swift-overlay"></div></Link>
+                            <AniLink cover direction="up"  bg="#0e101bfc" to="/match-the-memes"><img className="swift-feature" src={mtmImage} />
+                              <div className="swift-overlay"></div></AniLink>
                           </div>
 
                           <div className="swift-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
-                                <h5><a href="#" target="_blank">Match the Memes</a></h5>
+                                <AniLink cover direction="up" bg="#0e101bfc" to="/match-the-memes"><h5>Match the Memes</h5></AniLink>
                             </div>
                             
                                <p className="swift-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                                          
-                              <Link to="/capstone" className="details-btn">View Details</Link>                                 
+                              <AniLink cover direction="up" bg="#0e101bfc" to="/match-the-memes" className="details-btn">View Details</AniLink>                                 
                       
                           </div>                     
                       </div> {/* ---- End of Swift ----- */}
