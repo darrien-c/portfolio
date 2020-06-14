@@ -4,14 +4,16 @@
     align-items: center;
     position: relative;
     height: auto;
+    overflow:hidden;
 
     
     .section-01 {  
         
-        display: block;
+        display: block;  
+        margin: 0 auto;
         margin-top: 90px; 
-        margin-right: 50px;
-        margin-left: 50px;
+        margin-right: 40px;
+        margin-left: 40px;
         padding-top: 50px;
         
         
@@ -63,7 +65,7 @@
 
     .project-wrapper {    
 
-        position: relative;
+        position: relative;        
         margin-top: 60px;
 
         /* ----- Capstone Card ------ */
