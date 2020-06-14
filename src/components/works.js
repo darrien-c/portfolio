@@ -46,7 +46,7 @@ const Works = () => {
                     <div className="project-wrapper" >
                       <HeadShake>
                     <Reveal>
-                      <h3 className="works-title"><span><Code /></span> Projects </h3>
+                      <h3 className="works-title"><span><Code /></span> Works </h3>
                     </Reveal></HeadShake>
                       {/* --- Capstone Card --- */}
                       <Reveal>
@@ -62,9 +62,9 @@ const Works = () => {
                                 <h5><a href="#" target="_blank">Codium</a></h5>
                             </div>
                          
-                               <p className="capstone-description">Personal portfolio site built with GatsbyJS and hosted on Netlify. </p>       
+                               <p className="capstone-description">Codium is a fictious online coding website where users of beginner experience can start their journey. </p>       
 
-                               <Link to="/codium" className="details-btn">More Details</Link>       
+                               <Link to="/codium" className="details-btn">View Details</Link>       
                             </div>
                       </div>{/* ---- End of Capstone ---- */}
                     </Reveal>
@@ -83,9 +83,9 @@ const Works = () => {
                                 <h4>Featured Project</h4>
                                 <h5><a href="#" target="_blank">Portfolio</a></h5>
                             </div>                
-                              <p className="port-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                              <p className="port-description">Personal portfolio site built with GatsbyJS and hosted on Netlify.</p>
 
-                              <Link to="/capstone" className="details-btn">More Details</Link>
+                              <Link to="/capstone" className="details-btn">View Details</Link>
                           </div>
                       </div> {/* ---- End of Portfolio ---- */}
                       </Reveal>
@@ -107,7 +107,7 @@ const Works = () => {
                             
                                <p className="swift-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                                          
-                              <Link to="/capstone" className="details-btn">More Details</Link>                                 
+                              <Link to="/capstone" className="details-btn">View Details</Link>                                 
                       
                           </div>                     
                       </div> {/* ---- End of Swift ----- */}

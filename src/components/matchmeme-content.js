@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { useStaticQuery, graphq } from "gatsby";
 import { useEffect } from "react";
+import Img from 'gatsby-image';
 
 /* import Animations */
 import Particles from 'react-particles-js';
@@ -69,9 +70,13 @@ const MatchMemesContent = () => {
         <Particles className="particles"  params={{"retina_detect": true}}/>    
         <section className="project-intro-container">
           <div className="project-header">
+
           <h1>Match the Memes</h1>
-         {/*  <Img fluid={data.mtmHeader.childImageSharp.fluid} /> */}
-            <img src={mtmHeader} alt="Match the Meme"/>  
+
+          <div className="main-image">
+            <Img fluid={data.mtmHeader.childImageSharp.fluid} /> 
+           </div>
+
             <div className="cta-links">
                 <a href="http://dchow.bcitwebdeveloper.ca/match-the-memes/" target="_blank" rel="noreferrer" className="box-1"><span><BsBoxArrowInUpRight /></span></a>      
                 <a href="#" target="_blank" rel="noreferrer" className="box-2"><span><DiGithubBadge /></span></a>                         

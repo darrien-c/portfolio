@@ -14,6 +14,7 @@
         margin-left: 50px;
         padding-top: 50px;
         
+        
 
         .works-title {
             color: $off-white;
@@ -513,12 +514,12 @@
             content: "";
             display: block;
             position: absolute;
-            height: 180px;
+            height: 260px;
             width: 1px;
             transform: rotate(-180deg);            
             background-color: rgb(187, 193, 206);
             right: 11px;
-            bottom: -200px;
+            bottom: -285px;
         }           
     }
 
@@ -659,7 +660,7 @@
                     }
 
                     .swift-description{
-                        background-color: rgb(23, 42, 69);
+                        background-color: rgb(30, 44, 90);
                         padding: 17px;
                         max-width: 50%;
                         position: absolute;
@@ -687,7 +688,8 @@
                     .swift-overlay {
                         cursor: pointer;
                        /*  background-color:  rgba(100, 255, 219, 0.466); */
-                        background-color:  #63cdd7a8;
+                       /*  background-color:  #63cdd7a8; */
+                       background-color: #0092b780;
                     }
                     .swift-overlay:hover {
                         cursor: pointer;
@@ -733,7 +735,7 @@
                     }
 
                     .port-description {
-                        background-color: rgb(23, 42, 69);
+                        background-color: rgb(30, 44, 90);
                         padding: 17px;
                         margin-top: 50px;
                         max-width: 50%;
@@ -765,7 +767,8 @@
 
                     .port-overlay {
                         cursor: pointer;
-                        background-color:  #63cdd7a8;
+                        background-color:  #0092b780;
+                        
                     }
                     .port-overlay:hover {
                         cursor: pointer;
