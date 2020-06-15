@@ -1,11 +1,10 @@
 import { Link } from "gatsby";
-import { useStaticQuery, graphq } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import React from "react";
 import Logo  from '../images/d-logo.png';
 import Slide from 'react-reveal/Slide';
 
 /* Import Icons */
-import { AiFillHome as Home} from "react-icons/ai";
 import { BsCodeSlash as Code } from "react-icons/bs";
 import { FaUser as About } from "react-icons/fa";
 
@@ -24,10 +23,11 @@ const Header = () => {
   }
 `)
 
-  return (
+
+  return (    
   <header>
       <div className="inner-header">
-        <div className="logo">
+        <div className="logo" >
           <Slide top>
               <Link to="/">  <img src={Logo} alt="logo"></img> 
               </Link>
@@ -35,11 +35,11 @@ const Header = () => {
         </div> 
 
           <Slide top>
-            <div className="navbar">
+            <div className="navbar" >
               <nav className="nav-list">
                 <ul>
                   <Link to="#projects"><li><span><Code /></span>Work</li></Link>
-                  <Link to="#about"><li><span><About /></span>About</li></Link>
+                  <Link  to="#about"  ><li ><span><About /></span>About</li></Link>
                 </ul>
               </nav>
             </div>

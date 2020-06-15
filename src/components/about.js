@@ -1,5 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphq } from "gatsby";
+
 /* Import Icons */
 import aboutSVG from '../images/dark-code-editor-window.svg';
 import htmlSVG from '../images/html5.svg';
@@ -14,7 +15,7 @@ import { FaUser as AboutMe } from "react-icons/fa";
 /* Import Animations */
 import Reveal from 'react-reveal/Reveal';
 import Slide from 'react-reveal/Slide';
-import Particles from 'react-particles-js';
+
 
 const About = () => {
     
@@ -29,7 +30,16 @@ const About = () => {
                             <Slide left>
                             <div className="about-desc">                            
                                 <div>                   
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                                    <p>Hi, my name is Darrien - a front-end web developer based in Vancouver, BC. I'm a recent gradute of Technical Web Design Program at British Columbia Institute of Technology. I discovered the world of coding and development during my off hours and thought it was a fun hobby. I realized the moment I jumped into the rabbit hole, I decided I wanted to make a career out of it. 
+                                    <br />
+                                    <br />
+                                    Throughout the program, I was able to collaborate with other creative minds to build things together, find better ways to do things, overcome challenges with trial and error, and I find that incredibly fulfilling and (usually) fun.                                    
+                                    <br />
+                                    <br />
+                                    I'm currently looking to join a team where I can delve into and soak up all I can about new technologies.
+                                    <br />
+                                    <br />
+                                    Tech I've been working with:
                                     </p>
                                 </div>
                             

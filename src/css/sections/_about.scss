@@ -3,7 +3,8 @@
     height: auto;
     font-family: 'Source Sans Pro';
     position: relative;
-    height: 900px;
+    height: 1300px;
+    scroll-behavior: smooth;
 
     h1, h2, p {
         color: white;
@@ -12,14 +13,39 @@
     .container {  
         width: auto;
 
+        @media (min-width: 905px)  {
+            margin: 0;
+        }
+
         .about-wrapper {
-            padding-top: 150px;
+            padding-top: 120px;
             padding-right: 10px;
             padding-left: 10px;            
             position: relative;
-            
 
-            .about-content {        
+            @media (min-width: 610px) {
+                margin-left: 20px;
+                margin-right: 20px; 
+            }
+            
+            .about-desc {
+                font-weight: 300;
+
+                @media (min-width: 905px) {
+                    width: 50%;
+                    position: relative;
+                }
+
+                p {
+                    line-height: 1.6rem;
+                }
+            }
+
+            .about-content {     
+                @media (min-width: 610px) {
+                    margin: 0 auto;
+                    position: relative;
+                }   
                 .about-title {
                     color: $off-white;
                     font-weight: 600;
@@ -27,6 +53,10 @@
                     margin: 70px 0 40px; 
                     height: 31px;  
                     overflow: hidden;
+
+                    @media (min-width: 905px) {
+                        margin-left: 0;
+                    }
 
                     span {
                         color: rgb(100, 255, 218);
@@ -53,6 +83,7 @@
 
                     li {        
                         color: white;
+                        font-weight: 300;
                     }
                     li {
                         &::before {
@@ -68,6 +99,16 @@
                         }
                     }
                 }
+                
+                .about-box {
+                    @media (min-width: 905px) {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width:180px;
+                        margin-right: 15%;
+                    }
+                }
 
 
                 .contact {
@@ -75,6 +116,7 @@
                     margin: 0 auto;
                     margin-top: 75px;
                     text-decoration: none;
+                    text-align: center;
                     color: rgb(100, 255, 218);
                     font-weight: 300;
                     cursor: pointer;
@@ -83,6 +125,10 @@
                     padding: 0.5rem 1.75rem;
                     width: 130px;
                     position: relative;
+
+                    @media (min-width: 905px) {
+                        margin-left: 0;
+                    }
 
                     &:before { 
                         content: "";
@@ -113,50 +159,4 @@
     }
 }
 
-@media (min-width: 610px) {
-    .about-showcase {        
-        .container{            
-            .about-wrapper {
-               margin-left: 20px;
-                margin-right: 20px; 
-                .about-content {
-                    margin: 0 auto;
-                    position: relative;
-                }
-            }
-        }
-    }
-}
-
- @media (min-width: 905px) {
-    .about-showcase {        
-        .container {
-         margin: 0;
-            .about-wrapper {               
-                .about-content {
-                    .about-title {
-                        margin-left: 0;
-                    }
-                    
-                    .about-desc {
-                        width: 50%;
-                        position: relative;
-                    }
-
-                    .about-box {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        width:180px;
-                        margin-right: 15%;
-                    }
-
-                    .contact {
-                        margin-left: 0;
-                    }
-                }
-            }
-        }
-    }
-}  
 

@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
-import { useStaticQuery, graphq } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import { useEffect } from "react";
 import Img from 'gatsby-image';
+
+/* Transitions */
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 /* import Animations */
 import Particles from 'react-particles-js';
@@ -10,9 +13,6 @@ import Particles from 'react-particles-js';
 //import icons
 import {  BsBoxArrowInUpRight} from "react-icons/bs";
 import { DiGithubBadge, DiGit , DiHtml5, DiSass } from 'react-icons/di';
-
-//import images
-import mtmHeader from '../images/mtm-header.png';
 
 
 //import the Prism package
@@ -50,7 +50,7 @@ const MatchMemesContent = () => {
   query {
     mtmHeader: file(relativePath: { eq: "mtm-header.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }        
       }
@@ -88,7 +88,7 @@ const MatchMemesContent = () => {
         <section className="project-description">  
             <div className="proj-scope">        
               <h2>Scope</h2>
-                <p>Match the Memes is meme themed interactive desktop matching game developed with the basic front-end technologies.</p>
+                <p>Match the Memes was my first JavaScript project. It is a meme themed interactive desktop matching card game developed with the basic front-end technologies.</p>
         
               <div className="techstack">
               <h2>Technologies Used</h2>
@@ -117,7 +117,7 @@ const MatchMemesContent = () => {
 
         <div className="prev-next-container">
           <div className="prev-next-subtitle">Next Project</div>
-          <Link to="/codium" className="link-title">Codium</Link>
+          <AniLink cover direction="up"  bg="#0e101bfc" to="/codium" className="link-title">Codium</AniLink>
       </div>
     </main>
   )

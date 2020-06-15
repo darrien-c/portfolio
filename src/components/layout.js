@@ -12,9 +12,9 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import "../css/styles.scss";
-import Particles from 'react-particles-js';
 
+/* Footer Section */
+import Footer from '../components/footer';
 
 
 
@@ -34,12 +34,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <div>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      
-        {/* <main>{children}</main> */}      
+  
+      <Header siteTitle={data.site.siteMetadata.title} />     
        {children}
-       </div>
+       <Footer />    
     </>
   )
 }
