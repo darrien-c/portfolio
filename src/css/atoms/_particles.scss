@@ -1,0 +1,21 @@
+#tsparticles {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+
+    @media(min-width:905px) {
+        visibility: visible;
+    }
+}
+
+.particles{
+    position:absolute !important;
+    z-index: -2;
+    visibility: hidden;
+
+    @media(min-width:905px) {
+        visibility: visible;
+    }
+}
+
+

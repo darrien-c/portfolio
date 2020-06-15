@@ -17,16 +17,18 @@ import { AiOutlineMail } from "react-icons/ai";
 import Reveal from 'react-reveal/Reveal';
 import HeadShake from 'react-reveal/HeadShake';
 import Slide from 'react-reveal/Slide';
-import Particles from 'react-particles-js';
+import Particles from 'react-particles-js'; 
 
-/* Transitions */
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+
+/* /* Transitions */
+import AniLink from "gatsby-plugin-transition-link/AniLink"; 
 
 /* About Section */
 import About from '../components/about'
 
 
 const Works = () => {
+
     const data = useStaticQuery(graphql`
     query {
       comingSoon: file(relativePath: { eq: "coming-soon.jpg" }) {
@@ -55,7 +57,8 @@ const Works = () => {
     return (
      
         <main className="works-showcase">  
-         <Particles className="particles"  params={{"retina_detect": true}}/>               
+        {/*  <Particles className="particles"  params={{"retina_detect": true}}/>       */} 
+          
             <div className="container">
                 <div id="projects" className="section-01">
                     <div className="project-wrapper">

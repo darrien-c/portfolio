@@ -97,7 +97,6 @@ const CapstoneContent = () => {
 
   return (
     <main>
-      <Particles className="particles"  params={{"retina_detect": true}}/>    
           <section className="project-intro-container">
             <div className="project-header">
 

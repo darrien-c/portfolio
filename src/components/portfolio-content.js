@@ -92,8 +92,7 @@ const PortfolioContent = () => {
 `)
 
   return (
-<main>
-  <Particles className="particles"  params={{"retina_detect": true}}/>    
+<main> 
     <section className="project-intro-container">
     <div className="project-header">
           <h1>Portfolio</h1>      
