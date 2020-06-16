@@ -13,6 +13,7 @@ const IndexPage = () => {
   return(
       
       <Layout>
+        <SEO title="Web Developer | Darrien " />
         <Works />             
       </Layout>
 

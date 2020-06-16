@@ -33,7 +33,7 @@ const About = () => {
                                     <p>Hi, my name is Darrien - a front-end web developer based in Vancouver, BC. I'm a recent gradute of Technical Web Design Program at British Columbia Institute of Technology. I discovered the world of coding and development during my off hours and thought it was a fun hobby. I realized the moment I jumped into the rabbit hole, I decided I wanted to make a career out of it. 
                                     <br />
                                     <br />
-                                    Throughout the program, I was able to collaborate with other creative minds to build things together, find better ways to do things, overcome challenges with trial and error, and I find that incredibly fulfilling and (usually) fun.                                    
+                                    Throughout the program, I was able to collaborate with other creative minds to build things together, find better ways to do things, and overcome challenges with trial and error. Overall, I found the experience incredibly fulfilling and (usually) fun.                                    
                                     <br />
                                     <br />
                                     I'm currently looking to join a team where I can delve into and soak up all I can about new technologies.
@@ -66,9 +66,7 @@ const About = () => {
                                         <img src={phpSVG} />
                                         <img src={jsSVG} />
                                     </div>                                   
-                                </div>
-
-                               
+                                </div>                               
                             </Slide>                            
                         </div> 
                     </div>

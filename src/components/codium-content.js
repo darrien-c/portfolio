@@ -115,7 +115,7 @@ const CapstoneContent = () => {
 
     <section className="project-description">
       <div className="proj-scope">  
-        <p>Codium is a fictional e-Commerce online coding school built with WordPress, PHP, and version-controlled with Git in a collaborative team environment. The goal was to present a site with an intuitive way to navigate content, sell online courses, and provide lessons in various coding languages that are succinct for users; such as HTML, PHP, Java, and many more. Each course offers lessons via videos, quizzes, and additional materials for users to download. In order to provide this service, my team and I implemented the Woocomerce and Sensei plugin. </p>
+        <p>Codium is a ficticious e-Commerce online coding school built with WordPress, PHP, and version-controlled with Git in a collaborative team environment. The goal was to present a site with an intuitive way to navigate content, sell online courses, and provide lessons in various coding languages that are succinct for users; such as HTML, PHP, Java, and many more. Each course offers lessons via videos, quizzes, and additional materials for users to download. In order to provide this service, my team and I implemented the Woocomerce and Sensei plugin. </p>
 
         <div className="techstack">
           <h2>Technologies Used</h2>
