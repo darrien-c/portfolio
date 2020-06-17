@@ -11,7 +11,7 @@ import PortfolioContent from "../components/portfolio-content";
 
 const Portfolio = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Portfolio" />
     <PortfolioContent />
   </Layout>
 )

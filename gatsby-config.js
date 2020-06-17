@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Web Developer | Darrien `,
-    description: `Darrien Chow is a front-end web developer based in Vancouver, BC. Well versed in building mobile-first and responsive websites.`,
-    keywords: `Darrien Chow, dchow, darrien.jpg, front-end developer, front-end web developer, web developer`,
+    description: `Hey there! I'm Darrien, a front-end web developer based in British Columbia. I like build things and see them come to life.`,
+    keywords: `Darrien Chow, dchow, front-end developer, front-end web developer, web developer, website builder`,
     email: `"darrienchow_@hotmail.com"`,
     github: `https://github.com/darrien-c`,
     author: `@gatsbyjs`,

@@ -11,10 +11,9 @@ import Works from '../components/works';
 const IndexPage = () => {
 
 
-  return(
-      
+  return(      
       <Layout>
-        <SEO title="Web Developer | Darrien " />
+        <SEO title="Darrien | Front-End Web Developer" />
         <Works />             
       </Layout>
 

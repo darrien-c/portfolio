@@ -8,7 +8,7 @@ import CodiumContent from '../components/codium-content';
 
 const Capstone = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Codium" />
     <CodiumContent />
   </Layout>
 )

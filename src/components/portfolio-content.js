@@ -194,7 +194,7 @@ const PortfolioContent = () => {
 
         <div className="prev-next-container">
           <div className="prev-next-subtitle">Next Project</div>
-          <AniLink cover direction="up"  bg="#0e101bfc" to="/match-the-memes" className="link-title">Match the Meme</AniLink>
+          <AniLink cover direction="left"  bg="#0e101bfc" to="/match-the-memes" className="link-title">Match the Meme</AniLink>
         </div>
     </main>
   )
