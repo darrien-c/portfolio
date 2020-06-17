@@ -5,20 +5,26 @@
     font-family: 'Source Sans Pro';
 
     @media (min-width: 775px) {
-        height: 50px;
+        height: auto;
     }
 
     .contact-icons {     
         display: block;
         padding-top: 20px;
-   
-        a{
-            font-size: 28px;
+        a {
+            font-size: 32px;
             margin: 20px;
             text-decoration: none;
-           /*  color: rgb(129, 129, 129); */
-             color: rgb(100, 255, 218); 
+             color: #fff;
+
+             &:hover {
+                color: #64ffdb;
+                transform: translateY(-33px);
+            }     
+             
         }
+  
+
 
         @media (min-width: 775px) {
             display: none;
@@ -29,7 +35,7 @@
     p {
         color: rgb(129, 129, 129);
         margin: 0;
-        padding: 10px;
+        padding: 30px 10px 10px 10px;
         font-weight: 300;
 
     }

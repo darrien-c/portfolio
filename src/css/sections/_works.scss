@@ -8,8 +8,6 @@
     scroll-behavior: smooth;
     
     .container {
-
-
         @media (min-width: 905px) {
             width: 1150px;
         }
@@ -163,12 +161,14 @@
                     right: 0;
                     margin: 20px 30px;
 
+
                     a {
-                        text-decoration: none;
+                        text-decoration: none;                      
                     }
 
                     @media (min-width: 610px) {
-                        margin: 0;
+                        margin: 0;     
+                                         
                     }
 
                     @media (min-width: 1080px) {
@@ -180,6 +180,7 @@
                     margin-top: 20px;
                     margin-bottom: 15px;
                     font-size: 13px;
+                    font-weight: 500;
                     color: rgb(100, 255, 218);
                 }
 
@@ -190,7 +191,7 @@
                         color: rgb(100, 255, 218);
                     }
 
-                    @media (min-width: 1080px) {
+                    @media (min-width: 1080px) {                         
                         margin-bottom: 0;
                     }
                 }
@@ -238,12 +239,12 @@
                     bottom: 20px;
                     right: 0;
                     font-size: 14px;
-                    border: 1px solid rgb(173, 173, 173); 
+                    border: 1px solid  rgb(173, 173, 173);
                     border-radius: 4px; 
                     padding: 9px 20px; 
                     cursor: pointer;
                     text-decoration: none;
-                    color: white;
+                    color: white;                 
                     margin-right: 30px;
 
                     @media (min-width: 610px) {
@@ -267,7 +268,7 @@
 
                     &:hover::before {
                         opacity: 1;
-                        background-color: #132046;
+                        background-color:#64ffdb31;
                         transform: scaleX(1);
                         transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
                     }    
@@ -368,7 +369,6 @@
                         height: 400px;
                     }
                 }        
-
             }
 
 
@@ -421,7 +421,7 @@
                     @media (min-width: 610px) {
                         background-color: rgb(30, 44, 90);
                         padding: 17px;
-                        max-width: 50%;
+                        max-width: 40%;
                         position: absolute;
                         right: 0;
                         border-radius: 5px;  
@@ -475,7 +475,7 @@
  
                      &:hover::before {
                          opacity: 1;
-                         background-color: #132046;
+                         background-color:#64ffdb31;
                          transform: scaleX(1);
                          transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
                      }    
@@ -696,7 +696,7 @@
  
                      &:hover::before {
                          opacity: 1;
-                         background-color: #132046;
+                         background-color:#64ffdb31;
                          transform: scaleX(1);
                          transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
                      }    
@@ -722,7 +722,6 @@
 
                 @media (min-width: 610px) {
                     cursor: pointer;
-                    /* background-color:  #0092b780; */
                      background-color:  #0092b731;
 
                     &:hover{
@@ -744,7 +743,7 @@
         position: fixed;
         display: flex;
         flex-direction: column;
-        top: 70%;
+        top: 60%;
         left: -3px;
         font-weight: 700;
         font-size: 25px;
@@ -757,16 +756,29 @@
             padding: 0;
             margin: 0;
             margin-left: 20px;
-            a {            
-                color: white;
+            
+            a {          
+                color: #fff;  
+                    &:hover {
+                        color: #64ffdb;
+
+                    }            
             }      
+
+            li {
+                margin-bottom: 20px;
+                &:hover {
+                    color: #64ffdb;
+                    transform: translateY(-3px);
+                }
+            }
         }
         
         .social-media:after {
             content: "";
             display: block;
             position: absolute;
-            height: 260px;
+            height: 280px;
             width: 1px;
             transform: rotate(-180deg);            
             background-color: rgb(187, 193, 206);

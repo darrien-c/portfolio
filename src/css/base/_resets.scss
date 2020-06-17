@@ -1,8 +1,7 @@
 html {
     box-sizing: border-box; 
     padding: 0;
-    margin: 0;  
-      
+    margin: 0;        
 }
   
 *, *:before, *:after {
@@ -23,7 +22,6 @@ table {
 body {
     margin: 0;
     padding: 0;
-   /*   background-color: #0a192f; */
      background: linear-gradient(to left top, rgba(14, 16, 27, 0.99) 10%, rgba(21, 23, 39, 0.99) 50%, rgba(14, 16, 27, 0.99));
 }
 
@@ -31,13 +29,4 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top:0;
 }
 
-#tsparticles {
-    width: 100%;
-    height: 100%;
-}
-
-.particles{
-    position:absolute !important;
-    z-index: -2;
-}
 

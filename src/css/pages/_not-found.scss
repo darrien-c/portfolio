@@ -1,0 +1,15 @@
+.not-found-container {
+    height: 100vh;
+    color: rgb(175, 175, 175);
+    margin-top: 50px;
+    position: relative;
+
+    .not-found-content {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        margin:25px;
+    }
+
+}

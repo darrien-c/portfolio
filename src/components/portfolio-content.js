@@ -95,6 +95,7 @@ const PortfolioContent = () => {
 <main> 
     <section className="project-intro-container">
     <div className="project-header">
+      
           <h1>Portfolio</h1>      
        
        <div className="main-image">
@@ -138,10 +139,8 @@ const PortfolioContent = () => {
       </div>
     </section>
 
-
     <section className="dev-process">        
         <h2>Development</h2>
-
        
         <div className="code-wrapper">  
         <p>First I installed GatsbyCli</p>        
@@ -151,7 +150,6 @@ const PortfolioContent = () => {
               </pre>
               </div>
           </div>
-
          
           <div className="code-wrapper"> 
           <p>Here I created my project name</p>         
@@ -179,8 +177,6 @@ const PortfolioContent = () => {
               </pre>
               </div>
           </div>
-
-
            
           <div className="code-wrapper">
             <p>The following code snippet is the query to access images to utilize gatsby-image plugin. Then using the query to create a fluid image component. When I first implemented the query, the image was very low quality and had loss of colours, so to fix it, I needed to the write the query parameters quality.</p>

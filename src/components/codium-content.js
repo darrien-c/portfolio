@@ -168,7 +168,8 @@ const CapstoneContent = () => {
       </div>      
     </section>
 
-{/*     <section className="dev-process">
+{/*     Video code for codium once completed
+<section className="dev-process">
                    
                 <div className="case-study__video">
                     <video autoplay="true" loop="true" muted="true" className="case-study__video">

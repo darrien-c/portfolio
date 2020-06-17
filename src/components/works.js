@@ -8,7 +8,8 @@ import Img from 'gatsby-image';
 
 
 /* Icons */
-import { DiGithubBadge /* , DiGit , DiHtml5, DiSass  */} from 'react-icons/di';
+
+import { GoMarkGithub } from "react-icons/go";
 import { BsCodeSlash as Code } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
@@ -56,9 +57,7 @@ const Works = () => {
   `)
     return (
      
-        <main className="works-showcase">  
-        {/*  <Particles className="particles"  params={{"retina_detect": true}}/>       */} 
-          
+        <main className="works-showcase">           
             <div className="container">
                 <div id="projects" className="section-01">
                     <div className="project-wrapper">
@@ -85,7 +84,7 @@ const Works = () => {
                                 <AniLink cover direction="down"  bg="#0e101bfc"  to="/codium"><h5>Codium</h5></AniLink>
                             </div>
                          
-                               <p className="capstone-description">Codium is a fictious introductory online coding e-Commerce website for people with no experience to learn at their own pace.</p>       
+                               <p className="capstone-description">Codium is a fictious introductory coding e-Commerce website that allows users to purchase programming languages and learn at their own pace.</p>       
 
                                <AniLink cover direction="down"  bg="#0e101bfc" to="/codium" className="details-btn">View Details</AniLink>       
                             </div>
@@ -151,14 +150,13 @@ const Works = () => {
           <Slide bottom>
             <div className="fixed-social">
               <ul class="social-media" >
-                <li><a href="mailto:darrienchow_@hotmail.com"><AiOutlineMail /></a></li>
-                <li><a href="https://github.com/darrien-c" target="_blank" rel="nofollow noopener noreferrer"><DiGithubBadge /></a></li>  
+                <li><a href="mailto:hello@devdarrien.com"><AiOutlineMail /></a></li>
+                <li><a href="https://github.com/darrien-c" target="_blank" rel="nofollow noopener noreferrer"><GoMarkGithub /></a></li>  
                 <li><a href="https://www.linkedin.com/in/darrien-chow/" target="_blank" rel="nofollow noopener noreferrer"><FaLinkedinIn /></a></li>            
                 
               </ul>
             </div>
-            </Slide>
-            
+            </Slide>            
         </main>
 
     )
