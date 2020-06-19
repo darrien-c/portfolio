@@ -108,7 +108,7 @@ const CapstoneContent = () => {
             
               <div className="cta-links">
                   <a href="https://codium.bcitwebdeveloper.ca/" target="_blank" rel="noreferrer" className="box-1"><span><BsBoxArrowInUpRight /></span></a>      
-                  {/* <a href="#" target="_blank" rel="noreferrer" className="box-2"><span><DiGithubBadge /></span></a>    */}                      
+                  <a href="#" target="_blank" rel="noreferrer" className="box-2"><span><DiGithubBadge /></span></a>                        
               </div>
             </div>
           </section>
