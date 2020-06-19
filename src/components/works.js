@@ -32,14 +32,14 @@ const Works = () => {
 
     const data = useStaticQuery(graphql`
     query {
-      comingSoon: file(relativePath: { eq: "coming-soon.jpg" }) {
+      codiumImg: file(relativePath: { eq: "codium-card.png" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }          
         }
       }
-      portfolioImg: file(relativePath: { eq: "portfolio-img.png" }) {
+      portfolioImg: file(relativePath: { eq: "portfolio-card.png" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid
@@ -73,7 +73,7 @@ const Works = () => {
                         <div className="capstone-container">
                           <div className="capstone-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc"  to="/codium">
-                              <Img className="capstone-feature" fluid={data.comingSoon.childImageSharp.fluid}  alt="darrien codium"/> 
+                              <Img className="capstone-feature" fluid={data.codiumImg.childImageSharp.fluid}  alt="darrien codium"/> 
                               <div className="capstone-overlay"></div>
                             </AniLink>
                           </div>

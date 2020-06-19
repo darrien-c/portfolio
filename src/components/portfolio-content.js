@@ -25,7 +25,7 @@ import Prism from "prismjs";
 const code = `
 const data = useStaticQuery(graphql\`
 query {
-  headerImage: file(relativePath: { eq: "port-header.png" }) {
+  headerImage: file(relativePath: { eq: "portfolio-header.png" }) {
     childImageSharp {
       fluid(quality: 100) {
         ...GatsbyImageSharpFluid
@@ -60,7 +60,7 @@ const PortfolioContent = () => {
 
   const data = useStaticQuery(graphql`
   query {
-    headerImage: file(relativePath: { eq: "port-header.png" }) {
+    headerImage: file(relativePath: { eq: "portfolio-header.png" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid
@@ -103,7 +103,7 @@ const PortfolioContent = () => {
         </div>
 
         <div className="cta-links">
-            <a href="http://dchow.bcitwebdeveloper.ca/match-the-memes/" target="_blank" rel="noreferrer" className="box-1"><span><BsBoxArrowInUpRight /></span></a>      
+            <a href="http://devdarrien.com" target="_blank" rel="noreferrer" className="box-1"><span><BsBoxArrowInUpRight /></span></a>      
             <a href="https://github.com/darrien-c/portfolio" target="_blank" rel="noreferrer" className="box-2"><span><DiGithubBadge /></span></a>                         
           </div>
       </div>

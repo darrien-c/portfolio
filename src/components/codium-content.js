@@ -57,7 +57,7 @@ const CapstoneContent = () => {
 
   const data = useStaticQuery(graphql`
   query {
-    comingSoon: file(relativePath: { eq: "coming-soon.jpg" }) {
+    codiumHeader: file(relativePath: { eq: "codium-header.png" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid
@@ -103,12 +103,12 @@ const CapstoneContent = () => {
             <h1>Codium</h1>
 
             <div className="main-image">
-              <Img fluid={data.comingSoon.childImageSharp.fluid} /> 
+              <Img fluid={data.codiumHeader.childImageSharp.fluid} /> 
             </div>
             
               <div className="cta-links">
-                  <a href="#" target="_blank" rel="noreferrer" className="box-1"><span><BsBoxArrowInUpRight /></span></a>      
-                  <a href="#" target="_blank" rel="noreferrer" className="box-2"><span><DiGithubBadge /></span></a>                         
+                  <a href="https://codium.bcitwebdeveloper.ca/" target="_blank" rel="noreferrer" className="box-1"><span><BsBoxArrowInUpRight /></span></a>      
+                  {/* <a href="#" target="_blank" rel="noreferrer" className="box-2"><span><DiGithubBadge /></span></a>    */}                      
               </div>
             </div>
           </section>
