@@ -30,7 +30,7 @@ const About = () => {
                             <Slide left>
                             <div className="about-desc">                            
                                 <div>                   
-                                    <p>Hi, my name is Darrien - a front-end web developer based in British Columbia. I'm a passionate and ambitious developer who strives to build beautilful and responsive websites with clean code.                                    
+                                    <p>Hi, my name is Darrien Chow - a front-end web developer based in British Columbia. I'm a passionate and ambitious developer who strives to build beautilful and responsive websites with clean code.                                    
                                     <br />
                                     <br />
                                     Thank you for taking the time to check out my website. I'm currently looking to join a team where I can delve into and soak up all I can about new technologies and am open to collaborations!
