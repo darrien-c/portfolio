@@ -39,6 +39,13 @@ const Works = () => {
           }          
         }
       }
+      movieAppImg: file(relativePath: { eq: "movieApp-card.png" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }          
+        }
+      }
       portfolioImg: file(relativePath: { eq: "portfolio-card.png" }) {
         childImageSharp {
           fluid(quality: 100) {
@@ -67,6 +74,29 @@ const Works = () => {
                           <h3 className="works-title"><span><Code /></span> Works </h3>
                         </Reveal>
                       </HeadShake>
+
+                       {/* ==== React Movie Card ==== */}
+                    <Reveal>
+                      <div className="movieApp-container">
+                            <div className="movieApp-thumbnail">
+                            <AniLink cover direction="down"  bg="#0e101bfc" to="/react-movie">
+                                <Img className="movieApp-feature" fluid={data.movieAppImg.childImageSharp.fluid} alt="darrien chow react movie app"/> 
+                                <div className="movieApp-overlay"></div>
+                            </AniLink>
+                            </div>
+
+                            <div className="movieApp-info">
+                              <div className="featured-title">
+                                  <h4>Featured Project</h4>
+                                  <AniLink cover direction="down"  bg="#0e101bfc" to="/react-movie"><h5>React Movie App</h5></AniLink>
+                              </div>                
+
+                                <p className="movieApp-description">A dynamic movie website built using React and The Movie Database's API.</p>
+
+                                <AniLink cover direction="down"  bg="#0e101bfc"  to="/react-movie" className="details-btn">View Details</AniLink>
+                            </div>
+                        </div> 
+                      </Reveal>{/* ==== End of Portfolio ==== */}
 
                       {/* ==== Capstone Card ==== */}
                       <Reveal>

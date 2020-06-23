@@ -19,28 +19,29 @@ import { DiGithubBadge, DiGit , DiHtml5, DiSass } from 'react-icons/di';
 import Prism from "prismjs";
 
 // The code we will be displaying
-const code = `let correct = 0;
-totalMatched = [];
+const code = `
+//Set movie paramaters
+const movieId = props.match.params.movieId
+
+//Set State
+const [movie, setMovie] = useState([]);
 
 
-function checkMatch(){
-    if(firstChoice.dataset.image === secondChoice.dataset.image) {
-        correct++    
-        totalMatched.push(correct);
-        total.innerHTML = correct;
-        if(totalMatched.length == 6){           
-            victory();
-        };
-        disableCards();
-        
-    } else {   
-        unflip();
-    }
-}
+useEffect(() => {
+    const movieId = props.match.params.movieId;
+
+    // fetch the movie API
+    const fetchMovie = async () => {
+        const response = await fetch(\`$\\{API_URL}movie/$\\{movieId}?api_key=$\\{API_KEY}\`);
+        const data = await response.json();
+        setMovie(data);   
+        }
+        fetchMovie();
+    }, [movie]); 
 `
 
 
-const MatchMemesContent = () => {
+const ReactMovieContent = () => {
   useEffect(() => {
     // call the highlightAll() function to style our code blocks
     Prism.highlightAll()
@@ -48,7 +49,7 @@ const MatchMemesContent = () => {
 
   const data = useStaticQuery(graphql`
   query {
-    mtmHeader: file(relativePath: { eq: "mtm-header.png" }) {
+    movieHeader: file(relativePath: { eq: "react-movieApp-header.png" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid
@@ -70,15 +71,15 @@ const MatchMemesContent = () => {
         <section className="project-intro-container">
           <div className="project-header">
 
-          <h1>Match the Memes</h1>
+          <h1>React Movie Database</h1>
 
           <div className="main-image">
-            <Img fluid={data.mtmHeader.childImageSharp.fluid} /> 
+            <Img fluid={data.movieHeader.childImageSharp.fluid} /> 
            </div>
 
             <div className="cta-links">
-                <a href="http://dchow.bcitwebdeveloper.ca/match-the-memes/" target="_blank" rel="noreferrer nofollow noopener" className="box-1"><span><BsBoxArrowInUpRight /></span></a>      
-                <a href="https://github.com/darrien-c/match-the-memes" target="_blank" rel="noreferrer nofollow noopener" className="box-2"><span><DiGithubBadge /></span></a>                         
+                <a href="https://darrien-c.github.io/movie-app" target="_blank" rel="noreferrer nofollow noopener" className="box-1"><span><BsBoxArrowInUpRight /></span></a>      
+                <a href="https://github.com/darrien-c/movie-app" target="_blank" rel="noreferrer nofollow noopener" className="box-2"><span><DiGithubBadge /></span></a>                         
             </div>
             {/* <cite>Template by AlwaysSunday</cite> */}
           </div>
@@ -87,15 +88,14 @@ const MatchMemesContent = () => {
         <section className="project-description">  
             <div className="proj-scope">        
               <h2>Scope</h2>
-                <p>Match the Memes was my first JavaScript project. It is a meme themed interactive desktop matching card game developed with the basic front-end technologies.</p>
+                <p>React Movie Database is a web app that uses TMDB's API. It's functionality consists of allowing users to sort movies by type and create a favourites list. The goal was to create a React app that utilizes a REST API to display movies through filters and favourite each movie with local storage. </p>
         
               <div className="techstack">
               <h2>Technologies Used</h2>
               <ul >
-                  <li>HTML</li>
-                  <li>SaSS</li>
-                  <li>JavaScript</li>
-                  <li>Git</li>
+                  <li>React</li>
+                  <li>Sass</li>
+                  <li>TMDB API</li>
               </ul>
               </div>     
             </div>
@@ -104,7 +104,7 @@ const MatchMemesContent = () => {
 
         <section className="dev-process">
         <h2>Development</h2>
-            <p>The following code snippet is the matching logic to check if first card and second card match</p>
+            <p>In the following code snippet, I used React Effect Hook to fetch the movie's API</p>
           <div className="code-wrapper">
               <div className="code-container">
               <pre>
@@ -122,4 +122,4 @@ const MatchMemesContent = () => {
   )
 }
 
-export default MatchMemesContent
+export default ReactMovieContent

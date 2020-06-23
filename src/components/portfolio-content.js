@@ -103,8 +103,8 @@ const PortfolioContent = () => {
         </div>
 
         <div className="cta-links">
-            <a href="http://devdarrien.com" target="_blank" rel="noreferrer" className="box-1"><span><BsBoxArrowInUpRight /></span></a>      
-            <a href="https://github.com/darrien-c/portfolio" target="_blank" rel="noreferrer" className="box-2"><span><DiGithubBadge /></span></a>                         
+            <a href="http://devdarrien.com" target="_blank" rel="noreferrer nofollow noopener" className="box-1"><span><BsBoxArrowInUpRight /></span></a>      
+            <a href="https://github.com/darrien-c/portfolio" target="_blank" rel="noreferrer nofollow noopener" className="box-2"><span><DiGithubBadge /></span></a>                         
           </div>
       </div>
     </section>
