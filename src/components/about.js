@@ -30,10 +30,10 @@ const About = () => {
                             <Slide left>
                             <div className="about-desc">                            
                                 <div>                   
-                                    <p>Hi, my name is Darrien Chow - a front-end web developer based in British Columbia. I'm a passionate and ambitious developer who strives to build beautilful and responsive websites with clean code.                                    
+                                    <p>Hi, I'm Darrien Chow - a front-end web developer based in British Columbia. I'm a passionate and ambitious developer who strives to build intuiutive UIs and responsive websites with clean code.                                    
                                     <br />
                                     <br />
-                                    Thank you for taking the time to check out my website. I'm currently looking to join a team where I can delve into and soak up all I can about new technologies and am open to collaborations!
+                                    I began my journey with graduating from BCIT's Technical Web Design program where I built skills and grew experiences with HTML, CSS, PHP, JavaScript, and SEO optimization.  I am well-versed with Adobe Creative Cloud, specifically AdobeXD, Photoshop, and Illustrator. My goal as a developer is to practice building PWA's using JavaScript's framework ReactJS.
                                     <br />
                                     <br />
                                     Tech I've been working with:

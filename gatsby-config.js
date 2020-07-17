@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Front-End Web Developer | Darrien `,
+    title: `Front-End Web Developer | Darrien Chow`,
     description: `My name is Darrien Chow, a front-end web developer based in British Columbia. I love to code modern and responsive layouts for web.`,
     keywords: `Darrien Chow, dchow, front-end developer, front-end web developer, web developer, website builder`,
     email: `"darrienchow_@hotmail.com"`,

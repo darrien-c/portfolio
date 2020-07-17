@@ -116,7 +116,7 @@ const MatchMemesContent = () => {
 
         <div className="prev-next-container">
           <div className="prev-next-subtitle">Next Project</div>
-          <AniLink cover direction="left"  bg="#0e101bfc" to="/codium" className="link-title">Codium</AniLink>
+          <AniLink cover direction="left"  bg="#0e101bfc" to="/react-movie" className="link-title">React Movie App</AniLink>
       </div>
     </main>
   )

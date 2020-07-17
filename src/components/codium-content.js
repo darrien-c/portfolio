@@ -115,6 +115,7 @@ const CapstoneContent = () => {
 
     <section className="project-description">
       <div className="proj-scope">  
+      <h2>Scope</h2>
         <p>Codium is a ficticious e-Commerce online coding school built with WordPress, PHP, and version-controlled with Git in a collaborative team environment. The goal was to present a site with an intuitive way to navigate content, sell online courses, and provide lessons in various coding languages that are succinct for users; such as HTML, PHP, Java, and many more. Each course offers lessons via videos, quizzes, and additional materials for users to download. In order to provide this service, my team and I implemented the Woocomerce and Sensei plugin. </p>
 
         <div className="techstack">
@@ -167,16 +168,6 @@ const CapstoneContent = () => {
            <Img fluid={data.codiumMockupTwo.childImageSharp.fluid} />         
       </div>      
     </section>
-
-{/*     Video code for codium once completed
-<section className="dev-process">
-                   
-                <div className="case-study__video">
-                    <video autoplay="true" loop="true" muted="true" className="case-study__video">
-                    <source src={swiftVideo} type="video/mp4" />      
-                    </video> 
-                </div> 
-    </section> */}
 
       <section className="dev-process">
         <h2>Development</h2>
