@@ -6,7 +6,7 @@
     height: auto;
     overflow:hidden;
     scroll-behavior: smooth;
-    
+
     .container {
         margin: 0 auto;
         height: 100%;
@@ -998,6 +998,7 @@
         color: $off-white;
         letter-spacing: 1.5px;
         z-index: 8;
+        
 
         ul {
             list-style: none;
@@ -1040,7 +1041,7 @@
         display: none;
 
         @media (min-width: 775px) {
-            display: block;
+            display: block;            
         }
     }
 

@@ -34,7 +34,8 @@ const About = () => {
                                     <br />
                                     <br />
                                     I began my journey by graduating from BCIT's Technical Web Design program where I built skills and grew experiences in front-end programming. Discovering that I could be creative without a talent in classical arts and finding myself immersed in the code made me realize that this was quite enjoyable(usually). Luckily, I'm just a person who loves making things work! Currently, I am practicing my skills to create progressive web apps using JavaScript's framework ReactJS. 
-                                    
+                                    <br />
+                                    <br />
                                     When I'm not working, I'm usually still found on my computer playing PC games and trying out new hobbies!
                                     <br />
                                     <br />
