@@ -30,10 +30,12 @@ const About = () => {
                             <Slide left>
                             <div className="about-desc">                            
                                 <div>                   
-                                    <p>Hi, I'm Darrien Chow - a front-end web developer based in British Columbia. I'm a passionate and ambitious developer who strives to build intuiutive UIs and responsive websites with clean code.                                    
+                                    <p>Hi! I'm Darrien Chow - a front-end web developer based in British Columbia. I'm a passionate and ambitious developer who strives to build intuiutive UIs, responsive, and easy to use websites.                                    
                                     <br />
                                     <br />
-                                    I began my journey with graduating from BCIT's Technical Web Design program where I built skills and grew experiences with HTML, CSS, PHP, JavaScript, and SEO optimization.  I am well-versed with Adobe Creative Cloud, specifically AdobeXD, Photoshop, and Illustrator. My goal as a developer is to practice building PWA's using JavaScript's framework ReactJS.
+                                    I began my journey by graduating from BCIT's Technical Web Design program where I built skills and grew experiences in front-end programming. Discovering that I could be creative without a talent in classical arts and finding myself immersed in the code made me realize that this was quite enjoyable(usually). Luckily, I'm just a person who loves making things work! Currently, I am practicing my skills to create progressive web apps using JavaScript's framework ReactJS. 
+                                    
+                                    When I'm not working, I'm usually still found on my computer playing PC games and trying out new hobbies!
                                     <br />
                                     <br />
                                     Tech I've been working with:
