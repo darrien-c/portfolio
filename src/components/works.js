@@ -144,7 +144,7 @@ const Works = () => {
                                 <AniLink cover direction="down"  bg="#0e101bfc"  to="/react-weather-app"><h5>React Weather App</h5></AniLink>
                             </div>
                          
-                               <p className="capstone-description">Find the current weather and 5 day forecast of any city with this web app.</p>       
+                               <p className="capstone-description">A responsive web app to find the current weather and 5 day forecast of any city using OpenWeatherMap API.</p>       
 
                                <AniLink cover direction="down"  bg="#0e101bfc" to="/react-weather-app" className="details-btn">View Details</AniLink>       
                             </div>
