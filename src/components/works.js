@@ -18,7 +18,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import Reveal from 'react-reveal/Reveal';
 import HeadShake from 'react-reveal/HeadShake';
 import Slide from 'react-reveal/Slide';
-import Particles from 'react-particles-js'; 
+
 
 
 /* /* Transitions */
@@ -40,6 +40,13 @@ const Works = () => {
         }
       }
       movieAppImg: file(relativePath: { eq: "movieApp-card.png" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }          
+        }
+      }
+      weatherImg: file(relativePath: { eq: "weather-app.png" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid
@@ -75,6 +82,29 @@ const Works = () => {
                         </Reveal>
                       </HeadShake>
 
+                      {/* ==== Capstone Card ==== */}
+                      <Reveal>
+                        <div className="capstone-container">
+                          <div className="capstone-thumbnail">
+                            <AniLink cover direction="down"  bg="#0e101bfc"  to="/codium">
+                              <Img className="capstone-feature" fluid={data.codiumImg.childImageSharp.fluid}  alt="darrien codium"/> 
+                              <div className="capstone-overlay"></div>
+                            </AniLink>
+                          </div>
+
+                          <div className="capstone-info">
+                            <div className="featured-title">
+                                <h4>Featured Project</h4>
+                                <AniLink cover direction="down"  bg="#0e101bfc"  to="/codium"><h5>Codium</h5></AniLink>
+                            </div>
+                         
+                               <p className="capstone-description">Codium is a fictious introductory coding e-Commerce website that allows users to purchase programming languages and learn at their own pace.</p>       
+
+                               <AniLink cover direction="down"  bg="#0e101bfc" to="/codium" className="details-btn">View Details</AniLink>       
+                            </div>
+                      </div>
+                    </Reveal>{/* ==== End of Capstone ==== */}
+
                        {/* ==== React Movie Card ==== */}
                     <Reveal>
                       <div className="movieApp-container">
@@ -98,12 +128,12 @@ const Works = () => {
                         </div> 
                       </Reveal>{/* ==== End of Portfolio ==== */}
 
-                      {/* ==== Capstone Card ==== */}
+                      {/* ==== Weather-app Card ==== */}
                       <Reveal>
                         <div className="capstone-container">
                           <div className="capstone-thumbnail">
-                            <AniLink cover direction="down"  bg="#0e101bfc"  to="/codium">
-                              <Img className="capstone-feature" fluid={data.codiumImg.childImageSharp.fluid}  alt="darrien codium"/> 
+                            <AniLink cover direction="down"  bg="#0e101bfc"  to="/react-weather-app">
+                              <Img className="capstone-feature" fluid={data.weatherImg.childImageSharp.fluid}  alt="darrien weather app"/> 
                               <div className="capstone-overlay"></div>
                             </AniLink>
                           </div>
@@ -111,12 +141,12 @@ const Works = () => {
                           <div className="capstone-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
-                                <AniLink cover direction="down"  bg="#0e101bfc"  to="/codium"><h5>Codium</h5></AniLink>
+                                <AniLink cover direction="down"  bg="#0e101bfc"  to="/react-weather-app"><h5>React Weather App</h5></AniLink>
                             </div>
                          
-                               <p className="capstone-description">Codium is a fictious introductory coding e-Commerce website that allows users to purchase programming languages and learn at their own pace.</p>       
+                               <p className="capstone-description">Find the current weather and 5 day forecast of any city with this web app.</p>       
 
-                               <AniLink cover direction="down"  bg="#0e101bfc" to="/codium" className="details-btn">View Details</AniLink>       
+                               <AniLink cover direction="down"  bg="#0e101bfc" to="/react-weather-app" className="details-btn">View Details</AniLink>       
                             </div>
                       </div>
                     </Reveal>{/* ==== End of Capstone ==== */}

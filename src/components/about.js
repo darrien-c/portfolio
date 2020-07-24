@@ -2,7 +2,6 @@ import React from "react";
 import { useStaticQuery, graphq } from "gatsby";
 
 /* Import Icons */
-import aboutSVG from '../images/dark-code-editor-window.svg';
 import htmlSVG from '../images/html5.svg';
 import cssSVG from '../images/css3.svg';
 import reactSVG from '../images/react.svg';

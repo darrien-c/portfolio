@@ -3,14 +3,14 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-/* React Movie Content */
-import ReactMovieContent from '../components/react-movie-content';
+/* Weather Content */
+import ReactWeatherContent from '../components/react-weather-content';
 
-const ReactMovie = () => (
+const ReactWeather = () => (
   <Layout>
       <SEO title="React Movie Database" />
-     <ReactMovieContent />
+     <ReactWeatherContent />
   </Layout>
 )
 
-export default ReactMovie
+export default ReactWeather
