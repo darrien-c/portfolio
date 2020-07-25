@@ -36,7 +36,7 @@ const fetchForecast = async ( query ) => {
         }  
         catch(error) {
             let responseData = '';
-            if(error.request) {         
+            if(error) {         
                 responseData = "Oops! Unable to find city, please try again!"; 
                 setError(responseData);                 
             } else if (error.request) {    
