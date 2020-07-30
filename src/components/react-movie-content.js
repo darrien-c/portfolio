@@ -116,7 +116,7 @@ const ReactMovieContent = () => {
 
         <div className="prev-next-container">
           <div className="prev-next-subtitle">Next Project</div>
-          <AniLink cover direction="left"  bg="#0e101bfc" to="/react-weather-app" className="link-title">React Weather App</AniLink>
+          <AniLink cover direction="left"  bg="#0e101bfc" to="/react-weather-app" className="link-title">Weather App</AniLink>
       </div>
     </main>
   )
