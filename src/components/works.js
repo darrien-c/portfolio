@@ -8,7 +8,6 @@ import Img from 'gatsby-image';
 
 
 /* Icons */
-
 import { GoMarkGithub } from "react-icons/go";
 import { BsCodeSlash as Code } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -28,11 +27,18 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import About from '../components/about'
 
 
-const Works = () => {
+const Works = (props) => {
 
     const data = useStaticQuery(graphql`
     query {
       codiumImg: file(relativePath: { eq: "codium-card.png" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }          
+        }
+      }
+      pokemonImg: file(relativePath: { eq: "Pokemon-Thumbnail.png" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid
@@ -84,67 +90,95 @@ const Works = () => {
 
                       {/* ==== Capstone Card ==== */}
                       <Reveal>
-                        <div className="capstone-container">
-                          <div className="capstone-thumbnail">
+                        <div className="project-container">
+                          <div className="project-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc"  to="/codium">
-                              <Img className="capstone-feature" fluid={data.codiumImg.childImageSharp.fluid}  alt="darrien codium"/> 
-                              <div className="capstone-overlay"></div>
+                              <Img className="project-feature" fluid={data.codiumImg.childImageSharp.fluid}  alt="darrien codium"/> 
+                              <div className="project-overlay"></div>
                             </AniLink>
                           </div>
 
-                          <div className="capstone-info">
+                          <div className="project-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
                                 <AniLink cover direction="down"  bg="#0e101bfc"  to="/codium"><h5>Codium</h5></AniLink>
                             </div>
                          
-                               <p className="capstone-description">Codium is a fictious introductory coding e-Commerce website that allows users to purchase programming languages and learn at their own pace.</p>       
+                               <p className="project-description">Codium is a fictious introductory coding e-Commerce website that allows users to purchase programming languages and learn at their own pace.</p>       
 
                                <AniLink cover direction="down"  bg="#0e101bfc" to="/codium" className="details-btn">View Details</AniLink>       
                             </div>
                       </div>
                     </Reveal>{/* ==== End of Capstone ==== */}
 
+                    {/* ==== Pokemon Card ====*/}
+                    <Reveal>
+                      <div className="projectReverse-container">
+                            <div className="projectReverse-thumbnail">
+                         {/*    <AniLink cover direction="down"  bg="#0e101bfc" to="/"> */}
+                                <Img className="projectReverse-feature" fluid={data.pokemonImg.childImageSharp.fluid} alt="darrien chow pokemon game app"/> 
+                                <div className="projectReverse-overlay"></div>
+                        {/*     </AniLink> */}
+                            </div>
+
+                            <div className="projectReverse-info">
+                              <div className="featured-title">
+                                  <h4>Featured Project</h4>
+                                  <h5>Pokemon Game
+                                  <br />
+                                  -Coming Soon</h5>
+                                 {/*  <AniLink cover direction="down"  bg="#0e101bfc" to="/"><h5>Pokemon Game App</h5></AniLink> */
+                                 }
+                              </div>                
+
+                                <p className="projectReverse-description">Work in progress. Dynamic web app built using React and PokemonGO-Pokedex in JSON. </p>
+
+                               {/*  <AniLink cover direction="down"  bg="#0e101bfc"  to="/" className="details-btn">View Details</AniLink> */}
+                            </div>
+                        </div> 
+                      </Reveal>
+                    {/* ==== End Pokemon Card ==== */}
+
                        {/* ==== React Movie Card ==== */}
                     <Reveal>
-                      <div className="movieApp-container">
-                            <div className="movieApp-thumbnail">
+                      <div className="project-container">
+                            <div className="project-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc" to="/react-movie">
-                                <Img className="movieApp-feature" fluid={data.movieAppImg.childImageSharp.fluid} alt="darrien chow react movie app"/> 
-                                <div className="movieApp-overlay"></div>
+                                <Img className="project-feature" fluid={data.movieAppImg.childImageSharp.fluid} alt="darrien chow react movie app"/> 
+                                <div className="project-overlay"></div>
                             </AniLink>
                             </div>
 
-                            <div className="movieApp-info">
+                            <div className="project-info">
                               <div className="featured-title">
                                   <h4>Featured Project</h4>
-                                  <AniLink cover direction="down"  bg="#0e101bfc" to="/react-movie"><h5>React Movie App</h5></AniLink>
+                                  <AniLink cover direction="down"  bg="#0e101bfc" to="/react-movie"><h5>Movie App</h5></AniLink>
                               </div>                
 
-                                <p className="movieApp-description">A dynamic movie website built using React and The Movie Database's API.</p>
+                                <p className="project-description">A dynamic movie website built using React and The Movie Database's API.</p>
 
                                 <AniLink cover direction="down"  bg="#0e101bfc"  to="/react-movie" className="details-btn">View Details</AniLink>
                             </div>
                         </div> 
-                      </Reveal>{/* ==== End of Portfolio ==== */}
+                      </Reveal>{/* ==== End of Movie Card ==== */}
 
                       {/* ==== Weather-app Card ==== */}
                       <Reveal>
-                        <div className="capstone-container">
-                          <div className="capstone-thumbnail">
+                        <div className="projectReverse-container">
+                          <div className="projectReverse-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc"  to="/react-weather-app">
-                              <Img className="capstone-feature" fluid={data.weatherImg.childImageSharp.fluid}  alt="darrien weather app"/> 
-                              <div className="capstone-overlay"></div>
+                              <Img className="projectReverse-feature" fluid={data.weatherImg.childImageSharp.fluid}  alt="darrien weather app"/> 
+                              <div className="projectReverse-overlay"></div>
                             </AniLink>
                           </div>
 
-                          <div className="capstone-info">
+                          <div className="projectReverse-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
-                                <AniLink cover direction="down"  bg="#0e101bfc"  to="/react-weather-app"><h5>React Weather App</h5></AniLink>
+                                <AniLink cover direction="down"  bg="#0e101bfc"  to="/react-weather-app"><h5>Weather App</h5></AniLink>
                             </div>
                          
-                               <p className="capstone-description">A responsive web app to find the current weather and 5 day forecast of any city using OpenWeatherMap API.</p>       
+                               <p className="projectReverse-description">A responsive web app to find the current weather and 5 day forecast of any city using OpenWeatherMap API.</p>       
 
                                <AniLink cover direction="down"  bg="#0e101bfc" to="/react-weather-app" className="details-btn">View Details</AniLink>       
                             </div>
@@ -154,21 +188,21 @@ const Works = () => {
 
                     {/* ==== Portfolio Card ==== */}
                     <Reveal>
-                      <div className="portfolio-container">
-                            <div className="port-thumbnail">
+                      <div className="project-container">
+                            <div className="project-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc" to="/portfolio">
-                                <Img className="port-feature" fluid={data.portfolioImg.childImageSharp.fluid} alt="darrien portfolio"/> 
-                                <div className="port-overlay"></div>
+                                <Img className="project-feature" fluid={data.portfolioImg.childImageSharp.fluid} alt="darrien portfolio"/> 
+                                <div className="project-overlay"></div>
                             </AniLink>
                             </div>
 
-                            <div className="port-info">
+                            <div className="project-info">
                               <div className="featured-title">
                                   <h4>Featured Project</h4>
                                   <AniLink cover direction="down"  bg="#0e101bfc" to="/portfolio"><h5>Portfolio</h5></AniLink>
                               </div>                
 
-                                <p className="port-description">Personal portfolio site built with GatsbyJS and hosted on Netlify.</p>
+                                <p className="project-description">Personal portfolio site built with GatsbyJS and hosted on Netlify.</p>
 
                                 <AniLink cover direction="down"  bg="#0e101bfc"Link to="/portfolio" className="details-btn">View Details</AniLink>
                             </div>
@@ -176,27 +210,27 @@ const Works = () => {
                       </Reveal>{/* ==== End of Portfolio ==== */}
 
 
-                {/* ==== Swift Card ==== */}
+                {/* ==== Match the Memes Game Card ==== */}
                 <Reveal>
-                    <div className="swift-container">
-                        <div className="project-thumbnail">
+                    <div className="projectReverse-container">
+                        <div className="projectReverse-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc" to="/match-the-memes">
-                             <Img className="swift-feature" fluid={data.mtmImg.childImageSharp.fluid} alt="darrien match the memes"/> 
-                              <div className="swift-overlay"></div>
+                             <Img className="projectReverse-feature" fluid={data.mtmImg.childImageSharp.fluid} alt="darrien match the memes game"/> 
+                              <div className="projectReverse-overlay"></div>
                             </AniLink>
                           </div>
 
-                          <div className="swift-info">
+                          <div className="projectReverse-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
                                 <AniLink cover direction="down" bg="#0e101bfc" to="/match-the-memes"><h5>Match the Memes</h5></AniLink>
                             </div>
                             
-                               <p className="swift-description">A matching card game based on memes developed with JavaScript. </p>                                                         
+                               <p className="projectReverse-description">A matching card game based on memes developed with JavaScript. </p>                                                         
                               <AniLink cover direction="down" bg="#0e101bfc" to="/match-the-memes" className="details-btn">View Details</AniLink>                                 
                       
                           </div>                     
-                      </div> {/* ==== End of Swift ==== */}
+                      </div> {/* ==== End of Match the Memes ==== */}
 
                       {/*  ==== About Component ====*/}
                       <About />
