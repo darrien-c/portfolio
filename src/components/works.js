@@ -131,7 +131,7 @@ const Works = (props) => {
                                  }
                               </div>                
 
-                                <p className="projectReverse-description">Work in progress. Dynamic web app built using React and PokemonGO-Pokedex in JSON. </p>
+                                <p className="projectReverse-description"><b>Work in progress.</b> Dynamic web app built using React and PokemonGO-Pokedex in JSON. </p>
 
                                {/*  <AniLink cover direction="down"  bg="#0e101bfc"  to="/" className="details-btn">View Details</AniLink> */}
                             </div>
