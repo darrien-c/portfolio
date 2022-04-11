@@ -8,8 +8,10 @@ import Slide from 'react-reveal/Slide';
 import { BsCodeSlash as Code } from "react-icons/bs";
 import { FaUser as About } from "react-icons/fa";
 
+import smoothscroll from 'smoothscroll-polyfill';
 
 const Header = () => {
+  smoothscroll.polyfill();
   const data = useStaticQuery(graphql`
   query {
     logoImg: file(relativePath: { eq: "d-favicon.png" }) {

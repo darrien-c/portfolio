@@ -23,9 +23,6 @@ import Slide from 'react-reveal/Slide';
 /* /* Transitions */
 import AniLink from "gatsby-plugin-transition-link/AniLink"; 
 
-/* About Section */
-import About from '../components/about'
-
 
 const Works = (props) => {
 
@@ -77,7 +74,7 @@ const Works = (props) => {
   `)
     return (
      
-        <main className="works-showcase">           
+        <div className="works-showcase">           
             <div className="container">
                 <div id="projects" className="section-01">
                     <div className="project-wrapper">
@@ -111,34 +108,6 @@ const Works = (props) => {
                       </div>
                     </Reveal>{/* ==== End of Capstone ==== */}
 
-                    {/* ==== Pokemon Card ====*/}
-                    <Reveal>
-                      <div className="projectReverse-container">
-                            <div className="projectReverse-thumbnail">
-                         {/*    <AniLink cover direction="down"  bg="#0e101bfc" to="/"> */}
-                                <Img className="projectReverse-feature" fluid={data.pokemonImg.childImageSharp.fluid} alt="darrien chow pokemon game app"/> 
-                                <div className="projectReverse-overlay"></div>
-                        {/*     </AniLink> */}
-                            </div>
-
-                            <div className="projectReverse-info">
-                              <div className="featured-title">
-                                  <h4>Featured Project</h4>
-                                  <h5>Pokemon Game
-                                  <br />
-                                  -Coming Soon</h5>
-                                 {/*  <AniLink cover direction="down"  bg="#0e101bfc" to="/"><h5>Pokemon Game App</h5></AniLink> */
-                                 }
-                              </div>                
-
-                                <p className="projectReverse-description"><b>Work in progress.</b> Dynamic web app built using React and PokemonGO-Pokedex in JSON. </p>
-
-                               {/*  <AniLink cover direction="down"  bg="#0e101bfc"  to="/" className="details-btn">View Details</AniLink> */}
-                            </div>
-                        </div> 
-                      </Reveal>
-                    {/* ==== End Pokemon Card ==== */}
-
                        {/* ==== React Movie Card ==== */}
                     <Reveal>
                       <div className="project-container">
@@ -164,21 +133,21 @@ const Works = (props) => {
 
                       {/* ==== Weather-app Card ==== */}
                       <Reveal>
-                        <div className="projectReverse-container">
-                          <div className="projectReverse-thumbnail">
+                        <div className="project-container">
+                          <div className="project-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc"  to="/react-weather-app">
-                              <Img className="projectReverse-feature" fluid={data.weatherImg.childImageSharp.fluid}  alt="darrien weather app"/> 
-                              <div className="projectReverse-overlay"></div>
+                              <Img className="project-feature" fluid={data.weatherImg.childImageSharp.fluid}  alt="darrien weather app"/> 
+                              <div className="project-overlay"></div>
                             </AniLink>
                           </div>
 
-                          <div className="projectReverse-info">
+                          <div className="project-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
                                 <AniLink cover direction="down"  bg="#0e101bfc"  to="/react-weather-app"><h5>Weather App</h5></AniLink>
                             </div>
                          
-                               <p className="projectReverse-description">A responsive web app to find the current weather and 5 day forecast of any city using OpenWeatherMap API.</p>       
+                               <p className="project-description">A responsive web app to find the current weather and 5 day forecast of any city using OpenWeatherMap API.</p>       
 
                                <AniLink cover direction="down"  bg="#0e101bfc" to="/react-weather-app" className="details-btn">View Details</AniLink>       
                             </div>
@@ -212,28 +181,25 @@ const Works = (props) => {
 
                 {/* ==== Match the Memes Game Card ==== */}
                 <Reveal>
-                    <div className="projectReverse-container">
-                        <div className="projectReverse-thumbnail">
+                      <div className="project-container">
+                            <div className="project-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc" to="/match-the-memes">
-                             <Img className="projectReverse-feature" fluid={data.mtmImg.childImageSharp.fluid} alt="darrien match the memes game"/> 
-                              <div className="projectReverse-overlay"></div>
+                             <Img className="project-feature" fluid={data.mtmImg.childImageSharp.fluid} alt="darrien match the memes game"/> 
+                              <div className="project-overlay"></div>
                             </AniLink>
                           </div>
 
-                          <div className="projectReverse-info">
+                          <div className="project-info">
                             <div className="featured-title">
                                 <h4>Featured Project</h4>
                                 <AniLink cover direction="down" bg="#0e101bfc" to="/match-the-memes"><h5>Match the Memes</h5></AniLink>
                             </div>
                             
-                               <p className="projectReverse-description">A matching card game based on memes developed with JavaScript. </p>                                                         
+                               <p className="project-description">A matching card game based on memes developed with JavaScript. </p>                                                         
                               <AniLink cover direction="down" bg="#0e101bfc" to="/match-the-memes" className="details-btn">View Details</AniLink>                                 
                       
                           </div>                     
                       </div> {/* ==== End of Match the Memes ==== */}
-
-                      {/*  ==== About Component ====*/}
-                      <About />
 
                       </Reveal>
                     </div> {/* ==== End Project Wrapper ==== */}
@@ -251,7 +217,7 @@ const Works = (props) => {
               </ul>
             </div>
             </Slide>            
-        </main>
+        </div>
 
     )
 }

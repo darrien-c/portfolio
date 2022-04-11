@@ -3,37 +3,42 @@
     height: auto;
     font-family: 'Source Sans Pro';
     position: relative;
-    min-height: 1000px;
     scroll-behavior: smooth;
-    @media (min-width: 905px)  {
-        min-height: 1300px;
-    }
+    max-width: 1150px;
+    margin: 0 auto;
+
     h1, h2, p {
         color: white;
     }
 
     .container {  
         width: auto;
+        margin-left: 40px;
+        margin-right: 40px;       
+        margin-bottom: 70px;   
+        position: relative;
 
-        @media (min-width: 905px)  {
-            margin: 0;
+        @media (min-widtH: 768px) {
+            margin-left: 70px;
+            margin-right: 70px;  
+        }
+        @media (min-width: 1025px) {
+            margin: 0 40px;
         }
 
-        .about-wrapper {
-            padding-top: 120px;
-            padding-right: 10px;
-            padding-left: 10px;            
-            position: relative;
 
-            @media (min-width: 610px) {
-                margin-left: 20px;
-                margin-right: 20px; 
+        .about-wrapper {
+            @media (min-width: 768px) {
+                margin: 0 40px;
+            }
+            @media (min-width: 1025px) {
+                margin: 0 auto;
             }
             
             .about-desc {
                 font-weight: 300;
 
-                @media (min-width: 905px) {
+                @media (min-width: 1025px) {
                     width: 50%;
                     position: relative;
                 }
@@ -52,11 +57,10 @@
                     color: $off-white;
                     font-weight: 600;
                     max-width: 600px;
-                    margin: 70px 0 40px; 
                     height: 31px;  
                     overflow: hidden;
 
-                    @media (min-width: 905px) {
+                    @media (min-width: 1025px) {
                         margin-left: 0;
                     }
 
@@ -103,7 +107,9 @@
                 }
                 
                 .about-box {
-                    @media (min-width: 905px) {
+                    display: none;
+                    @media (min-width: 1025px) {
+                        display: block;
                         position: absolute;
                         top: 0;
                         right: 0;
@@ -128,7 +134,7 @@
                     width: 130px;
                     position: relative;
 
-                    @media (min-width: 905px) {
+                    @media (min-width: 1025px) {
                         margin-left: 0;
                     }
 
