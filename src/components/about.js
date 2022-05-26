@@ -28,27 +28,18 @@ const About = () => {
                             <Slide left>
                             <div className="about-desc">                            
                                 <div>                   
-                                    <p>Hi! I'm Darrien - a front-end web developer based in British Columbia. I'm a passionate and ambitious developer who strives to build intuiutive UIs, responsive, and easy to use websites.                                    
-                                    <br />
-                                    <br />
-                                    I began my journey by graduating from BCIT where I built skills and grew experiences in front-end programming. Discovering that I could be creative without a talent in classical arts and finding myself immersed in the code made me realize that this was quite enjoyable(usually). Luckily, I'm just a person who loves making things work! Currently, I am practicing my skills to create progressive web apps using JavaScript's framework ReactJS. 
-                                    <br />
-                                    When I'm not working, I'm usually still found on my computer playing PC games and trying out new hobbies!
-                                    <br />
-                                    <br />
-                                    Tech I've been working with:
-                                    </p>                                    
-                                </div>
-                            
-                            </div>
-                            <ul className="skills-arrow">
-                                    <li>HTML / CSS</li>
-                                    <li>SaSS</li>
-                                    <li>JavaScript</li>
-                                    <li>PHP</li>
-                                    <li>React</li>
-                                    <li>MySQL</li>
-                            </ul>     
+                                    <p>Greetings! I'm Darrien - a front-end web developer based in British Columbia, Canada. I strive to build intuitive UIs, responsive, and easy to use websites that help make people's lives easier. When I'm not at my computer I like to spend my time going on hikes and trails!</p>
+                                    <p>Tech I've been working with:</p>
+                                    <ul className="skills-arrow">
+                                        <li>HTML / CSS</li>
+                                        <li>SaSS</li>
+                                        <li>JavaScript</li>
+                                        <li>PHP</li>
+                                        <li>React</li>
+                                        <li>MySQL</li>
+                                </ul>             
+                                </div>                            
+                            </div>  
 
                             <a href="mailto:hello@devdarrien.com" rel="nofollow noopener noreferrer" className="contact">Email me</a>
                             

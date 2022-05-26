@@ -4,7 +4,7 @@
     font-family: 'Source Sans Pro';
     position: relative;
     scroll-behavior: smooth;
-    max-width: 1150px;
+    max-width: 1320px;
     margin: 0 auto;
 
     h1, h2, p {
@@ -14,8 +14,8 @@
     .container {  
         width: auto;
         margin-left: 40px;
-        margin-right: 40px;       
-        margin-bottom: 70px;   
+        margin-right: 40px;  
+        margin-top: 70px;
         position: relative;
 
         @media (min-widtH: 768px) {
@@ -23,7 +23,7 @@
             margin-right: 70px;  
         }
         @media (min-width: 1025px) {
-            margin: 0 40px;
+            margin: 70px 120px 0 120px;
         }
 
 

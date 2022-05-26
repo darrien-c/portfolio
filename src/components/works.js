@@ -28,6 +28,13 @@ const Works = (props) => {
 
     const data = useStaticQuery(graphql`
     query {
+      lbsImg: file(relativePath: { eq: "lbs-screen.png" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }          
+        }
+      }
       codiumImg: file(relativePath: { eq: "codium-card.png" }) {
         childImageSharp {
           fluid(quality: 100) {
@@ -84,6 +91,29 @@ const Works = (props) => {
                           <h3 className="works-title"><span><Code /></span> Works </h3>
                         </Reveal>
                       </HeadShake>
+
+                      {/* ==== LBS Card ==== */}
+                      <Reveal>
+                        <div className="project-container">
+                          <div className="project-thumbnail">
+                            <AniLink cover direction="down"  bg="#0e101bfc"  to="/laidback">
+                              <Img className="project-feature" fluid={data.lbsImg.childImageSharp.fluid}  alt="Laid Back Snacks"/> 
+                              <div className="project-overlay"></div>
+                            </AniLink>
+                          </div>
+
+                          <div className="project-info">
+                            <div className="featured-title">
+                                <h4>Featured Project</h4>
+                                <AniLink cover direction="down"  bg="#0e101bfc"  to="/laidback"><h5>Laid Back Snacks</h5></AniLink>
+                            </div>
+                         
+                               <p className="project-description">Laid Back Snacks is an e-Commerce subscription service website built using WordPress CMS, WooCommerce, and GravityKit. </p>
+
+                               <AniLink cover direction="down"  bg="#0e101bfc" to="/laidback" className="details-btn">View Details</AniLink>       
+                            </div>
+                      </div>
+                    </Reveal>{/* ==== End of LBS ==== */}
 
                       {/* ==== Capstone Card ==== */}
                       <Reveal>
@@ -152,8 +182,31 @@ const Works = (props) => {
                                <AniLink cover direction="down"  bg="#0e101bfc" to="/react-weather-app" className="details-btn">View Details</AniLink>       
                             </div>
                       </div>
-                    </Reveal>{/* ==== End of Capstone ==== */}
+                    </Reveal>{/* ==== End of Weather ==== */}
 
+                {/* ==== Match the Memes Game Card ==== */}
+                <Reveal>
+                      <div className="project-container">
+                            <div className="project-thumbnail">
+                            <AniLink cover direction="down"  bg="#0e101bfc" to="/match-the-memes">
+                             <Img className="project-feature" fluid={data.mtmImg.childImageSharp.fluid} alt="darrien match the memes game"/> 
+                              <div className="project-overlay"></div>
+                            </AniLink>
+                          </div>
+
+                          <div className="project-info">
+                            <div className="featured-title">
+                                <h4>Featured Project</h4>
+                                <AniLink cover direction="down" bg="#0e101bfc" to="/match-the-memes"><h5>Match the Memes</h5></AniLink>
+                            </div>
+                            
+                               <p className="project-description">A matching card game based on memes developed with JavaScript. </p>                                                         
+                              <AniLink cover direction="down" bg="#0e101bfc" to="/match-the-memes" className="details-btn">View Details</AniLink>                                 
+                      
+                          </div>                     
+                      </div> 
+
+                    </Reveal>{/* ==== End of Match the Memes ==== */}
 
                     {/* ==== Portfolio Card ==== */}
                     <Reveal>
@@ -179,29 +232,6 @@ const Works = (props) => {
                       </Reveal>{/* ==== End of Portfolio ==== */}
 
 
-                {/* ==== Match the Memes Game Card ==== */}
-                <Reveal>
-                      <div className="project-container">
-                            <div className="project-thumbnail">
-                            <AniLink cover direction="down"  bg="#0e101bfc" to="/match-the-memes">
-                             <Img className="project-feature" fluid={data.mtmImg.childImageSharp.fluid} alt="darrien match the memes game"/> 
-                              <div className="project-overlay"></div>
-                            </AniLink>
-                          </div>
-
-                          <div className="project-info">
-                            <div className="featured-title">
-                                <h4>Featured Project</h4>
-                                <AniLink cover direction="down" bg="#0e101bfc" to="/match-the-memes"><h5>Match the Memes</h5></AniLink>
-                            </div>
-                            
-                               <p className="project-description">A matching card game based on memes developed with JavaScript. </p>                                                         
-                              <AniLink cover direction="down" bg="#0e101bfc" to="/match-the-memes" className="details-btn">View Details</AniLink>                                 
-                      
-                          </div>                     
-                      </div> {/* ==== End of Match the Memes ==== */}
-
-                      </Reveal>
                     </div> {/* ==== End Project Wrapper ==== */}
                </div>  {/* ==== End Project Section ==== */}   
             </div> {/* ==== End Container ==== */}       
