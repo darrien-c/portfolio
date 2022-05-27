@@ -42,6 +42,20 @@ const Works = (props) => {
           }          
         }
       }
+      sunnysideImg: file(relativePath: { eq: "sunnyside-screen.png" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }          
+        }
+      }
+      lbsPortalDashboardImg: file(relativePath: { eq: "lbs-ecommerce-dashboard-screen.png" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }          
+        }
+      }
       pokemonImg: file(relativePath: { eq: "Pokemon-Thumbnail.png" }) {
         childImageSharp {
           fluid(quality: 100) {
@@ -115,6 +129,29 @@ const Works = (props) => {
                       </div>
                     </Reveal>{/* ==== End of LBS ==== */}
 
+                     {/* ==== UX UI Strategy Card ==== */}
+                     <Reveal>
+                        <div className="project-container">
+                          <div className="project-thumbnail">
+                            <AniLink cover direction="down"  bg="#0e101bfc"  to="/corporate-gifting">
+                              <Img className="project-feature" fluid={data.lbsPortalDashboardImg.childImageSharp.fluid}  alt="Sunny Side Agency"/> 
+                              <div className="project-overlay"></div>
+                            </AniLink>
+                          </div>
+
+                          <div className="project-info">
+                            <div className="featured-title">
+                                <h4>Featured Project</h4>
+                                <AniLink cover direction="down"  bg="#0e101bfc"  to="/corporate-gifting"><h5>Corporate Gifting Portal</h5></AniLink>
+                            </div>
+                         
+                               <p className="project-description">Sunnyside agency responsive landing page layout challenge</p>       
+
+                               <AniLink cover direction="down"  bg="#0e101bfc" to="/corporate-gifting" className="details-btn">View Details</AniLink>       
+                            </div>
+                      </div>
+                    </Reveal>{/* ==== End of UX UI Strategy ==== */}
+
                       {/* ==== Capstone Card ==== */}
                       <Reveal>
                         <div className="project-container">
@@ -138,6 +175,29 @@ const Works = (props) => {
                       </div>
                     </Reveal>{/* ==== End of Capstone ==== */}
 
+                      {/* ==== SunnySide Card ==== */}
+                      <Reveal>
+                        <div className="project-container">
+                          <div className="project-thumbnail">
+                            <AniLink cover direction="down"  bg="#0e101bfc"  to="/sunnysideagency">
+                              <Img className="project-feature" fluid={data.sunnysideImg.childImageSharp.fluid}  alt="Sunny Side Agency"/> 
+                              <div className="project-overlay"></div>
+                            </AniLink>
+                          </div>
+
+                          <div className="project-info">
+                            <div className="featured-title">
+                                <h4>Featured Project</h4>
+                                <AniLink cover direction="down"  bg="#0e101bfc"  to="/sunnysideagency"><h5>Sunny Side Agency</h5></AniLink>
+                            </div>
+                         
+                               <p className="project-description">Sunnyside agency responsive landing page layout challenge</p>       
+
+                               <AniLink cover direction="down"  bg="#0e101bfc" to="/sunnysideagency" className="details-btn">View Details</AniLink>       
+                            </div>
+                      </div>
+                    </Reveal>{/* ==== End of SunnySide ==== */}
+                
                        {/* ==== React Movie Card ==== */}
                     <Reveal>
                       <div className="project-container">

@@ -16,6 +16,8 @@ import Prism from "prismjs";
 //import icons
 import {  BsBoxArrowInUpRight} from "react-icons/bs";
 
+import showcaseMultiDevices from '../images/lbs-multi.png';
+
 
 
 const LaidBackContent = () => {
@@ -129,7 +131,8 @@ const LaidBackContent = () => {
     </section>
     <section class="showcase-section">
         <div className="design-image dual-clay">      
-            <Img fluid={data.lbsMultiDevice.childImageSharp.fluid} /> 
+            {/* <Img fluid={data.lbsMultiDevice.childImageSharp.fluid} />  */}
+            <img src={showcaseMultiDevices} />
         </div>
       </section>
 
@@ -168,7 +171,7 @@ const LaidBackContent = () => {
 
       <div className="prev-next-container">
         <div className="prev-next-subtitle">Next Project</div>
-        <AniLink cover direction="left"  bg="#0e101bfc" to="/react-movie" className="link-title">Movie App</AniLink>
+        <AniLink cover direction="left"  bg="#0e101bfc" to="/corporate-gifting" className="link-title">Corporate Gifting</AniLink>
       </div>
     </main>
   )

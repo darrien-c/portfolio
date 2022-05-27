@@ -38,6 +38,24 @@ main {
                     width: 755px;
                 }
             }
+            .main-image.custom {
+                max-width: 960px;
+                width: 100%;
+                padding: 0 10px;
+
+                @media (min-width: 1025px) {
+                    padding: 0;
+                }
+            }
+            .main-image.wireframes {
+                max-width: 1852px;
+                width: 100%;
+                padding: 10px;
+
+                @media (min-width: 1025px) {
+                    padding: 0;
+                }
+            }
         }
 
         cite, p {
@@ -332,10 +350,11 @@ main {
             color: #e3e3e3;      
             padding-top: 10px;
             padding-bottom: 10px;
-       }
+       }     
+    }
 
-
-     
+    .design-process.wireframes {
+        margin-bottom: 50px;
     }
 
     .dev-process {
@@ -444,14 +463,25 @@ main {
     }
 
     .showcase-section {
+        background: #c9d0dd;
+        .design-image.dual-clay {
+            width: 100%;
+            margin: margin;
+            max-width: 1250px;
+            margin: auto;
+        }
+    }
 
+    .showcase-section.wireframes {
+        background: unset;
+        .design-image.wireframes-presentation {
+            margin: 0 auto;
+            max-width: 1920px;
+        }
     }
 }
 
 .tl-edges {
     overflow: hidden;
-    .design-image.dual-clay {
-        width: 1920px;
-    }
 }
 
