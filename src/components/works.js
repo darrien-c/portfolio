@@ -134,7 +134,7 @@ const Works = (props) => {
                         <div className="project-container">
                           <div className="project-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc"  to="/corporate-gifting">
-                              <Img className="project-feature" fluid={data.lbsPortalDashboardImg.childImageSharp.fluid}  alt="Sunny Side Agency"/> 
+                              <Img className="project-feature" fluid={data.lbsPortalDashboardImg.childImageSharp.fluid}  alt="Corporate Gifting Portal"/> 
                               <div className="project-overlay"></div>
                             </AniLink>
                           </div>
@@ -145,7 +145,7 @@ const Works = (props) => {
                                 <AniLink cover direction="down"  bg="#0e101bfc"  to="/corporate-gifting"><h5>Corporate Gifting Portal</h5></AniLink>
                             </div>
                          
-                               <p className="project-description">Sunnyside agency responsive landing page layout challenge</p>       
+                               <p className="project-description">Corporate gifting is a project strategy created for companies to use as their platform for automating services.</p>       
 
                                <AniLink cover direction="down"  bg="#0e101bfc" to="/corporate-gifting" className="details-btn">View Details</AniLink>       
                             </div>
@@ -180,7 +180,7 @@ const Works = (props) => {
                         <div className="project-container">
                           <div className="project-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc"  to="/sunnysideagency">
-                              <Img className="project-feature" fluid={data.sunnysideImg.childImageSharp.fluid}  alt="Sunny Side Agency"/> 
+                              <Img className="project-feature" fluid={data.sunnysideImg.childImageSharp.fluid}  alt="Sunnyside Agency"/> 
                               <div className="project-overlay"></div>
                             </AniLink>
                           </div>
