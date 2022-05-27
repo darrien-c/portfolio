@@ -16,7 +16,7 @@ import Prism from "prismjs";
 //import icons
 import {  BsBoxArrowInUpRight} from "react-icons/bs";
 
-import wireframeImage from '../images/cg-admin-wireframe.png';
+import wireframeImage from '../images/cg-admin-wireframe.jpg';
 import CorporatePortalUserFlow from '../images/corporate-customer-flow.png';
 import CustomerUserPurchaseFlow from '../images/customer-flow.png';
 

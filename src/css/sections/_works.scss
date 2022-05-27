@@ -155,9 +155,7 @@
                     display: block;
                     position: absolute;
                     top: 0;
-                    color: $off-white;
-                    text-align: right;
-                    right: 0;
+                    color: $off-white;                    
                     margin: 20px 30px;
 
 
@@ -167,6 +165,8 @@
 
                     @media (min-width: 610px) {
                         margin: 0;     
+                        text-align: right;
+                        right: 0;
                                          
                     }
 

@@ -68,8 +68,8 @@ const SunnySideContent = () => {
 
     <section className="project-description custom">
       <div className="proj-scope">  
-      <h2>Scope</h2>
-        <p>☀️Sunnyside agency landing page solution to the Sunnyside agency landing page challenge on Frontend Mentor. Frontend Mentor is a dedicated hub for challenges to help improve coding skills by building realistic projects.</p>
+      <h2>Brief</h2>
+        <p>☀️Sunnyside agency landing page solution to the challenge on Frontend Mentor. Frontend Mentor is a dedicated hub for challenges to help improve coding skills by building realistic projects.</p>
 
         <div className="techstack">
           <h2>Technologies Used</h2>
