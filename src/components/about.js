@@ -28,7 +28,7 @@ const About = () => {
                             <Slide left>
                             <div className="about-desc">                            
                                 <div>                   
-                                    <p>Greetings! I'm Darrien - a front-end web developer based in British Columbia, Canada. I strive to build intuitive UIs, responsive, and easy to use websites that help make people's lives easier. When I'm not at my computer I like to spend my time going on hikes and trails!</p>
+                                    <p>Greetings! I'm a front-end web developer based. I strive to build intuitive UIs, responsive, and easy to use websites that help make people's lives easier. When I'm not at my computer I like to spend my time going on hikes and trails!</p>
                                     <p>Tech I've been working with:</p>
                                     <ul className="skills-arrow">
                                         <li>HTML / CSS</li>

@@ -157,7 +157,7 @@ const Works = (props) => {
                         <div className="project-container">
                           <div className="project-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc"  to="/codium">
-                              <Img className="project-feature" fluid={data.codiumImg.childImageSharp.fluid}  alt="darrien codium"/> 
+                              <Img className="project-feature" fluid={data.codiumImg.childImageSharp.fluid}  alt="codium"/> 
                               <div className="project-overlay"></div>
                             </AniLink>
                           </div>
@@ -203,7 +203,7 @@ const Works = (props) => {
                       <div className="project-container">
                             <div className="project-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc" to="/react-movie">
-                                <Img className="project-feature" fluid={data.movieAppImg.childImageSharp.fluid} alt="darrien chow react movie app"/> 
+                                <Img className="project-feature" fluid={data.movieAppImg.childImageSharp.fluid} alt="react movie app"/> 
                                 <div className="project-overlay"></div>
                             </AniLink>
                             </div>
@@ -226,7 +226,7 @@ const Works = (props) => {
                         <div className="project-container">
                           <div className="project-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc"  to="/react-weather-app">
-                              <Img className="project-feature" fluid={data.weatherImg.childImageSharp.fluid}  alt="darrien weather app"/> 
+                              <Img className="project-feature" fluid={data.weatherImg.childImageSharp.fluid}  alt="weather app"/> 
                               <div className="project-overlay"></div>
                             </AniLink>
                           </div>
@@ -249,7 +249,7 @@ const Works = (props) => {
                       <div className="project-container">
                             <div className="project-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc" to="/match-the-memes">
-                             <Img className="project-feature" fluid={data.mtmImg.childImageSharp.fluid} alt="darrien match the memes game"/> 
+                             <Img className="project-feature" fluid={data.mtmImg.childImageSharp.fluid} alt="match the memes game"/> 
                               <div className="project-overlay"></div>
                             </AniLink>
                           </div>
@@ -273,7 +273,7 @@ const Works = (props) => {
                       <div className="project-container">
                             <div className="project-thumbnail">
                             <AniLink cover direction="down"  bg="#0e101bfc" to="/portfolio">
-                                <Img className="project-feature" fluid={data.portfolioImg.childImageSharp.fluid} alt="darrien portfolio"/> 
+                                <Img className="project-feature" fluid={data.portfolioImg.childImageSharp.fluid} alt="portfolio"/> 
                                 <div className="project-overlay"></div>
                             </AniLink>
                             </div>
