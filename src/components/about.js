@@ -28,7 +28,7 @@ const About = () => {
                             <Slide left>
                             <div className="about-desc">                            
                                 <div>                   
-                                    <p>Greetings! I'm a front-end web developer based. I strive to build intuitive UIs, responsive, and easy to use websites that help make people's lives easier. When I'm not at my computer I like to spend my time going on hikes and trails!</p>
+                                    <p>Hello! I'm a front-end developer specializing in the creation of user-friendly, responsive web applications. My primary focus is on enhancing user experience through intuitive design and seamless performance.</p>
                                     <p>Tech I've been working with:</p>
                                     <ul className="skills-arrow">
                                         <li>HTML / CSS</li>
